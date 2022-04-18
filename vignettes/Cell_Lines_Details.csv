@@ -1,0 +1,1009 @@
+Sample Name,COSMIC identifier,Whole Exome Sequencing (WES),Copy Number Alterations (CNA),Gene Expression,Methylation,"Drug
+Response","GDSC
+Tissue descriptor 1","GDSC
+Tissue
+descriptor 2","Cancer Type
+(matching TCGA label)","Microsatellite 
+instability Status (MSI)",Screen Medium,Growth Properties
+A253,906794,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,,MSS/MSI-L,D/F12,Adherent
+BB30-HNC,753531,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+BB49-HNC,753532,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+BHY,753535,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+BICR10,1290724,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+BICR22,1240121,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+BICR31,1290725,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+BICR78,1240122,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+Ca9-22,753538,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+CAL-27,910916,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+CAL-33,753541,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+Detroit562,906837,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+DOK,910936,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+FADU,906863,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+H3118,1240140,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,,MSS/MSI-L,R,Adherent
+HN,907059,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+HO-1-N-1,924111,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+HO-1-u-1,753561,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+HSC-2,753562,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+HSC-3,907061,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+HSC-4,907062,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+JHU-011,1240161,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,R,Adherent
+JHU-022,1240162,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,R,Adherent
+KON,1298215,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+KOSC-2,753570,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,R,Adherent
+LB771-HNC,753583,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+OSC-19,1298362,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+OSC-20,1240196,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+PCI-15A,1240204,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,R,Adherent
+PCI-30,1298529,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,R,Adherent
+PCI-38,1240205,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,R,Adherent
+PCI-4B,1298531,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,R,Adherent
+PCI-6A,1240206,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,R,Adherent
+PE/CA-PJ15,1240207,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+RPMI-2650,909700,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+SAS,909708,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+SAT,1299050,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,R,Adherent
+SCC-15,910911,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+SCC-25,910701,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+SCC-4,910904,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+SCC-9,909709,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,D/F12,Adherent
+SKN-3,1299059,Y,Y,Y,Y,Y,aero_dig_tract,head and neck,HNSC,MSS/MSI-L,R,Adherent
+COLO-680N,906817,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,R,Adherent
+EC-GI-10,753555,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,D/F12,Adherent
+ESO26,1503366,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,R,Adherent
+ESO51,1503367,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,R,Semi-Adherent
+FLO-1,1503361,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,R,Adherent
+HCE-4,753559,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,D/F12,Adherent
+KYAE-1,1503368,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,R,Suspension
+KYSE-140,753573,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,R,Adherent
+KYSE-150,907317,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,R,Adherent
+KYSE-180,907318,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,R,Adherent
+KYSE-220,1240167,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,R,Adherent
+KYSE-270,907319,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,R,Adherent
+KYSE-410,753574,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,R,Adherent
+KYSE-450,907320,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,R,Adherent
+KYSE-50,1298222,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,D/F12,Adherent
+KYSE-510,907321,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,R,Adherent
+KYSE-520,753575,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,R,Adherent
+KYSE-70,753576,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,R,Adherent
+OACM5-1,1503363,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,R,Semi-Adherent
+OACp4C,1503362,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,R,Adherent
+OE19,910079,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,R,Adherent
+OE21,1298359,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,R,Adherent
+OE33,910549,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,R,Adherent
+SK-GT-4,1503365,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,R,Adherent
+TE-1,753621,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,D/F12,Adherent
+TE-10,753622,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,D/F12,Adherent
+TE-11,946354,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,D/F12,Adherent
+TE-12,946356,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,D/F12,Suspension
+TE-15,753614,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,D/F12,Suspension
+TE-4,1503371,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,R,Adherent
+TE-5,735784,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,D/F12,Adherent
+TE-6,946355,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,D/F12,Adherent
+TE-8,753623,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,D/F12,Adherent
+TE-9,946353,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,D/F12,Adherent
+T-T,1299064,Y,Y,Y,Y,Y,aero_dig_tract,oesophagus,ESCA,MSS/MSI-L,D/F12,Adherent
+CESS,910688,Y,Y,Y,Y,Y,leukemia,acute_myeloid_leukaemia,LAML,MSS/MSI-L,R,Suspension
+CTV-1,753548,Y,Y,Y,Y,Y,leukemia,acute_myeloid_leukaemia,LAML,MSI-H,R,Suspension
+GDM-1,906870,Y,Y,Y,Y,Y,leukemia,acute_myeloid_leukaemia,LAML,MSS/MSI-L,R,Suspension
+HEL,907053,Y,Y,Y,Y,Y,leukemia,acute_myeloid_leukaemia,LAML,MSS/MSI-L,R,Semi-Adherent
+HL-60,905938,Y,Y,Y,Y,Y,leukemia,acute_myeloid_leukaemia,LAML,MSS/MSI-L,D/F12,Suspension
+KASUMI-1,907275,Y,Y,Y,Y,Y,leukemia,acute_myeloid_leukaemia,LAML,MSS/MSI-L,R,Suspension
+KG-1,907278,Y,Y,Y,Y,Y,leukemia,acute_myeloid_leukaemia,LAML,MSS/MSI-L,D/F12,Suspension
+KMOE-2,907280,Y,Y,Y,Y,Y,leukemia,acute_myeloid_leukaemia,LAML,MSS/MSI-L,R,Suspension
+ME-1,1330942,Y,Y,Y,Y,Y,leukemia,acute_myeloid_leukaemia,LAML,MSS/MSI-L,R,Suspension
+ML-2,908141,Y,Y,Y,Y,Y,leukemia,acute_myeloid_leukaemia,LAML,MSS/MSI-L,R,Suspension
+MOLM-13,1330947,Y,Y,Y,Y,Y,leukemia,acute_myeloid_leukaemia,LAML,MSS/MSI-L,R,Suspension
+MONO-MAC-6,908148,Y,Y,Y,Y,Y,leukemia,acute_myeloid_leukaemia,LAML,MSS/MSI-L,R,Suspension
+NKM-1,908448,Y,Y,Y,Y,Y,leukemia,acute_myeloid_leukaemia,LAML,MSS/MSI-L,R,Suspension
+NOMO-1,908451,Y,Y,Y,Y,Y,leukemia,acute_myeloid_leukaemia,LAML,MSS/MSI-L,R,Suspension
+OCI-AML2,910947,Y,Y,Y,Y,Y,leukemia,acute_myeloid_leukaemia,LAML,MSS/MSI-L,D/F12,Suspension
+OCI-AML3,1290455,Y,Y,Y,Y,Y,leukemia,acute_myeloid_leukaemia,LAML,MSS/MSI-L,R,Suspension
+OCI-AML5,1330983,Y,Y,Y,Y,Y,leukemia,acute_myeloid_leukaemia,LAML,MSS/MSI-L,D/F12,Suspension
+OCI-M1,1330985,Y,Y,Y,Y,Y,leukemia,acute_myeloid_leukaemia,LAML,MSS/MSI-L,D/F12,Suspension
+P31-FUJ,909253,Y,Y,Y,Y,Y,leukemia,acute_myeloid_leukaemia,LAML,MSI-H,R,Suspension
+PL-21,1330991,Y,Y,Y,Y,Y,leukemia,acute_myeloid_leukaemia,LAML,MSS/MSI-L,R,Suspension
+QIMR-WIL,910545,Y,Y,Y,Y,Y,leukemia,acute_myeloid_leukaemia,LAML,MSS/MSI-L,D/F12,Suspension
+SIG-M5,909715,Y,Y,Y,Y,Y,leukemia,acute_myeloid_leukaemia,LAML,MSS/MSI-L,D/F12,Suspension
+THP-1,909771,Y,Y,Y,Y,Y,leukemia,acute_myeloid_leukaemia,LAML,MSS/MSI-L,R,Suspension
+KARPAS-299,907273,Y,Y,Y,Y,Y,lymphoma,anaplastic_large_cell_lymphoma,,MSS/MSI-L,R,Suspension
+SU-DHL-1,909742,Y,Y,Y,Y,Y,lymphoma,anaplastic_large_cell_lymphoma,,MSS/MSI-L,R,Suspension
+SUP-M2,1331040,Y,Y,Y,Y,Y,lymphoma,anaplastic_large_cell_lymphoma,,MSS/MSI-L,R,Suspension
+BALL-1,910705,Y,Y,Y,Y,Y,leukemia,B_cell_leukemia,,MSS/MSI-L,R,Suspension
+KARPAS-231,1327774,Y,Y,Y,Y,Y,leukemia,B_cell_leukemia,,MSS/MSI-L,R,Suspension
+KOPN-8,1330933,Y,Y,Y,Y,Y,leukemia,B_cell_leukemia,,MSS/MSI-L,R,Suspension
+MHH-CALL-2,908132,Y,Y,Y,Y,Y,leukemia,B_cell_leukemia,,MSS/MSI-L,R,Suspension
+MHH-PREB-1,908136,Y,Y,Y,Y,Y,leukemia,B_cell_leukemia,,MSI-H,R,Suspension
+MN-60,908143,Y,Y,Y,Y,Y,leukemia,B_cell_leukemia,,MSI-H,D/F12,Suspension
+NALM-6,908158,Y,Y,Y,Y,Y,leukemia,B_cell_leukemia,,MSI-H,R,Suspension
+RCH-ACV,1330994,Y,Y,Y,Y,Y,leukemia,B_cell_leukemia,,MSS/MSI-L,R,Suspension
+REH,909696,Y,Y,Y,Y,Y,leukemia,B_cell_leukemia,,MSI-H,R,Suspension
+ROS-50,1331025,Y,Y,Y,Y,Y,leukemia,B_cell_leukemia,,MSS/MSI-L,R,Suspension
+SUP-B8,910209,Y,Y,Y,Y,Y,leukemia,B_cell_leukemia,,MSS/MSI-L,R,Suspension
+U-698-M,909777,Y,Y,Y,Y,Y,leukemia,B_cell_leukemia,,MSS/MSI-L,R,Suspension
+A3-KAW,910935,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+A4-Fuk,910934,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+BC-1,910919,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+CRO-AP2,906807,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+CTB-1,949088,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+DB,906832,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+DOHH-2,906842,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+Farage,1297449,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+GRANTA-519,1303897,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,D/F12,Suspension
+JEKO-1,1327765,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+JSC-1,1327769,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+KARPAS-1106P,1327773,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+KARPAS-422,907274,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+MC116,907799,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+NU-DUL-1,1330982,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+OCI-LY-19,1330984,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,D/F12,Suspension
+RC-K8,1330995,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+RL,910861,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+SCC-3,910930,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+SLVL,1331032,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+SU-DHL-10,1331033,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+SU-DHL-16,1331034,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+SU-DHL-4,1331035,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+SU-DHL-5,1331036,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+SU-DHL-6,1331037,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+SU-DHL-8,1331038,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+TK,1331045,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+TUR,909773,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSI-H,R,Suspension
+VAL,1331048,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+WSU-DLCL2,1331050,Y,Y,Y,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+BL-41,910706,Y,Y,Y,Y,Y,lymphoma,Burkitt_lymphoma,,MSS/MSI-L,R,Suspension
+CA46,910703,Y,Y,Y,Y,Y,lymphoma,Burkitt_lymphoma,,MSS/MSI-L,R,Suspension
+Daudi,906831,Y,Y,Y,Y,Y,lymphoma,Burkitt_lymphoma,,MSS/MSI-L,R,Suspension
+DG-75,906838,Y,Y,Y,Y,Y,lymphoma,Burkitt_lymphoma,,MSI-H,R,Suspension
+EB2,906846,Y,Y,Y,Y,Y,lymphoma,Burkitt_lymphoma,,MSS/MSI-L,R,Suspension
+EB-3,906847,Y,Y,Y,Y,Y,lymphoma,Burkitt_lymphoma,,MSS/MSI-L,R,Suspension
+GA-10,1303896,Y,Y,Y,Y,Y,lymphoma,Burkitt_lymphoma,,MSS/MSI-L,R,Suspension
+JiyoyeP-2003,907268,Y,Y,Y,Y,Y,lymphoma,Burkitt_lymphoma,,MSS/MSI-L,R,Suspension
+NAMALWA,908159,Y,Y,Y,Y,Y,lymphoma,Burkitt_lymphoma,,MSS/MSI-L,R,Suspension
+P32-ISH,1330987,Y,Y,Y,Y,Y,lymphoma,Burkitt_lymphoma,,MSS/MSI-L,R,Suspension
+Raji,909262,Y,Y,Y,Y,Y,lymphoma,Burkitt_lymphoma,,MSS/MSI-L,R,Suspension
+Ramos-2G6-4C10,910401,Y,Y,Y,Y,Y,lymphoma,Burkitt_lymphoma,,MSS/MSI-L,R,Suspension
+ST486,910906,Y,Y,Y,Y,Y,lymphoma,Burkitt_lymphoma,,MSS/MSI-L,R,Suspension
+BV-173,910710,Y,Y,Y,Y,Y,leukemia,chronic_myeloid_leukaemia,LCML,MSS/MSI-L,R,Suspension
+CML-T1,910951,Y,Y,Y,Y,Y,leukemia,chronic_myeloid_leukaemia,LCML,MSS/MSI-L,D/F12,Suspension
+EM-2,906855,Y,Y,Y,Y,Y,leukemia,chronic_myeloid_leukaemia,LCML,MSS/MSI-L,R,Suspension
+JURL-MK1,1327771,Y,Y,Y,Y,Y,leukemia,chronic_myeloid_leukaemia,LCML,MSS/MSI-L,R,Suspension
+K-562,905940,Y,Y,Y,Y,Y,leukemia,chronic_myeloid_leukaemia,LCML,MSS/MSI-L,D/F12,Suspension
+KCL-22,1330931,Y,Y,Y,Y,Y,leukemia,chronic_myeloid_leukaemia,LCML,MSI-H,R,Suspension
+KU812,907311,Y,Y,Y,Y,Y,leukemia,chronic_myeloid_leukaemia,LCML,MSS/MSI-L,R,Suspension
+LAMA-84,907783,Y,Y,Y,Y,Y,leukemia,chronic_myeloid_leukaemia,LCML,MSS/MSI-L,R,Suspension
+MEG-01,908126,Y,Y,Y,Y,Y,leukemia,chronic_myeloid_leukaemia,LCML,MSS/MSI-L,R,Suspension
+RPMI-8866,910544,Y,Y,Y,Y,Y,leukemia,chronic_myeloid_leukaemia,LCML,MSS/MSI-L,R,Suspension
+AMO-1,1295741,Y,Y,Y,Y,Y,myeloma,haematopoietic_neoplasm other,MM,MSS/MSI-L,R,Suspension
+EoL-1-cell,906856,Y,Y,Y,Y,Y,leukemia,haematopoietic_neoplasm other,,MSS/MSI-L,R,Suspension
+JJN-3,1327766,Y,Y,Y,Y,Y,myeloma,haematopoietic_neoplasm other,MM,MSS/MSI-L,D/F12,Suspension
+KARPAS-620,1327775,Y,Y,Y,Y,Y,myeloma,haematopoietic_neoplasm other,MM,MSS/MSI-L,R,Suspension
+MC-CAR,683665,Y,Y,Y,Y,Y,myeloma,haematopoietic_neoplasm other,MM,MSS/MSI-L,D/F12,Suspension
+SKM-1,909722,Y,Y,Y,Y,Y,leukemia,haematopoietic_neoplasm other,,MSS/MSI-L,R,Suspension
+HC-1,907044,Y,Y,Y,Y,Y,leukemia,hairy_cell_leukaemia,,MSS/MSI-L,R,Suspension
+MLMA,908142,Y,Y,Y,Y,Y,leukemia,hairy_cell_leukaemia,,MSS/MSI-L,R,Semi-Adherent
+Mo-T,908149,Y,Y,Y,Y,Y,leukemia,hairy_cell_leukaemia,,MSS/MSI-L,D/F12,Suspension
+HDLM-2,924110,Y,Y,Y,Y,Y,lymphoma,Hodgkin_lymphoma,,MSS/MSI-L,R,Suspension
+HD-MY-Z,907050,Y,Y,Y,Y,Y,lymphoma,Hodgkin_lymphoma,,MSS/MSI-L,R,Adherent
+Hs-445,1322218,Y,Y,Y,Y,Y,lymphoma,Hodgkin_lymphoma,,MSS/MSI-L,R,Suspension
+KM-H2,909976,Y,Y,Y,Y,Y,lymphoma,Hodgkin_lymphoma,,MSS/MSI-L,R,Suspension
+L-1236,1330935,Y,Y,Y,Y,Y,lymphoma,Hodgkin_lymphoma,,MSS/MSI-L,R,Suspension
+L-428,907322,Y,Y,Y,Y,Y,lymphoma,Hodgkin_lymphoma,,MSS/MSI-L,R,Suspension
+L-540,907323,Y,Y,Y,Y,Y,lymphoma,Hodgkin_lymphoma,,MSS/MSI-L,R,Suspension
+RPMI-6666,909701,Y,Y,Y,Y,Y,lymphoma,Hodgkin_lymphoma,,MSS/MSI-L,R,Suspension
+SUP-HD1,1331039,Y,Y,Y,Y,Y,lymphoma,Hodgkin_lymphoma,,MSS/MSI-L,R,Suspension
+KY821,907300,Y,Y,Y,Y,Y,leukemia,leukemia,LAML,MSS/MSI-L,R,Suspension
+MV-4-11,908156,Y,Y,Y,Y,Y,leukemia,leukemia,,MSS/MSI-L,D/F12,Suspension
+RS4-11,909703,Y,Y,Y,Y,Y,leukemia,leukemia,ALL,MSI-H,R,Suspension
+697,906800,Y,Y,Y,Y,Y,leukemia,lymphoblastic_leukemia,,MSS/MSI-L,R,Suspension
+ALL-PO,910944,Y,Y,Y,Y,Y,leukemia,lymphoblastic_leukemia,ALL,MSS/MSI-L,R,Suspension
+BE-13,906763,Y,Y,Y,Y,Y,leukemia,lymphoblastic_leukemia,ALL,MSS/MSI-L,R,Suspension
+CCRF-CEM,905952,Y,Y,Y,Y,Y,leukemia,lymphoblastic_leukemia,ALL,MSS/MSI-L,R,Suspension
+GR-ST,906877,Y,Y,Y,Y,Y,leukemia,lymphoblastic_leukemia,ALL,MSI-H,R,Suspension
+HAL-01,949153,Y,Y,Y,Y,Y,leukemia,lymphoblastic_leukemia,ALL,MSS/MSI-L,R,Suspension
+KARPAS-45,907272,Y,Y,Y,Y,Y,leukemia,lymphoblastic_leukemia,ALL,MSS/MSI-L,R,Suspension
+KE-37,907277,Y,Y,Y,Y,Y,leukemia,lymphoblastic_leukemia,ALL,MSS/MSI-L,R,Suspension
+LC4-1,907787,Y,Y,Y,Y,Y,leukemia,lymphoblastic_leukemia,ALL,MSS/MSI-L,R,Suspension
+MOLT-4,905958,Y,Y,Y,Y,Y,leukemia,lymphoblastic_leukemia,ALL,MSI-H,R,Suspension
+P30-OHK,909252,Y,Y,Y,Y,Y,leukemia,lymphoblastic_leukemia,ALL,MSI-H,R,Suspension
+SUP-B15,1247871,Y,Y,Y,Y,Y,leukemia,lymphoblastic_leukemia,ALL,MSS/MSI-L,D/F12,Suspension
+ATN-1,910687,Y,Y,Y,Y,Y,leukemia,lymphoblastic_T_cell_leukaemia,ALL,MSS/MSI-L,R,Suspension
+LOUCY,907789,Y,Y,Y,Y,Y,leukemia,lymphoblastic_T_cell_leukaemia,ALL,MSS/MSI-L,R,Suspension
+MOLT-13,908146,Y,Y,Y,Y,Y,leukemia,lymphoblastic_T_cell_leukaemia,ALL,MSI-H,R,Suspension
+MOLT-16,908147,Y,Y,Y,Y,Y,leukemia,lymphoblastic_T_cell_leukaemia,ALL,MSS/MSI-L,R,Suspension
+P12-ICHIKAWA,909251,Y,Y,Y,Y,Y,leukemia,lymphoblastic_T_cell_leukaemia,ALL,MSS/MSI-L,R,Suspension
+PF-382,909260,Y,Y,Y,Y,Y,leukemia,lymphoblastic_T_cell_leukaemia,ALL,MSS/MSI-L,R,Suspension
+RPMI-8402,909702,Y,Y,Y,Y,Y,leukemia,lymphoblastic_T_cell_leukaemia,ALL,MSS/MSI-L,R,Suspension
+SUP-T1,909743,Y,Y,Y,Y,Y,leukemia,lymphoblastic_T_cell_leukaemia,ALL,MSS/MSI-L,R,Suspension
+DEL,906836,Y,Y,Y,Y,Y,lymphoma,lymphoid_neoplasm other,,MSS/MSI-L,R,Suspension
+EHEB,906854,Y,Y,Y,Y,Y,lymphoma,lymphoid_neoplasm other,CLL,MSS/MSI-L,R,Suspension
+EJM,1297447,Y,Y,Y,Y,Y,myeloma,lymphoid_neoplasm other,MM,MSS/MSI-L,D/F12,Semi-Adherent
+H9,907043,Y,Y,Y,Y,Y,lymphoma,lymphoid_neoplasm other,,MSS/MSI-L,R,Suspension
+JVM-2,907269,Y,Y,Y,Y,Y,lymphoma,lymphoid_neoplasm other,CLL,MSS/MSI-L,R,Suspension
+JVM-3,907270,Y,Y,Y,Y,Y,lymphoma,lymphoid_neoplasm other,CLL,MSS/MSI-L,R,Suspension
+SR,905965,Y,Y,Y,Y,Y,lymphoma,lymphoid_neoplasm other,,MSS/MSI-L,R,Suspension
+WIL2-NS,1331049,Y,Y,Y,Y,Y,lymphoma,lymphoid_neoplasm other,,MSS/MSI-L,R,Suspension
+WSU-NHL,909785,Y,Y,Y,Y,Y,lymphoma,lymphoid_neoplasm other,,MSI-H,R,Suspension
+YT,946358,Y,Y,Y,Y,Y,lymphoma,lymphoid_neoplasm other,ALL,MSS/MSI-L,D/F12,Suspension
+ARH-77,906765,Y,Y,Y,Y,Y,myeloma,myeloma,MM,MSS/MSI-L,R,Suspension
+IM-9,753563,Y,Y,Y,Y,Y,myeloma,myeloma,MM,MSS/MSI-L,R,Suspension
+KMS-12-BM,907281,Y,Y,Y,Y,Y,myeloma,myeloma,MM,MSS/MSI-L,R,Suspension
+L-363,924239,Y,Y,Y,Y,Y,myeloma,myeloma,MM,MSS/MSI-L,R,Suspension
+LP-1,907791,Y,Y,Y,Y,Y,myeloma,myeloma,MM,MSS/MSI-L,D/F12,Suspension
+MM1S,1659818,Y,Y,Y,Y,Y,myeloma,myeloma,MM,MSS/MSI-L,R,Suspension
+MOLP-8,1330950,Y,Y,Y,Y,Y,myeloma,myeloma,MM,MSS/MSI-L,R,Suspension
+NCI-H929,724825,Y,Y,Y,Y,Y,myeloma,myeloma,MM,MSS/MSI-L,R,Suspension
+OPM-2,909249,Y,Y,Y,Y,Y,myeloma,myeloma,MM,MSS/MSI-L,R,Suspension
+RPMI-8226,905964,Y,Y,Y,Y,Y,myeloma,myeloma,MM,MSS/MSI-L,R,Suspension
+SK-MM-2,753612,Y,Y,Y,Y,Y,myeloma,myeloma,MM,MSS/MSI-L,R,Suspension
+U-266,753615,Y,Y,Y,Y,Y,myeloma,myeloma,MM,MSS/MSI-L,R,Semi-Adherent
+ALL-SIL,1295740,Y,Y,Y,Y,Y,leukemia,T_cell_leukemia,ALL,MSS/MSI-L,R,Suspension
+DND-41,1297446,Y,Y,Y,Y,Y,leukemia,T_cell_leukemia,ALL,MSI-H,R,Suspension
+HH,907056,Y,Y,Y,Y,Y,leukemia,T_cell_leukemia,,MSS/MSI-L,R,Suspension
+Jurkat,998184,Y,Y,Y,Y,Y,leukemia,T_cell_leukemia,ALL,MSI-H,R,Suspension
+CS1,1290795,Y,Y,Y,Y,Y,bone,bone_other,,MSS/MSI-L,R,Adherent
+SJSA-1,909717,Y,Y,Y,Y,Y,bone,bone_other,,MSS/MSI-L,R,Adherent
+CAL-78,1290765,Y,Y,Y,Y,Y,bone,chondrosarcoma,,MSS/MSI-L,R,Adherent
+CHSA8926,1303912,Y,Y,Y,Y,Y,bone,chondrosarcoma,,MSS/MSI-L,R,Adherent
+H-EMC-SS,907290,Y,Y,Y,Y,Y,bone,chondrosarcoma,,MSS/MSI-L,D/F12,Adherent
+CADO-ES1,753539,Y,Y,Y,Y,Y,bone,ewings_sarcoma,,MSS/MSI-L,R,Suspension
+ES1,949158,Y,Y,Y,Y,Y,bone,ewings_sarcoma,,MSS/MSI-L,R,Adherent
+ES3,684055,Y,Y,Y,Y,Y,bone,ewings_sarcoma,,MSS/MSI-L,R,Adherent
+ES4,949156,Y,Y,Y,Y,Y,bone,ewings_sarcoma,,MSS/MSI-L,R,Adherent
+ES5,684057,Y,Y,Y,Y,Y,bone,ewings_sarcoma,,MSS/MSI-L,R,Adherent
+ES7,684059,Y,Y,Y,Y,Y,bone,ewings_sarcoma,,MSS/MSI-L,R,Adherent
+ES8,949155,Y,Y,Y,Y,Y,bone,ewings_sarcoma,,MSS/MSI-L,R,Adherent
+EW-1,949163,Y,Y,Y,Y,Y,bone,ewings_sarcoma,,MSS/MSI-L,R,Semi-Adherent
+EW-11,684062,Y,Y,Y,Y,Y,bone,ewings_sarcoma,,MSS/MSI-L,R,Adherent
+EW-12,949162,Y,Y,Y,Y,Y,bone,ewings_sarcoma,,MSS/MSI-L,R,Suspension
+EW-13,949166,Y,Y,Y,Y,Y,bone,ewings_sarcoma,,MSS/MSI-L,R,Suspension
+EW-16,949165,Y,Y,Y,Y,Y,bone,ewings_sarcoma,,MSS/MSI-L,R,Adherent
+EW-18,949164,Y,Y,Y,Y,Y,bone,ewings_sarcoma,,MSS/MSI-L,R,Suspension
+EW-22,949167,Y,Y,Y,Y,Y,bone,ewings_sarcoma,,MSS/MSI-L,R,Adherent
+EW-24,949168,Y,Y,Y,Y,Y,bone,ewings_sarcoma,,MSS/MSI-L,R,Semi-Adherent
+EW-3,949161,Y,Y,Y,Y,Y,bone,ewings_sarcoma,,MSS/MSI-L,R,Adherent
+EW-7,949160,Y,Y,Y,Y,Y,bone,ewings_sarcoma,,MSS/MSI-L,R,Semi-Adherent
+SK-ES-1,684072,Y,Y,Y,Y,Y,bone,ewings_sarcoma,,MSS/MSI-L,R,Semi-Adherent
+SK-PN-DW,909731,Y,Y,Y,Y,Y,bone,ewings_sarcoma,,MSS/MSI-L,D/F12,Adherent
+TC-71,1240221,Y,Y,Y,Y,Y,bone,ewings_sarcoma,,MSS/MSI-L,D/F12,Adherent
+CAL-72,906827,Y,Y,Y,Y,Y,bone,osteosarcoma,,MSS/MSI-L,D/F12,Adherent
+G-292 Clone A141B1,1290807,Y,Y,Y,Y,Y,bone,osteosarcoma,,MSS/MSI-L,R,Adherent
+HOS,907060,Y,Y,Y,Y,Y,bone,osteosarcoma,,MSS/MSI-L,D/F12,Adherent
+HuO-3N1,909977,Y,Y,Y,Y,Y,bone,osteosarcoma,,MSS/MSI-L,R,Adherent
+HuO9,907072,Y,Y,Y,Y,Y,bone,osteosarcoma,,MSS/MSI-L,R,Adherent
+MG-63,908131,Y,Y,Y,Y,Y,bone,osteosarcoma,,MSS/MSI-L,D/F12,Adherent
+NOS-1,925345,Y,Y,Y,Y,Y,bone,osteosarcoma,,MSS/MSI-L,R,Adherent
+NY,910849,Y,Y,Y,Y,Y,bone,osteosarcoma,,MSS/MSI-L,D/F12,Adherent
+Saos-2,909707,Y,Y,Y,Y,Y,bone,osteosarcoma,,MSS/MSI-L,R,Adherent
+U-2-OS,909776,Y,Y,Y,Y,Y,bone,osteosarcoma,,MSS/MSI-L,R,Adherent
+AU565,910704,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,R,Adherent
+BT-20,906801,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,D/F12,Adherent
+BT-474,946359,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,R,Adherent
+BT-483,949093,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,R,Adherent
+BT-549,905951,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,R,Adherent
+CAL-120,906826,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,D/F12,Adherent
+CAL-148,924106,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,D/F12,Suspension
+CAL-51,910927,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,D/F12,Adherent
+CAL-85-1,910852,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,D/F12,Adherent
+CAMA-1,946382,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,D/F12,Adherent
+COLO-824,906812,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,R,Adherent
+DU-4475,906844,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,R,Suspension
+EFM-19,906851,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,R,Adherent
+EFM-192A,1290798,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,R,Adherent
+EVSA-T,906862,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,D/F12,Adherent
+HCC1143,749710,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,R,Adherent
+HCC1187,749711,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,R,Suspension
+HCC1395,749712,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,R,Adherent
+HCC1419,907045,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,R,Adherent
+HCC1428,1290905,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,R,Adherent
+HCC1500,1303900,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,R,Adherent
+HCC1569,907046,Y,Y,Y,Y,Y,breast,breast,BRCA,MSI-H,R,Adherent
+HCC1599,749713,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,R,Suspension
+HCC1806,907047,Y,Y,Y,Y,Y,breast,breast,,MSS/MSI-L,R,Adherent
+HCC1937,749714,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,R,Adherent
+HCC1954,749709,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,R,Adherent
+HCC202,1290906,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,R,Adherent
+HCC2157,749715,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,D/F12,Suspension
+HCC2218,749716,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,R,Suspension
+HCC38,749717,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,R,Adherent
+HCC70,907048,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,R,Adherent
+HDQ-P1,1290922,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,D/F12,Adherent
+Hs-578-T,905957,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,D/F12,Adherent
+MCF7,905946,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,D/F12,Adherent
+MDA-MB-157,925338,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,D/F12,Adherent
+MDA-MB-231,905960,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,D/F12,Adherent
+MDA-MB-330,1330941,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,D/F12,Adherent
+MDA-MB-361,908121,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,D/F12,Adherent
+MDA-MB-415,924240,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,D/F12,Adherent
+MDA-MB-436,1240172,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,D/F12,Adherent
+MDA-MB-453,908122,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,D/F12,Adherent
+MDA-MB-468,908123,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,D/F12,Adherent
+MFM-223,910948,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,D/F12,Adherent
+MRK-nu-1,908151,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,D/F12,Suspension
+OCUB-M,909256,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,D/F12,Adherent
+T47D,905945,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,R,Adherent
+UACC-812,910910,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,D/F12,Adherent
+UACC-893,909778,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,D/F12,Adherent
+ZR-75-30,909907,Y,Y,Y,Y,Y,breast,breast,BRCA,MSS/MSI-L,R,Adherent
+EGI-1,906853,Y,Y,Y,Y,Y,digestive_system,biliary_tract,,MSS/MSI-L,D/F12,Adherent
+ETK-1,906861,Y,Y,Y,Y,Y,digestive_system,biliary_tract,,MSS/MSI-L,R,Adherent
+HuCCT1,907069,Y,Y,Y,Y,Y,digestive_system,biliary_tract,,MSS/MSI-L,R,Adherent
+TGBC1TKB,909769,Y,Y,Y,Y,Y,digestive_system,biliary_tract,,MSS/MSI-L,D/F12,Adherent
+TGBC24TKB,910695,Y,Y,Y,Y,Y,digestive_system,biliary_tract,,MSS/MSI-L,D/F12,Adherent
+HUTU-80,907073,Y,Y,Y,Y,Y,digestive_system,digestive_system_other,,MSS/MSI-L,D/F12,Adherent
+C2BBe1,910700,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,D/F12,Adherent
+CaR-1,924108,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,D/F12,Adherent
+CCK-81,1240123,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSI-H,R,Adherent
+CL-11,1290769,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,D/F12,Adherent
+CL-40,1240124,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,D/F12,Adherent
+COLO-205,905961,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,R,Suspension
+COLO-320-HSR,910569,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,R,Suspension
+COLO-678,910689,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,R,Semi-Adherent
+CW-2,910554,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSI-H,R,Adherent
+GP5d,907291,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSI-H,D/F12,Adherent
+HCC2998,905971,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,R,Adherent
+HCC-56,1290907,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,R,Adherent
+HCT-116,905936,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSI-H,R,Adherent
+HCT-15,905937,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSI-H,R,Adherent
+HT-115,907289,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,D/F12,Adherent
+HT-29,905939,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,R,Adherent
+HT55,907287,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,D/F12,Adherent
+KM12,905989,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSI-H,R,Adherent
+LoVo,907790,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSI-H,D/F12,Adherent
+LS-1034,917486,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,R,Adherent
+LS-123,907792,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,D/F12,Adherent
+LS-180,998189,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSI-H,D/F12,Adherent
+LS-411N,907794,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSI-H,R,Adherent
+LS-513,907795,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,R,Adherent
+MDST8,1240173,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,R,Adherent
+NCI-H630,908482,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSI-H,D/F12,Adherent
+NCI-H716,908458,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,R,Suspension
+NCI-H747,908457,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,R,Adherent
+RCM-1,909263,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,R,Adherent
+RKO,909698,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSI-H,D/F12,Adherent
+SK-CO-1,909718,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,R,Adherent
+SNU-1040,1659823,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,R,Adherent
+SNU-175,1659928,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSI-H,R,Suspension
+SNU-407,1660034,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSI-H,R,Adherent
+SNU-61,1660035,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,R,Adherent
+SNU-81,1660036,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,R,Adherent
+SNU-C1,910905,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,R,Suspension
+SNU-C2B,909740,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSI-H,R,Adherent
+SNU-C5,1674021,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSI-H,R,Adherent
+SW1116,909746,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,D/F12,Adherent
+SW1417,909747,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,D/F12,Adherent
+SW1463,909748,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,D/F12,Adherent
+SW48,909751,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSI-H,D/F12,Adherent
+SW837,909755,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,D/F12,Adherent
+SW948,909757,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,D/F12,Adherent
+T84,909761,Y,Y,Y,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,D/F12,Adherent
+C3A,910850,Y,Y,Y,Y,Y,digestive_system,liver,LIHC,MSS/MSI-L,D/F12,Adherent
+Hep 3B2_1-7,1240147,Y,Y,Y,Y,Y,digestive_system,liver,LIHC,MSS/MSI-L,D/F12,Adherent
+HLE,907057,Y,Y,Y,Y,Y,digestive_system,liver,LIHC,MSS/MSI-L,D/F12,Adherent
+huH-1,1298146,Y,Y,Y,Y,Y,digestive_system,liver,LIHC,MSS/MSI-L,D/F12,Adherent
+HuH-7,907071,Y,Y,Y,Y,Y,digestive_system,liver,LIHC,MSS/MSI-L,D/F12,Adherent
+JHH-1,1298151,Y,Y,Y,Y,Y,digestive_system,liver,LIHC,MSS/MSI-L,D/F12,Adherent
+JHH-6,1240159,Y,Y,Y,Y,Y,digestive_system,liver,LIHC,MSS/MSI-L,D/F12,Adherent
+JHH-7,1240160,Y,Y,Y,Y,Y,digestive_system,liver,LIHC,MSS/MSI-L,D/F12,Adherent
+SK-HEP-1,909719,Y,Y,Y,Y,Y,digestive_system,liver,LIHC,MSS/MSI-L,D/F12,Adherent
+SNU-182,1240216,Y,Y,Y,Y,Y,digestive_system,liver,LIHC,MSS/MSI-L,R,Adherent
+SNU-387,909736,Y,Y,Y,Y,Y,digestive_system,liver,LIHC,MSS/MSI-L,R,Adherent
+SNU-398,1240217,Y,Y,Y,Y,Y,digestive_system,liver,LIHC,MSS/MSI-L,R,Adherent
+SNU-423,909737,Y,Y,Y,Y,Y,digestive_system,liver,LIHC,MSS/MSI-L,R,Adherent
+SNU-449,909738,Y,Y,Y,Y,Y,digestive_system,liver,LIHC,MSS/MSI-L,R,Adherent
+SNU-475,909739,Y,Y,Y,Y,Y,digestive_system,liver,LIHC,MSS/MSI-L,R,Adherent
+23132-87,910924,Y,Y,Y,Y,Y,digestive_system,stomach,STAD,MSI-H,R,Adherent
+AGS,906790,Y,Y,Y,Y,Y,digestive_system,stomach,STAD,MSS/MSI-L,D/F12,Adherent
+ECC10,906848,Y,Y,Y,Y,Y,digestive_system,stomach,,MSS/MSI-L,R,Suspension
+ECC12,906849,Y,Y,Y,Y,Y,digestive_system,stomach,,MSS/MSI-L,R,Suspension
+FU97,1290806,Y,Y,Y,Y,Y,digestive_system,stomach,STAD,MSS/MSI-L,D/F12,Adherent
+GCIY,906869,Y,Y,Y,Y,Y,digestive_system,stomach,STAD,MSS/MSI-L,D/F12,Adherent
+GT3TKB,907041,Y,Y,Y,Y,Y,digestive_system,stomach,STAD,MSS/MSI-L,D/F12,Adherent
+HGC-27,907055,Y,Y,Y,Y,Y,digestive_system,stomach,STAD,MSS/MSI-L,D/F12,Adherent
+Hs746T,1240151,Y,Y,Y,Y,Y,digestive_system,stomach,STAD,MSS/MSI-L,D/F12,Adherent
+HSC-39,1322224,Y,Y,Y,Y,Y,digestive_system,stomach,STAD,MSS/MSI-L,D/F12,Suspension
+IM-95,1240155,Y,Y,Y,Y,Y,digestive_system,stomach,STAD,MSS/MSI-L,R,Adherent
+KATOIII,907276,Y,Y,Y,Y,Y,digestive_system,stomach,STAD,MSS/MSI-L,D/F12,Semi-Adherent
+MKN1,908138,Y,Y,Y,Y,Y,digestive_system,stomach,,MSS/MSI-L,R,Adherent
+MKN28,908139,Y,Y,Y,Y,Y,digestive_system,stomach,STAD,MSS/MSI-L,R,Adherent
+MKN45,925340,Y,Y,Y,Y,Y,digestive_system,stomach,STAD,MSS/MSI-L,R,Adherent
+MKN7,924250,Y,Y,Y,Y,Y,digestive_system,stomach,STAD,MSS/MSI-L,R,Adherent
+NCI-N87,908461,Y,Y,Y,Y,Y,digestive_system,stomach,STAD,MSS/MSI-L,R,Adherent
+NCI-SNU-1,908444,Y,Y,Y,Y,Y,digestive_system,stomach,STAD,MSI-H,R,Suspension
+NCI-SNU-16,908446,Y,Y,Y,Y,Y,digestive_system,stomach,STAD,MSS/MSI-L,R,Suspension
+NCI-SNU-5,908445,Y,Y,Y,Y,Y,digestive_system,stomach,STAD,MSS/MSI-L,D/F12,Suspension
+NUGC-3,908455,Y,Y,Y,Y,Y,digestive_system,stomach,STAD,MSI-H,R,Adherent
+NUGC-4,1298357,Y,Y,Y,Y,Y,digestive_system,stomach,STAD,MSS/MSI-L,R,Adherent
+OCUM-1,1298358,Y,Y,Y,Y,Y,digestive_system,stomach,STAD,MSS/MSI-L,D/F12,Adherent
+RERF-GC-1B,1240209,Y,Y,Y,Y,Y,digestive_system,stomach,STAD,MSS/MSI-L,R,Adherent
+RF-48,909697,Y,Y,Y,Y,Y,digestive_system,stomach,STAD,MSS/MSI-L,D/F12,Adherent
+SCH,909711,Y,Y,Y,Y,Y,digestive_system,stomach,,MSS/MSI-L,R,Adherent
+SK-GT-2,1503364,Y,Y,Y,Y,Y,digestive_system,stomach,STAD,MSS/MSI-L,R,Adherent
+TGBC11TKB,909770,Y,Y,Y,Y,Y,digestive_system,stomach,STAD,MSI-H,D/F12,Adherent
+SW13,909744,Y,Y,Y,Y,Y,kidney,adrenal_gland,ACC,MSS/MSI-L,D/F12,Adherent
+769-P,910922,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,R,Adherent
+786-0,905947,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,R,Adherent
+A498,905948,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,D/F12,Adherent
+A704,910920,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,D/F12,Adherent
+ACHN,905950,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,R,Adherent
+BB65-RCC,753533,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,D/F12,Adherent
+BFTC-909,910698,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,D/F12,Adherent
+CAKI-1,905963,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,R,Adherent
+CAL-54,910952,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,D/F12,Adherent
+G-401,907299,Y,Y,Y,Y,Y,kidney,kidney,,MSS/MSI-L,R,Adherent
+HA7-RCC,753558,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,D/F12,Adherent
+KMRC-1,1298168,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,D/F12,Adherent
+KMRC-20,1298169,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,D/F12,Adherent
+LB1047-RCC,753577,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSI-H,D/F12,Adherent
+LB2241-RCC,753578,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,D/F12,Adherent
+LB996-RCC,753585,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,D/F12,Adherent
+NCC010,1509073,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,R,Adherent
+NCC021,1509074,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,D/F12,Adherent
+OS-RC-2,909250,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,R,Adherent
+RCC10RGB,909974,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,D/F12,Adherent
+RCC-AB,1524418,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,D/F12,Adherent
+RCC-ER,1524417,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,D/F12,Adherent
+RCC-FG2,1524414,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,D/F12,Adherent
+RCC-JW,1524416,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,D/F12,Adherent
+RCC-MF,1524419,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,D/F12,Adherent
+RXF393,905978,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,R,Adherent
+SN12C,905979,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,D/F12,Adherent
+TK10,905980,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,R,Adherent
+U031,905981,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,R,Adherent
+VMRC-RCZ,909781,Y,Y,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,D/F12,Adherent
+201T,1287381,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+A549,905949,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,D/F12,Adherent
+ABC-1,906791,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,D/F12,Adherent
+Calu-3,687777,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,D/F12,Adherent
+Calu-6,724859,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,D/F12,Adherent
+COR-L105,906805,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+EKVX,905970,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,D/F12,Adherent
+EMC-BAC-1,1503369,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+EMC-BAC-2,1503370,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+H3255,1247873,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+HCC-44,1240145,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+HCC-78,1290908,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+HCC-827,1240146,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+LC-2-ad,907786,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+LXF-289,753592,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,D/F12,Adherent
+NCI-H1355,724866,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,D/F12,Adherent
+NCI-H1395,684681,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+NCI-H1435,1298347,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,D/F12,Semi-Adherent
+NCI-H1563,753600,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+NCI-H1568,1298348,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+NCI-H1573,908472,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,D/F12,Adherent
+NCI-H1623,687798,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,D/F12,Adherent
+NCI-H1648,687799,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,D/F12,Adherent
+NCI-H1650,687800,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+NCI-H1651,910900,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,D/F12,Adherent
+NCI-H1666,908473,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,D/F12,Semi-Adherent
+NCI-H1693,687802,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+NCI-H1703,908474,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,,MSS/MSI-L,R,Adherent
+NCI-H1734,722058,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+NCI-H1755,908475,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+NCI-H1781,1298350,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+NCI-H1792,724868,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+NCI-H1793,908463,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,D/F12,Adherent
+NCI-H1838,687807,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+NCI-H1944,1240185,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,D/F12,Adherent
+NCI-H1975,924244,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+NCI-H1993,908476,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+NCI-H2009,724873,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,D/F12,Adherent
+NCI-H2023,1240187,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+NCI-H2030,722045,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+NCI-H2085,687812,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,D/F12,Adherent
+NCI-H2087,724834,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,D/F12,Semi-Adherent
+NCI-H2122,722046,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+NCI-H2228,687816,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+NCI-H2291,724874,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+NCI-H23,905942,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+NCI-H2342,687819,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,D/F12,Adherent
+NCI-H2347,687820,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+NCI-H2405,687821,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,D/F12,Adherent
+NCI-H292,753604,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,,MSS/MSI-L,R,Adherent
+NCI-H3122,1240190,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+NCI-H322M,905967,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Suspension
+NCI-H358,908465,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+NCI-H441,908460,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+NCI-H522,905944,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+NCI-H596,908459,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,,MSS/MSI-L,R,Adherent
+NCI-H650,722066,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,D/F12,Adherent
+NCI-H838,910399,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+PC-14,753608,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+RERF-LC-KJ,1298537,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+RERF-LC-MS,910931,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,D/F12,Adherent
+SK-LU-1,909721,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,D/F12,Adherent
+SW1573,724878,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,D/F12,Adherent
+NCI-H720,687600,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_carcinoid,,MSS/MSI-L,D/F12,Suspension
+NCI-H727,724855,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_carcinoid,,MSS/MSI-L,R,Adherent
+NCI-H835,753607,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_carcinoid,,MSS/MSI-L,R,Suspension
+UMC-11,909779,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_carcinoid,,MSS/MSI-L,D/F12,Adherent
+COR-L23,687780,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_large cell,,MSS/MSI-L,R,Adherent
+HOP-92,905973,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_large cell,,MSS/MSI-L,D/F12,Adherent
+IA-LM,910779,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_large cell,,MSS/MSI-L,D/F12,Adherent
+LCLC-103H,753586,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_large cell,,MSS/MSI-L,R,Adherent
+LCLC-97TM1,946361,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_large cell,,MSS/MSI-L,R,Adherent
+LU-65,724863,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_large cell,,MSS/MSI-L,R,Suspension
+LU-99A,907796,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_large cell,,MSS/MSI-L,R,Adherent
+NCI-H1155,908467,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_large cell,,MSS/MSI-L,D/F12,Suspension
+NCI-H1299,724831,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_large cell,,MSS/MSI-L,R,Adherent
+NCI-H1581,908471,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_large cell,,MSS/MSI-L,D/F12,Semi-Adherent
+NCI-H1915,1240184,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_large cell,,MSS/MSI-L,R,Adherent
+NCI-H661,687829,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_large cell,,MSS/MSI-L,R,Adherent
+NCI-H810,925341,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_large cell,,MSS/MSI-L,D/F12,Adherent
+A427,910851,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_not specified,UNABLE TO CLASSIFY,MSS/MSI-L,D/F12,Adherent
+BEN,753534,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_not specified,UNABLE TO CLASSIFY,MSS/MSI-L,D/F12,Adherent
+CAL-12T,753540,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_not specified,UNABLE TO CLASSIFY,MSS/MSI-L,D/F12,Adherent
+ChaGo-K-1,687596,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_not specified,UNABLE TO CLASSIFY,MSS/MSI-L,R,Adherent
+HCC-366,1240144,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_not specified,,MSS/MSI-L,R,Adherent
+NCI-H1770,687804,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_not specified,UNABLE TO CLASSIFY,MSS/MSI-L,D/F12,Suspension
+NCI-H2110,1298351,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_not specified,UNABLE TO CLASSIFY,MSS/MSI-L,R,Adherent
+NCI-H2135,1298352,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_not specified,UNABLE TO CLASSIFY,MSS/MSI-L,D/F12,Adherent
+NCI-H2172,1298353,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_not specified,UNABLE TO CLASSIFY,MSS/MSI-L,R,Adherent
+NCI-H2444,1298356,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_not specified,UNABLE TO CLASSIFY,MSS/MSI-L,R,Adherent
+NCI-H647,1240191,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_not specified,,MSS/MSI-L,R,Adherent
+EBC-1,753554,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_squamous_cell_carcinoma,LUSC,MSS/MSI-L,D/F12,Adherent
+EPLC-272H,753556,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_squamous_cell_carcinoma,LUSC,MSS/MSI-L,R,Adherent
+HARA,1240142,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_squamous_cell_carcinoma,LUSC,MSS/MSI-L,R,Adherent
+HCC-15,1240143,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_squamous_cell_carcinoma,LUSC,MSS/MSI-L,D/F12,Adherent
+KNS-62,753569,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_squamous_cell_carcinoma,LUSC,MSS/MSI-L,D/F12,Adherent
+LC-1-sq,1298223,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_squamous_cell_carcinoma,LUSC,MSS/MSI-L,R,Adherent
+LK-2,687787,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_squamous_cell_carcinoma,LUSC,MSS/MSI-L,R,Adherent
+LOU-NH91,1298226,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_squamous_cell_carcinoma,LUSC,MSS/MSI-L,R,Adherent
+NCI-H1869,1240183,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_squamous_cell_carcinoma,LUSC,MSS/MSI-L,D/F12,Adherent
+NCI-H2170,687815,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_squamous_cell_carcinoma,LUSC,MSS/MSI-L,R,Adherent
+NCI-H226,905941,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_squamous_cell_carcinoma,LUSC,MSS/MSI-L,R,Adherent
+NCI-H520,908443,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_squamous_cell_carcinoma,LUSC,MSS/MSI-L,R,Adherent
+RERF-LC-Sq1,1298538,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_squamous_cell_carcinoma,LUSC,MSS/MSI-L,R,Adherent
+SK-MES-1,909728,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_squamous_cell_carcinoma,LUSC,MSS/MSI-L,D/F12,Adherent
+SW900,724879,Y,Y,Y,Y,Y,lung_NSCLC,lung_NSCLC_squamous_cell_carcinoma,LUSC,MSS/MSI-L,R,Adherent
+COR-L321,1322213,Y,Y,Y,Y,Y,lung,Lung_other,UNABLE TO CLASSIFY,MSS/MSI-L,R,Suspension
+COLO-668,910692,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Adherent
+COR-L279,910937,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+COR-L303,1297438,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+COR-L311,687980,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+COR-L32,1322212,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+COR-L88,906808,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Adherent
+CPC-N,753547,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+DMS-114,687983,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,D/F12,Adherent
+DMS-273,687985,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,D/F12,Adherent
+DMS-53,907295,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,D/F12,Adherent
+IST-SL1,753564,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Semi-Adherent
+IST-SL2,753565,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+LB647-SCLC,753582,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Semi-Adherent
+LU-134-A,753588,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+LU-135,713899,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+LU-139,713878,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+LU-165,753589,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+MS-1,753594,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+NCI-H1048,687995,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSI-H,D/F12,Adherent
+NCI-H1092,687997,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,D/F12,Suspension
+NCI-H1105,908468,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,D/F12,Suspension
+NCI-H1341,1330964,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,D/F12,Suspension
+NCI-H1417,688001,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+NCI-H1436,908469,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,D/F12,Suspension
+NCI-H146,910899,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+NCI-H1688,1298349,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Adherent
+NCI-H1694,688006,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,D/F12,Suspension
+NCI-H1836,1240182,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,D/F12,Suspension
+NCI-H187,688007,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+NCI-H1876,1330972,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,D/F12,Adherent
+NCI-H196,1240186,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Adherent
+NCI-H1963,688010,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+NCI-H2029,688011,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,D/F12,Adherent
+NCI-H2066,1330973,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,D/F12,Adherent
+NCI-H209,688013,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+NCI-H211,1240189,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Adherent
+NCI-H2141,688014,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,D/F12,Suspension
+NCI-H2196,908481,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Adherent
+NCI-H2227,688018,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Semi-Adherent
+NCI-H250,924241,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+NCI-H345,688021,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,D/F12,Suspension
+NCI-H378,688022,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+NCI-H446,688023,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Semi-Adherent
+NCI-H510A,753605,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,D/F12,Semi-Adherent
+NCI-H524,908483,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+NCI-H526,688025,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+NCI-H64,688026,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+NCI-H69,688027,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+NCI-H748,909194,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+NCI-H82,688031,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+NCI-H841,1240192,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,D/F12,Adherent
+NCI-H847,1240193,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,D/F12,Adherent
+SBC-1,713885,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+SBC-3,753610,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,D/F12,Adherent
+SBC-5,713880,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,D/F12,Adherent
+H2369,1290808,Y,Y,Y,Y,Y,lung,mesothelioma,MESO,MSS/MSI-L,R,Adherent
+H2373,1290809,Y,Y,Y,Y,Y,lung,mesothelioma,MESO,MSS/MSI-L,R,Adherent
+H2461,1290810,Y,Y,Y,Y,Y,lung,mesothelioma,MESO,MSS/MSI-L,R,Adherent
+H2591,1240131,Y,Y,Y,Y,Y,lung,mesothelioma,MESO,MSS/MSI-L,R,Adherent
+H2595,1240132,Y,Y,Y,Y,Y,lung,mesothelioma,MESO,MSS/MSI-L,R,Adherent
+H2722,1290812,Y,Y,Y,Y,Y,lung,mesothelioma,MESO,MSS/MSI-L,R,Adherent
+H2731,1240134,Y,Y,Y,Y,Y,lung,mesothelioma,MESO,MSS/MSI-L,R,Adherent
+H2795,1290813,Y,Y,Y,Y,Y,lung,mesothelioma,MESO,MSS/MSI-L,R,Adherent
+H2803,1240135,Y,Y,Y,Y,Y,lung,mesothelioma,MESO,MSS/MSI-L,R,Adherent
+H2804,1240136,Y,Y,Y,Y,Y,lung,mesothelioma,MESO,MSS/MSI-L,R,Adherent
+H2810,1240137,Y,Y,Y,Y,Y,lung,mesothelioma,MESO,MSS/MSI-L,R,Adherent
+H2818,1290814,Y,Y,Y,Y,Y,lung,mesothelioma,MESO,MSS/MSI-L,R,Adherent
+H2869,1240138,Y,Y,Y,Y,Y,lung,mesothelioma,MESO,MSS/MSI-L,R,Adherent
+H290,1240139,Y,Y,Y,Y,Y,lung,mesothelioma,MESO,MSS/MSI-L,R,Adherent
+H513,1240141,Y,Y,Y,Y,Y,lung,mesothelioma,MESO,MSS/MSI-L,R,Semi-Adherent
+IST-MES1,907173,Y,Y,Y,Y,Y,lung,mesothelioma,MESO,MSS/MSI-L,D/F12,Adherent
+MPP-89,908150,Y,Y,Y,Y,Y,lung,mesothelioma,MESO,MSS/MSI-L,D/F12,Adherent
+MSTO-211H,908152,Y,Y,Y,Y,Y,lung,mesothelioma,MESO,MSS/MSI-L,R,Adherent
+NCI-H2052,688058,Y,Y,Y,Y,Y,lung,mesothelioma,MESO,MSS/MSI-L,R,Adherent
+NCI-H2452,908462,Y,Y,Y,Y,Y,lung,mesothelioma,MESO,MSS/MSI-L,R,Adherent
+NCI-H28,908470,Y,Y,Y,Y,Y,lung,mesothelioma,MESO,MSS/MSI-L,R,Adherent
+42-MG-BA,687561,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,R,Adherent
+8-MG-BA,687562,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+A172,687563,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+AM-38,910933,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Semi-Adherent
+Becker,906746,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+CAS-1,910943,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+CCF-STTG1,906823,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,R,Adherent
+D-247MG,946367,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+D-263MG,946368,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+D-336MG,946369,Y,Y,Y,Y,Y,nervous_system,glioma,LGG,MSS/MSI-L,D/F12,Adherent
+D-392MG,946370,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+D-502MG,946373,Y,Y,Y,Y,Y,nervous_system,glioma,LGG,MSS/MSI-L,D/F12,Adherent
+D-542MG,753549,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+D-566MG,946377,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+DBTRG-05MG,906835,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,R,Adherent
+DK-MG,906839,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,R,Adherent
+GAMG,906868,Y,Y,Y,Y,Y,nervous_system,glioma,LGG,MSS/MSI-L,D/F12,Adherent
+GB-1,687568,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+GI-1,906871,Y,Y,Y,Y,Y,nervous_system,glioma,LGG,MSS/MSI-L,D/F12,Adherent
+GMS-10,906873,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+H4,907042,Y,Y,Y,Y,Y,nervous_system,glioma,LGG,MSS/MSI-L,D/F12,Adherent
+Hs683,1240150,Y,Y,Y,Y,Y,nervous_system,glioma,LGG,MSS/MSI-L,D/F12,Adherent
+KALS-1,907271,Y,Y,Y,Y,Y,nervous_system,glioma,LGG,MSS/MSI-L,R,Adherent
+KINGS-1,907279,Y,Y,Y,Y,Y,nervous_system,glioma,LGG,MSS/MSI-L,R,Adherent
+KNS-42,907282,Y,Y,Y,Y,Y,nervous_system,glioma,LGG,MSS/MSI-L,D/F12,Adherent
+KNS-81-FD,924188,Y,Y,Y,Y,Y,nervous_system,glioma,LGG,MSS/MSI-L,D/F12,Adherent
+KS-1,907313,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+LN-18,1240168,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+LN-229,1240169,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+LN-405,910694,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+LNZTA3WT4,1240170,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+M059J,949094,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+MOG-G-CCM,908144,Y,Y,Y,Y,Y,nervous_system,glioma,LGG,MSS/MSI-L,D/F12,Adherent
+MOG-G-UVW,908145,Y,Y,Y,Y,Y,nervous_system,glioma,LGG,MSS/MSI-L,D/F12,Adherent
+NMC-G1,908449,Y,Y,Y,Y,Y,nervous_system,glioma,LGG,MSS/MSI-L,D/F12,Adherent
+no-10,908452,Y,Y,Y,Y,Y,nervous_system,glioma,LGG,MSS/MSI-L,D/F12,Adherent
+no-11,908450,Y,Y,Y,Y,Y,nervous_system,glioma,LGG,MSS/MSI-L,D/F12,Adherent
+SF126,909712,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+SF268,905986,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,R,Adherent
+SF295,905985,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+SF539,905984,Y,Y,Y,Y,Y,nervous_system,glioma,LGG,MSS/MSI-L,R,Adherent
+SK-MG-1,909729,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,R,Adherent
+SNB75,905982,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,R,Adherent
+SW1088,909745,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+SW1783,909750,Y,Y,Y,Y,Y,nervous_system,glioma,LGG,MSS/MSI-L,D/F12,Adherent
+T98G,687586,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+U-118-MG,687588,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+U251,905983,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+U-87-MG,687590,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+YH-13,909905,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+YKG-1,687592,Y,Y,Y,Y,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+D-283MED,906834,Y,Y,Y,Y,Y,nervous_system,medulloblastoma,MB,MSS/MSI-L,D/F12,Adherent
+Daoy,906833,Y,Y,Y,Y,Y,nervous_system,medulloblastoma,MB,MSS/MSI-L,D/F12,Adherent
+ONS-76,909248,Y,Y,Y,Y,Y,nervous_system,medulloblastoma,MB,MSS/MSI-L,R,Adherent
+PFSK-1,683667,Y,Y,Y,Y,Y,nervous_system,medulloblastoma,MB,MSS/MSI-L,R,Adherent
+BE2-M17,753616,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,D/F12,Adherent
+CHP-126,910567,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,R,Suspension
+CHP-134,910941,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,R,Suspension
+CHP-212,906820,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,D/F12,Adherent
+GI-ME-N,906872,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,R,Adherent
+GOTO,906875,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,R,Adherent
+IMR-5,907170,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,R,Adherent
+KELLY,753618,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,R,Adherent
+KP-N-YN,907314,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,R,Adherent
+LAN-6,949170,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,R,Adherent
+MHH-NB-11,908135,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,R,Adherent
+NB(TU)1-10,1240181,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,R,Adherent
+NB1,949179,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,R,Semi-Adherent
+NB10,949171,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,D/F12,Adherent
+NB12,949172,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,D/F12,Adherent
+NB13,949177,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,D/F12,Adherent
+NB14,949178,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,D/F12,Adherent
+NB17,949175,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,D/F12,Adherent
+NB5,949176,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,D/F12,Adherent
+NB6,949173,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,D/F12,Adherent
+NB69,908440,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,D/F12,Adherent
+NB7,949174,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,D/F12,Adherent
+NH-12,908447,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,D/F12,Adherent
+SIMA,753620,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,R,Adherent
+SK-N-AS,724828,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,D/F12,Adherent
+SK-N-DZ,688086,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,D/F12,Adherent
+SK-N-FI,688087,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,D/F12,Adherent
+SK-N-SH,717431,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,D/F12,Adherent
+TGW,910780,Y,Y,Y,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,D/F12,Adherent
+AsPC-1,910702,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,R,Adherent
+BxPC-3,906693,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,R,Adherent
+CAPAN-1,753624,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,D/F12,Adherent
+Capan-2,910915,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,R,Adherent
+CFPAC-1,906821,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,R,Adherent
+DAN-G,1290797,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,R,Adherent
+HPAC,1298136,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,D/F12,Adherent
+HPAF-II,724869,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,D/F12,Adherent
+Hs766T,1298141,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,D/F12,Adherent
+HuP-T3,907285,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,R,Adherent
+HuP-T4,907286,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,D/F12,Adherent
+KP-1N,1298216,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,R,Adherent
+KP-3,1298219,Y,Y,Y,Y,Y,pancreas,pancreas,UNABLE TO CLASSIFY,MSS/MSI-L,R,Adherent
+KP-4,753572,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,D/F12,Adherent
+MIA-PaCa-2,724870,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,D/F12,Adherent
+MZ1-PC,753595,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,R,Adherent
+PANC-02-03,1298475,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,R,Adherent
+PANC-03-27,925346,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,R,Adherent
+PANC-04-03,1298476,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,R,Adherent
+PANC-08-13,925347,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,R,Adherent
+PANC-10-05,925348,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,R,Adherent
+PA-TU-8902,1298526,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,D/F12,Adherent
+PA-TU-8988T,1240201,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,D/F12,Adherent
+PL18,1240208,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,D/F12,Adherent
+PL4,1298533,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,D/F12,Adherent
+PSN1,910546,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,R,Adherent
+QGP-1,1298534,Y,Y,Y,Y,Y,pancreas,pancreas,,MSS/MSI-L,R,Adherent
+SU8686,1240218,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,R,Adherent
+SUIT-2,1240219,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,R,Adherent
+SW1990,910907,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,D/F12,Adherent
+YAPC,909904,Y,Y,Y,Y,Y,pancreas,pancreas,PAAD,MSS/MSI-L,R,Adherent
+451Lu,1287706,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+A101D,910921,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+A2058,906792,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+A375,906793,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+C32,906830,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+CHL-1,910853,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+COLO-679,906818,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,R,Adherent
+COLO-792,906814,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,R,Adherent
+COLO-800,906813,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,R,Adherent
+COLO-829,687448,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,R,Adherent
+CP50-MEL-B,753545,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+CP66-MEL,753546,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+G-361,906865,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,R,Adherent
+GAK,910932,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+G-MEL,1240130,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+HMV-II,907058,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,R,Adherent
+Hs940-T,1298145,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+HT-144,907067,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,R,Adherent
+IGR-1,907169,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+IGR-37,1240153,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+IPC-298,907171,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,R,Adherent
+IST-MEL1,907172,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,R,Adherent
+LB2518-MEL,753579,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+LB373-MEL-D,753581,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+LOXIMVI,905974,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,R,Semi-Adherent
+M14,905975,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,R,Adherent
+MEL-HO,908124,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,R,Adherent
+MEL-JUSO,908125,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,R,Adherent
+Mewo,908128,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,R,Adherent
+MMAC-SF,925339,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+MZ2-MEL,971777,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+MZ7-mel,753596,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,R,Adherent
+RPMI-7951,910903,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+RVH-421,909706,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,R,Adherent
+SH-4,909713,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+SK-MEL-1,909723,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Suspension
+SK-MEL-2,905955,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSI-H,R,Adherent
+SK-MEL-24,909725,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+SK-MEL-28,905954,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+SK-MEL-3,909724,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,R,Adherent
+SK-MEL-30,909726,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,R,Adherent
+SK-MEL-31,909727,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+SK-MEL-5,905956,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+UACC-257,905977,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,R,Adherent
+UACC-62,905976,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+WM-115,909784,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+WM1552C,1299078,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,R,Adherent
+WM278,1240226,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,R,Adherent
+WM35,1299080,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,R,Adherent
+WM793B,1299081,Y,Y,Y,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,R,Adherent
+A388,910697,Y,Y,Y,Y,Y,skin,skin_other,,MSS/MSI-L,D/F12,Adherent
+A431,910925,Y,Y,Y,Y,Y,skin,skin_other,,MSS/MSI-L,D/F12,Adherent
+DJM-1,906841,Y,Y,Y,Y,Y,skin,skin_other,,MSS/MSI-L,D/F12,Adherent
+HT-1080,907064,Y,Y,Y,Y,Y,soft_tissue,fibrosarcoma,,MSS/MSI-L,D/F12,Adherent
+SW684,909754,Y,Y,Y,Y,Y,soft_tissue,fibrosarcoma,,MSS/MSI-L,D/F12,Adherent
+A204,910784,Y,Y,Y,Y,Y,soft_tissue,rhabdomyosarcoma,,MSS/MSI-L,R,Adherent
+A673,684052,Y,Y,Y,Y,Y,soft_tissue,rhabdomyosarcoma,,MSS/MSI-L,D/F12,Adherent
+KYM-1,1240166,Y,Y,Y,Y,Y,soft_tissue,rhabdomyosarcoma,,MSS/MSI-L,D/F12,Adherent
+RD,909264,Y,Y,Y,Y,Y,soft_tissue,rhabdomyosarcoma,,MSS/MSI-L,D/F12,Adherent
+RH-1,971773,Y,Y,Y,Y,Y,soft_tissue,rhabdomyosarcoma,,MSS/MSI-L,R,Adherent
+RH-18,971774,Y,Y,Y,Y,Y,soft_tissue,rhabdomyosarcoma,,MSS/MSI-L,R,Adherent
+RH-41,1240210,Y,Y,Y,Y,Y,soft_tissue,rhabdomyosarcoma,,MSS/MSI-L,R,Adherent
+SJRH30,909716,Y,Y,Y,Y,Y,soft_tissue,rhabdomyosarcoma,,MSS/MSI-L,R,Adherent
+TE-441-T,924248,Y,Y,Y,Y,Y,soft_tissue,rhabdomyosarcoma,,MSS/MSI-L,D/F12,Adherent
+G-402,907298,Y,Y,Y,Y,Y,soft_tissue,soft_tissue_other,,MSS/MSI-L,R,Adherent
+GCT,906999,Y,Y,Y,Y,Y,soft_tissue,soft_tissue_other,,MSS/MSI-L,R,Adherent
+MFH-ino,925343,Y,Y,Y,Y,Y,soft_tissue,soft_tissue_other,,MSS/MSI-L,D/F12,Adherent
+SK-LMS-1,909720,Y,Y,Y,Y,Y,soft_tissue,soft_tissue_other,,MSS/MSI-L,D/F12,Adherent
+SK-UT-1,909732,Y,Y,Y,Y,Y,soft_tissue,soft_tissue_other,,MSI-H,D/F12,Adherent
+SW872,909756,Y,Y,Y,Y,Y,soft_tissue,soft_tissue_other,,MSS/MSI-L,D/F12,Adherent
+SW982,909759,Y,Y,Y,Y,Y,soft_tissue,soft_tissue_other,,MSS/MSI-L,D/F12,Adherent
+VA-ES-BJ,688121,Y,Y,Y,Y,Y,soft_tissue,soft_tissue_other,,MSS/MSI-L,D/F12,Adherent
+8305C,906795,Y,Y,Y,Y,Y,thyroid,thyroid,THCA,MSS/MSI-L,R,Adherent
+8505C,924102,Y,Y,Y,Y,Y,thyroid,thyroid,THCA,MSS/MSI-L,R,Adherent
+ASH-3,1290722,Y,Y,Y,Y,Y,thyroid,thyroid,THCA,MSS/MSI-L,D/F12,Adherent
+BCPAP,924104,Y,Y,Y,Y,Y,thyroid,thyroid,THCA,MSS/MSI-L,R,Adherent
+BHT-101,906696,Y,Y,Y,Y,Y,thyroid,thyroid,THCA,MSS/MSI-L,D/F12,Adherent
+CAL-62,906828,Y,Y,Y,Y,Y,thyroid,thyroid,THCA,MSS/MSI-L,D/F12,Adherent
+CGTH-W-1,910568,Y,Y,Y,Y,Y,thyroid,thyroid,THCA,MSS/MSI-L,R,Adherent
+FTC-133,906864,Y,Y,Y,Y,Y,thyroid,thyroid,THCA,MSS/MSI-L,D/F12,Adherent
+HTC-C3,924151,Y,Y,Y,Y,Y,thyroid,thyroid,THCA,MSS/MSI-L,D/F12,Adherent
+IHH-4,1240154,Y,Y,Y,Y,Y,thyroid,thyroid,THCA,MSS/MSI-L,D/F12,Semi-Adherent
+K5,924238,Y,Y,Y,Y,Y,thyroid,thyroid,THCA,MSS/MSI-L,D/F12,Adherent
+ML-1,1240178,Y,Y,Y,Y,Y,thyroid,thyroid,THCA,MSS/MSI-L,D/F12,Adherent
+RO82-W-1,930083,Y,Y,Y,Y,Y,thyroid,thyroid,THCA,MSS/MSI-L,D/F12,Adherent
+TT,930299,Y,Y,Y,Y,Y,thyroid,thyroid,THCA,MSS/MSI-L,D/F12,Adherent
+TT2609-C02,1240223,Y,Y,Y,Y,Y,thyroid,thyroid,THCA,MSS/MSI-L,R,Adherent
+5637,687452,Y,Y,Y,Y,Y,urogenital_system,Bladder,BLCA,MSS/MSI-L,R,Adherent
+639-V,906798,Y,Y,Y,Y,Y,urogenital_system,Bladder,BLCA,MSS/MSI-L,D/F12,Adherent
+647-V,906797,Y,Y,Y,Y,Y,urogenital_system,Bladder,BLCA,MSS/MSI-L,D/F12,Adherent
+BFTC-905,910926,Y,Y,Y,Y,Y,urogenital_system,Bladder,BLCA,MSS/MSI-L,D/F12,Adherent
+CAL-29,1290730,Y,Y,Y,Y,Y,urogenital_system,Bladder,BLCA,MSS/MSI-L,D/F12,Adherent
+DSH1,753552,Y,Y,Y,Y,Y,urogenital_system,Bladder,BLCA,MSS/MSI-L,R,Adherent
+HT-1197,907065,Y,Y,Y,Y,Y,urogenital_system,Bladder,BLCA,MSS/MSI-L,D/F12,Adherent
+HT-1376,907066,Y,Y,Y,Y,Y,urogenital_system,Bladder,BLCA,MSS/MSI-L,D/F12,Adherent
+J82,753566,Y,Y,Y,Y,Y,urogenital_system,Bladder,BLCA,MSS/MSI-L,D/F12,Adherent
+KU-19-19,907312,Y,Y,Y,Y,Y,urogenital_system,Bladder,BLCA,MSS/MSI-L,R,Adherent
+LB831-BLC,753584,Y,Y,Y,Y,Y,urogenital_system,Bladder,BLCA,MSS/MSI-L,D/F12,Adherent
+RT-112,909704,Y,Y,Y,Y,Y,urogenital_system,Bladder,BLCA,MSS/MSI-L,R,Adherent
+RT4,687455,Y,Y,Y,Y,Y,urogenital_system,Bladder,BLCA,MSS/MSI-L,D/F12,Adherent
+SW1710,909749,Y,Y,Y,Y,Y,urogenital_system,Bladder,BLCA,MSS/MSI-L,D/F12,Adherent
+SW780,687457,Y,Y,Y,Y,Y,urogenital_system,Bladder,BLCA,MSS/MSI-L,D/F12,Adherent
+T-24,724812,Y,Y,Y,Y,Y,urogenital_system,Bladder,BLCA,MSS/MSI-L,D/F12,Adherent
+TCCSUP,687459,Y,Y,Y,Y,Y,urogenital_system,Bladder,BLCA,MSS/MSI-L,D/F12,Adherent
+UM-UC-3,724838,Y,Y,Y,Y,Y,urogenital_system,Bladder,BLCA,MSS/MSI-L,D/F12,Adherent
+VM-CUB-1,909780,Y,Y,Y,Y,Y,urogenital_system,Bladder,BLCA,MSS/MSI-L,D/F12,Adherent
+C-33-A,687505,Y,Y,Y,Y,Y,urogenital_system,cervix,CESC,MSI-H,D/F12,Adherent
+C-4-I,687506,Y,Y,Y,Y,Y,urogenital_system,cervix,CESC,MSS/MSI-L,D/F12,Adherent
+CAL-39,924107,Y,Y,Y,Y,Y,urogenital_system,cervix,CESC,MSS/MSI-L,D/F12,Adherent
+Ca-Ski,906824,Y,Y,Y,Y,Y,urogenital_system,cervix,CESC,MSS/MSI-L,R,Adherent
+DoTc2-4510,906843,Y,Y,Y,Y,Y,urogenital_system,cervix,CESC,MSS/MSI-L,D/F12,Adherent
+HeLa,1298134,Y,Y,Y,Y,Y,urogenital_system,cervix,CESC,MSS/MSI-L,D/F12,Adherent
+HT-3,907068,Y,Y,Y,Y,Y,urogenital_system,cervix,CESC,MSS/MSI-L,R,Adherent
+ME-180,687514,Y,Y,Y,Y,Y,urogenital_system,cervix,CESC,MSS/MSI-L,D/F12,Adherent
+MS751,1240179,Y,Y,Y,Y,Y,urogenital_system,cervix,CESC,MSS/MSI-L,D/F12,Adherent
+SiHa,930297,Y,Y,Y,Y,Y,urogenital_system,cervix,CESC,MSS/MSI-L,D/F12,Adherent
+SISO,1240212,Y,Y,Y,Y,Y,urogenital_system,cervix,CESC,MSS/MSI-L,R,Adherent
+SKG-IIIa,930298,Y,Y,Y,Y,Y,urogenital_system,cervix,CESC,MSS/MSI-L,D/F12,Adherent
+SW756,724839,Y,Y,Y,Y,Y,urogenital_system,cervix,CESC,MSS/MSI-L,D/F12,Adherent
+TC-YIK,946357,Y,Y,Y,Y,Y,urogenital_system,cervix,,MSS/MSI-L,R,Suspension
+AN3-CA,910781,Y,Y,Y,Y,Y,urogenital_system,endometrium,UCEC,MSI-H,D/F12,Adherent
+COLO-684,910691,Y,Y,Y,Y,Y,urogenital_system,endometrium,UCEC,MSI-H,R,Suspension
+EN,1240127,Y,Y,Y,Y,Y,urogenital_system,endometrium,UCEC,MSS/MSI-L,R,Adherent
+ESS-1,907000,Y,Y,Y,Y,Y,urogenital_system,endometrium,,MSS/MSI-L,R,Adherent
+HEC-1,907051,Y,Y,Y,Y,Y,urogenital_system,endometrium,UCEC,MSI-H,D/F12,Adherent
+KLE,924187,Y,Y,Y,Y,Y,urogenital_system,endometrium,UCEC,MSS/MSI-L,D/F12,Adherent
+MFE-280,908129,Y,Y,Y,Y,Y,urogenital_system,endometrium,UCEC,MSS/MSI-L,D/F12,Adherent
+MFE-296,908130,Y,Y,Y,Y,Y,urogenital_system,endometrium,UCEC,MSI-H,D/F12,Adherent
+MFE-319,1240174,Y,Y,Y,Y,Y,urogenital_system,endometrium,UCEC,MSI-H,D/F12,Adherent
+SNG-M,909735,Y,Y,Y,Y,Y,urogenital_system,endometrium,UCEC,MSI-H,D/F12,Adherent
+A2780,906804,Y,Y,Y,Y,Y,urogenital_system,ovary,UNABLE TO CLASSIFY,MSS/MSI-L,R,Semi-Adherent
+Caov-4,949090,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,D/F12,Adherent
+EFO-21,911905,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,R,Adherent
+EFO-27,906852,Y,Y,Y,Y,Y,urogenital_system,ovary,,MSI-H,R,Adherent
+ES-2,1240128,Y,Y,Y,Y,Y,urogenital_system,ovary,,MSS/MSI-L,R,Adherent
+FU-OV-1,1240129,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,D/F12,Adherent
+IGROV-1,905968,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSI-H,R,Adherent
+JHOS-2,1479995,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,D/F12,Adherent
+JHOS-3,1480358,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,D/F12,Adherent
+JHOS-4,1480359,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,D/F12,Adherent
+KGN,924186,Y,Y,Y,Y,Y,urogenital_system,ovary,,MSS/MSI-L,D/F12,Adherent
+KURAMOCHI,909975,Y,Y,Y,Y,Y,urogenital_system,ovary,UNABLE TO CLASSIFY,MSS/MSI-L,R,Adherent
+OAW-28,946360,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,D/F12,Adherent
+OAW-42,910548,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,D/F12,Adherent
+OC-314,909257,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSI-H,R,Adherent
+OV-17R,1480361,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,D/F12,Adherent
+OV-56,1480362,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,D/F12,Adherent
+OV-7,1480360,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,D/F12,Adherent
+OV-90,1240197,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,D/F12,Adherent
+OVCA420,1480364,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,D/F12,Adherent
+OVCAR-3,905933,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,R,Adherent
+OVCAR-4,905990,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,R,Adherent
+OVCAR-5,905969,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,R,Adherent
+OVCAR-8,905991,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,R,Adherent
+OVISE,1240198,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,R,Adherent
+OVK-18,1480371,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSI-H,D/F12,Adherent
+OVKATE,1240199,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,R,Adherent
+OVMIU,1240200,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,R,Adherent
+OVTOKO,1298365,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,R,Adherent
+PA-1,909255,Y,Y,Y,Y,Y,urogenital_system,ovary,,MSS/MSI-L,D/F12,Adherent
+PEO1,1480372,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,R,Adherent
+RKN,1298539,Y,Y,Y,Y,Y,urogenital_system,ovary,,MSS/MSI-L,D/F12,Adherent
+RMG-I,909699,Y,Y,Y,Y,Y,urogenital_system,ovary,,MSS/MSI-L,D/F12,Adherent
+SK-OV-3,905959,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSI-H,R,Adherent
+SW626,909753,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,D/F12,Adherent
+TOV-112D,1299070,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,D/F12,Adherent
+TOV-21G,1240222,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSI-H,D/F12,Adherent
+TYK-nu,909774,Y,Y,Y,Y,Y,urogenital_system,ovary,UNABLE TO CLASSIFY,MSS/MSI-L,D/F12,Adherent
+UWB1.289,1480374,Y,Y,Y,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,D/F12,Adherent
+22RV1,924100,Y,Y,Y,Y,Y,urogenital_system,prostate,PRAD,MSI-H,R,Adherent
+BPH-1,924105,Y,Y,Y,Y,Y,urogenital_system,prostate,,MSS/MSI-L,R,Adherent
+DU-145,905935,Y,Y,Y,Y,Y,urogenital_system,prostate,PRAD,MSI-H,D/F12,Adherent
+LNCaP-Clone-FGC,907788,Y,Y,Y,Y,Y,urogenital_system,prostate,PRAD,MSI-H,R,Adherent
+PC-3,905934,Y,Y,Y,Y,Y,urogenital_system,prostate,PRAD,MSS/MSI-L,D/F12,Adherent
+PWR-1E,1330993,Y,Y,Y,Y,Y,urogenital_system,prostate,PRAD,MSS/MSI-L,D/F12,Adherent
+VCaP,1299075,Y,Y,Y,Y,Y,urogenital_system,prostate,PRAD,MSS/MSI-L,D/F12,Adherent
+NCCIT,908441,Y,Y,Y,Y,N,urogenital_system,testis,,MSS/MSI-L,R,Adherent
+NEC8,910942,Y,Y,Y,Y,Y,urogenital_system,testis,,MSS/MSI-L,R,Adherent
+NTERA-2 cl.D1,908454,Y,Y,Y,Y,Y,urogenital_system,testis,,MSS/MSI-L,D/F12,Adherent
+JAR,907175,Y,Y,Y,Y,Y,urogenital_system,urogenital_system_other,,MSS/MSI-L,R,Adherent
+JEG-3,907176,Y,Y,Y,Y,Y,urogenital_system,urogenital_system_other,,MSS/MSI-L,D/F12,Adherent
+SW954,924247,Y,Y,Y,Y,Y,urogenital_system,urogenital_system_other,,MSS/MSI-L,D/F12,Adherent
+SW962,909758,Y,Y,Y,Y,Y,urogenital_system,urogenital_system_other,,MSS/MSI-L,D/F12,Adherent
+MES-SA,908127,Y,Y,Y,Y,Y,urogenital_system,uterus,,MSS/MSI-L,R,Adherent
+SKN,1240215,Y,Y,Y,Y,Y,urogenital_system,uterus,,MSS/MSI-L,D/F12,Adherent
+DMS-79,753551,Y,Y,Y,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,,R,Suspension
+CMK,910566,Y,Y,Y,N,Y,leukemia,acute_myeloid_leukaemia,LAML,MSS/MSI-L,R,Suspension
+NB-4,1323913,Y,Y,Y,N,Y,leukemia,acute_myeloid_leukaemia,LAML,MSS/MSI-L,R,Suspension
+MHH-CALL-4,908133,Y,Y,Y,Y,N,leukemia,B_cell_leukemia,,MSS/MSI-L,R,Suspension
+BC-3,910918,Y,Y,N,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,Suspension
+HT,907063,Y,Y,N,Y,Y,lymphoma,B_cell_lymphoma,DLBC,MSI-H,R,Suspension
+JM1,1327768,Y,Y,Y,N,Y,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,D/F12,Suspension
+BONNA-12,906695,Y,Y,Y,Y,N,leukemia,hairy_cell_leukaemia,,MSS/MSI-L,R,Suspension
+ES6,949157,Y,Y,Y,N,Y,bone,ewings_sarcoma,,MSS/MSI-L,R,Adherent
+MHH-ES-1,908134,Y,Y,N,Y,Y,bone,ewings_sarcoma,,MSS/MSI-L,R,Adherent
+DIFI,1789883,Y,Y,N,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,D/F12,Adherent
+NCI-H508,908442,Y,Y,N,Y,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,R,Semi-Adherent
+SNU-283,1659929,Y,Y,Y,Y,N,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,R,Adherent
+SW620,905962,Y,Y,Y,N,Y,large_intestine,large_intestine,COAD/READ,MSS/MSI-L,D/F12,Adherent
+JHH-2,1240157,Y,N,Y,Y,Y,digestive_system,liver,LIHC,MSS/MSI-L,D/F12,Adherent
+JHH-4,1240158,Y,N,Y,Y,Y,digestive_system,liver,LIHC,MSS/MSI-L,D/F12,Adherent
+RCC-JF,1524415,Y,Y,Y,N,Y,kidney,kidney,KIRC,MSS/MSI-L,D/F12,Adherent
+SW156,1240220,Y,N,Y,Y,Y,kidney,kidney,KIRC,MSS/MSI-L,D/F12,Adherent
+HOP-62,905972,Y,Y,Y,N,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+NCI-H1437,687794,Y,Y,N,Y,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,R,Adherent
+PC-3 [JPC-3],1240202,Y,Y,Y,N,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,MSS/MSI-L,D/F12,Adherent
+NCI-H740,1331055,Y,Y,Y,Y,N,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+COR-L95,1297439,Y,Y,Y,N,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Adherent
+HCC-33,1303901,Y,Y,N,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Adherent
+NCI-H128,753597,Y,Y,N,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+NCI-H1304,753599,Y,Y,Y,N,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,D/F12,Suspension
+NCI-H2081,908480,Y,Y,N,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,D/F12,Suspension
+NCI-H2171,688015,Y,Y,N,Y,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,D/F12,Suspension
+SHP-77,724872,Y,Y,Y,N,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Semi-Adherent
+SW1271,1299062,Y,Y,Y,N,Y,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,D/F12,Adherent
+D-423MG,946372,Y,Y,Y,N,Y,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+KP-N-RT-BM-1,924189,Y,Y,N,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,R,Semi-Adherent
+KP-N-YS,946363,Y,Y,N,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,R,Adherent
+MC-IXC,908118,Y,Y,N,Y,Y,neuroblastoma,neuroblastoma,NB,MSS/MSI-L,D/F12,Adherent
+COLO-783,1240125,Y,Y,Y,N,Y,skin,melanoma,SKCM,MSS/MSI-L,R,Adherent
+CP67-MEL,949092,Y,Y,N,Y,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+Hs633T,1240149,Y,N,Y,Y,Y,soft_tissue,fibrosarcoma,,MSS/MSI-L,D/F12,Adherent
+KMH-2,1298167,Y,Y,N,Y,Y,thyroid,thyroid,THCA,MSS/MSI-L,R,Adherent
+OMC-1,949154,Y,Y,N,Y,Y,urogenital_system,cervix,CESC,MSS/MSI-L,D/F12,Adherent
+RL95-2,930082,Y,Y,Y,N,Y,urogenital_system,endometrium,,MSI-H,D/F12,Adherent
+Caov-3,906825,Y,Y,N,Y,Y,urogenital_system,ovary,OV,MSS/MSI-L,D/F12,Adherent
+DOV13,1479987,Y,Y,Y,N,Y,urogenital_system,ovary,OV,MSS/MSI-L,D/F12,Adherent
+Hey,1479988,Y,Y,Y,N,Y,urogenital_system,ovary,OV,MSS/MSI-L,R,Adherent
+NCI-H660,1330975,Y,Y,Y,Y,N,urogenital_system,prostate,,MSS/MSI-L,D/F12,Suspension
+JHU-029,1298156,Y,Y,Y,N,Y,aero_dig_tract,head and neck,HNSC,,R,Adherent
+SCC90,1299052,Y,Y,Y,N,Y,aero_dig_tract,head and neck,HNSC,,R,Adherent
+MOLM-16,1330948,Y,Y,Y,N,Y,leukemia,acute_myeloid_leukaemia,LAML,,R,Suspension
+OCI-LY7,1659819,Y,Y,Y,N,Y,lymphoma,B_cell_lymphoma,DLBC,,D/F12,Suspension
+KMS-11,1659817,Y,Y,Y,N,Y,myeloma,myeloma,MM,,R,Suspension
+CHSA0011,1290767,Y,Y,Y,N,Y,bone,chondrosarcoma,,,R,Adherent
+CHSA0108,1290768,Y,Y,Y,N,Y,bone,chondrosarcoma,,,R,Adherent
+JIMT-1,1298157,Y,Y,Y,N,Y,breast,breast,BRCA,,D/F12,Adherent
+CL-34,1290771,Y,Y,Y,N,Y,large_intestine,large_intestine,COAD/READ,,D/F12,Adherent
+VMRC-LCD,713869,Y,Y,Y,N,Y,lung_NSCLC,lung_NSCLC_adenocarcinoma,LUAD,,D/F12,Adherent
+K2,1298160,Y,Y,Y,N,Y,skin,melanoma,SKCM,,D/F12,Adherent
+STS-0421,1299061,Y,Y,Y,N,Y,soft_tissue,soft_tissue_other,,,R,Adherent
+MY-M12,1330960,Y,Y,N,N,Y,leukemia,leukemia,ALL,MSS/MSI-L,R,Suspension
+TALL-1,909762,Y,Y,N,N,Y,leukemia,lymphoblastic_T_cell_leukaemia,ALL,MSS/MSI-L,R,Suspension
+NK-92MI,1330981,Y,Y,N,N,Y,lymphoma,lymphoid_neoplasm other,,MSS/MSI-L,D/F12,Suspension
+MDA-MB-175-VII,908120,Y,Y,N,N,Y,breast,breast,BRCA,MSS/MSI-L,D/F12,Adherent
+YMB-1-E,1303911,Y,Y,N,N,Y,breast,breast,BRCA,MSS/MSI-L,R,Adherent
+VMRC-RCW,1240224,Y,Y,N,N,Y,kidney,kidney,KIRC,MSS/MSI-L,R,Adherent
+NCI-H460,905943,Y,Y,N,N,Y,lung_NSCLC,lung_NSCLC_large cell,,MSS/MSI-L,R,Adherent
+RERF-LC-FM,930081,Y,Y,N,Y,N,lung_SCLC,lung_small_cell_carcinoma,SCLC,MSS/MSI-L,R,Suspension
+D-245MG,946366,Y,Y,N,Y,N,nervous_system,glioma,GBM,MSS/MSI-L,D/F12,Adherent
+Hs939-T,1298144,Y,Y,N,N,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+VMRC-MELG,930301,Y,Y,N,N,Y,skin,melanoma,SKCM,MSS/MSI-L,D/F12,Adherent
+OVCA433,1480367,Y,Y,N,N,Y,urogenital_system,ovary,OV,MSS/MSI-L,D/F12,Adherent
+TMK-1,1299069,Y,Y,N,N,Y,digestive_system,stomach,STAD,,R,Adherent
+KP-2,1298218,Y,N,Y,N,Y,pancreas,pancreas,PAAD,,D/F12,Adherent
+KO52,1330932,Y,Y,N,N,N,leukemia,acute_myeloid_leukaemia,LAML,MSS/MSI-L,D/F12,NA
+SC-1,1331030,Y,Y,N,N,N,lymphoma,B_cell_lymphoma,DLBC,MSS/MSI-L,R,NA
+U-CH2,1503373,Y,Y,N,N,N,bone,bone_other,,MSS/MSI-L,D/F12,Adherent
+TOTAL:,,1001,996,968,957,990,,,,,,

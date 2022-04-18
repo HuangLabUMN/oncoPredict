@@ -1,0 +1,519 @@
+DRUG_ID,SCREENING_SITE,DRUG_NAME,SYNONYMS,TARGET,TARGET_PATHWAY
+1,MGH,Erlotinib,"Tarceva, RG-1415, CP-358774, OSI-774, Ro-508231, R-1415",EGFR,EGFR 
+3,MGH,Rapamycin,"AY-22989, Sirolimus, WY-090217, Torisel, Rapamune",MTORC1,PI3K/MTOR 
+5,MGH,Sunitinib,"Sutent, Sunitinib Malate, SU-11248","PDGFR, KIT, VEGFR, FLT3, RET, CSF1R",RTK 
+6,MGH,PHA.665752,"PHA665752, PHA 665752",MET,RTK 
+9,MGH,MG-132,"LLL cpd, MG 132, MG132","Proteasome, CAPN1",Protein stability and degradation
+11,MGH,Paclitaxel,"BMS-181339-01, Taxol, Onxol, Paxene, Praxel, Abraxane",Microtubule stabiliser,Mitosis
+17,MGH,Cyclopamine,,SMO,Other
+29,MGH,AZ628,"AZ-628, AZ 628",BRAF,ERK MAPK 
+30,MGH,Sorafenib,"Nexavar, 284461-73-0, BAY 43-9006","PDGFR, KIT, VEGFR, RAF",RTK 
+32,MGH,Tozasertib,"MK 0457,MK-0457,MK-045, VX-680 VX 680 VX-68","AURKA, AURKB, AURKC, others",Mitosis
+34,MGH,Imatinib,"Gleevec, STI-571","ABL, KIT, PDGFR","Other, kinases"
+35,MGH,NVP.TAE684,"NVP-TAE 684, TAE684, TAE-684",ALK,RTK 
+37,MGH,Crizotinib,"Xalkori, PF2341066, PF-2341066, PF 2341066","MET, ALK, ROS1",RTK 
+38,MGH,Saracatinib,"AZD0530, AZD-0530, AZ-10353926","ABL, SRC","Other, kinases"
+41,MGH,S.Trityl.L.cysteine,"NSC 83265, Tritylcysteine",KIF11,Mitosis
+45,MGH,Z.LLNle.CHO,"Z-L-Norleucine-CHO, Gamma-Secretase Inhibitor 1",gamma-secretase,Other
+51,MGH,Dasatinib,"BMS-354825-03, BMS-354825, Sprycel","ABL, SRC, Ephrins, PDGFR, KIT",RTK 
+52,MGH,GNF.2,KIN001-013,BCR-ABL,ABL 
+53,MGH,CGP.60474,"KIN001-019, CGP60474, CGP 60474","CDK1,CDK2,CDK5,CDK7,CDK9, PKC",Cell cycle
+54,MGH,CGP.082996,"CINK4, KIN001-021",CDK4,Cell cycle
+55,MGH,A.770041,KIN001-111,"LCK, FYN","Other, kinases"
+56,MGH,WH.4.023,KIN001-112,"SRC, LCK","Other, kinases"
+59,MGH,WZ.1.84,KIN001-123,BMX,"Other, kinases"
+60,MGH,BI-2536,,"PLK1, PLK2, PLK3",Cell cycle
+62,MGH,BMS-536924,BMS 536924,"IGF1R, IR",IGF1R 
+63,MGH,BMS.509744,"KIN001-127, ITK inhibitor",ITK,"Other, kinases"
+64,MGH,CMK,KIN001-128,RSK2,"Other, kinases"
+71,MGH,Pyrimethamine,"Daraprim, Chloridine",Dihydrofolate reductase (DHFR),Other
+83,MGH,JW.7.52.1,NA,MTOR,PI3K/MTOR 
+86,MGH,A.443654,KIN001-139,"AKT1, AKT2, AKT3",PI3K/MTOR 
+87,MGH,GW843682X,GW843682X (AN-13),PLK1,Cell cycle
+88,MGH,Entinostat,MS-275,"HDAC1, HDAC3",Chromatin histone acetylation
+89,MGH,Parthenolide,,HDAC1,Chromatin histone acetylation
+91,MGH,GSK319347A,"KIN001-135, IKK-3 inhibitor",IKK,"Other, kinases"
+94,MGH,TGX221,"TGX-221, Tgx 221",PI3Kbeta,PI3K/MTOR 
+104,MGH,Bortezomib,"PS-341, LDP-341, Velcade",Proteasome,Protein stability and degradation
+106,MGH,XMD8.85,ERK5-IN-1,"ERK5, BET",Other
+110,MGH,Seliciclib,"Roscovitine, CYC-202, AL-39256","CDK2, CDK7, CDK9",Cell cycle
+111,MGH,Salubrinal,EIF-2alpha Inhibitor,EIF2A,Other
+119,MGH,Lapatinib,"Tykerb, Tyverb","EGFR, ERBB2",RTK 
+127,MGH,GSK269962A,GSK 269962A,"ROCK1, ROCK2",Cytoskeleton
+133,MGH,Doxorubicin,"Doxil, Rubex, Adriamycin, Adriablastin, Doxorubicine",Anthracycline,DNA replication
+134,MGH,Etoposide,"Etopophos, Vepesid, Eposin, VP-16",TOP2,DNA replication
+135,MGH,Gemcitabine,"Gemzar, LY-188011",Pyrimidine antimetabolite,DNA replication
+136,MGH,Mitomycin.C,"Mytozytrex, NSC-26980, MMC, Mitosol, Mitozytrex",DNA crosslinker,DNA replication
+140,MGH,Vinorelbine,"vinorelbine tartrate, Navelbine, Exelbine",Microtubule destabiliser,Mitosis
+147,MGH,NSC.87877,NSC 87877,"SHP-1 (PTPN6), SHP-2 (PTPN11)",Other
+150,MGH,Bicalutamide,"ICI-176334, Casodex, Cosudex, ICI 176334",AR,Hormone-related
+151,MGH,QS11,944328-88-5,ARFGAP1,Other
+152,MGH,CP466722,"CP-466722, CP 466722, 1080622-86-1",ATM,Genome integrity
+153,MGH,Midostaurin,"PKC412, benzoylstaurosporine, CGP-41251","PKC, PPK, FLT1, c-FGR, others",Other
+154,MGH,CHIR.99021,"CT 99021, CHIR99021, CHIR 99021","GSK3A, GSK3B",WNT 
+155,MGH,Ponatinib,"AP24534, AP-24534, KIN001-192, Iclusig","ABL, PDGFRA, VEGFR2, FGFR1, SRC, TIE2, FLT3","Other, kinases"
+156,MGH,AZD6482,"AZD 6482, AZD-6482, AK-55409",PI3Kbeta,PI3K/MTOR 
+157,MGH,JNK.9L,"KIN001-204, JNK inhibitor 9l","JNK2, JNK3",JNK and p38 
+158,MGH,PF.562271,PF-00562271,"FAK, FAK2",Cytoskeleton
+159,MGH,HG6.64.1,KIN001-206,BRAF,ERK MAPK 
+163,MGH,JQ1,"JQ-1, (+)-JQ-1","BRD2, BRD3, BRD4, BRDT",Chromatin other
+164,MGH,JQ12,,"HDAC1, HDAC2",Chromatin histone acetylation
+165,MGH,DMOG,Dimethyloxalylglcine,HIF-PH,Metabolism
+166,MGH,FTI.277,,Farnesyl-transferase (FNTA),Other
+167,MGH,OSU.03012,"AR-12, OSU 03012, OSU03012, PDK1 inhibitor AR-12",PDK1 (PDPK1),Metabolism
+170,MGH,Shikonin,Anchusin,not defined,Other
+171,MGH,AKT.inhibitor.VIII,"Akti-1/2, KIN001-102","AKT1, AKT2, AKT3",PI3K/MTOR 
+172,MGH,Embelin,"Emberine, Embelic acid",XIAP,Apoptosis regulation
+173,MGH,FH535,,"PPARgamma, PPARdelta",Other
+175,MGH,PAC.1,GTPL5238,"Procaspase-3, Procaspase-7",Apoptosis regulation
+176,MGH,IPA.3,IPA 3,PAK1,Cytoskeleton
+177,MGH,GSK650394,"GSK-650394, GSK 650394","SGK2, SGK3","Other, kinases"
+178,MGH,BAY.61.3606,"Syk Inhibitor, BAY-613606",SYK,"Other, kinases"
+179,MGH,5-Fluorouracil,5-FU,Antimetabolite (DNA & RNA),Other
+180,MGH,Thapsigargin,Octanoic acid,SERCA,Other
+182,MGH,Obatoclax Mesylate,"GX15-070MS, Obatoclax, GX15-070","BCL2, BCL-XL, BCL-W, MCL1",Apoptosis regulation
+184,MGH,BMS-754807,"BMS754807, BMS 754807","IGF1R, IR",RTK 
+185,MGH,Linsitinib,"OSI-906, ASP-7487",IGF1R,IGF1R 
+186,MGH,Bexarotene,"LG-100069, Targretin, Targret, Targrexin, Targretyn, Bexarotenum",Retinioic X receptor (RXR) agonist,Other
+190,MGH,Bleomycin,,dsDNA break induction,DNA replication
+192,MGH,LFM.A13,DDE-28,BTK,"Other, kinases"
+193,MGH,GW.2580,"GX2580, CFMS receptor tyrosine kinase inhibitor",CSF1R,RTK 
+194,MGH,Luminespib,"AUY922, VER-52296,NVP-AUY922,  AUY",HSP90,Protein stability and degradation
+196,MGH,Phenformin,DBI,Biguanide agent,Other
+197,MGH,Bryostatin.1,Bryostatin,PKC,Other
+199,MGH,Pazopanib,Votrient,"CSF1R, KIT,  PDGFRA, PDGFRB",RTK 
+200,MGH,Dacinostat,"NVP-LAQ824, LAQ824",HDAC1,Chromatin histone acetylation
+201,MGH,Epothilone.B,"Patupilone, EpoB, EPO906, GNF-PF-193",Microtubule stabiliser,Mitosis
+202,MGH,GSK1904529A,"GSK-1904529A, GSK 1904529A","IGF1R, IR",RTK 
+203,MGH,BMS-345541,"BMS345541, IKK Inhibitor 3","IKK1, IKK2","Other, kinases"
+204,MGH,Tipifarnib,Zarnestra,Farnesyl-transferase (FNTA),Other
+205,MGH,Avagacestat,"BMS-708163, BMS 708163","Amyloid beta20, Amyloid beta40",Other
+206,MGH,Ruxolitinib,"INCB-18424, Ruxolitinib Phosphate, Jakafi","JAK1, JAK2","Other, kinases"
+207,MGH,AS601245,,"JNK1, JNK2, JNK2",JNK and p38 
+208,MGH,Ispinesib.Mesylate,SB-715992,KSP,Mitosis
+211,MGH,TL.2.105,,not defined,Other
+219,MGH,AT.7519,AT7519,"CDK1, CDK2, CDK4, CDK6, CDK9",Cell cycle
+221,MGH,TAK.715,"KIN001-201, TAK 715","p38alpha, p38beta",JNK and p38 
+222,MGH,BX.912,,PDK1 (PDPK1),Metabolism
+223,MGH,ZSTK474,"KIN001-167, ZSTK-474, ZSTK 474",PI3K (class 1),PI3K/MTOR 
+224,MGH,AS605240,"KIN001-173, AS-605240",PI3Kgamma,PI3K/MTOR 
+225,MGH,Genentech.Cpd.10,,"AURKA, AURKB",Mitosis
+226,MGH,GSK1070916,GSK-1070916,"AURKA, AURKC",Mitosis
+228,MGH,AKT.inhibitor.VIII,"Akti-1/2, KIN001-102","AKT1, AKT2, AKT3",PI3K/MTOR 
+229,MGH,Enzastaurin,LY317615,PKCB,"Other, kinases"
+230,MGH,GSK429286A,,"ROCK1, ROCK2",Cytoskeleton
+231,MGH,FMK,KIN001-242,RSK,"Other, kinases"
+235,MGH,QL.XII.47,,"BTK, BMX","Other, kinases"
+236,MGH,IC.87114,,PI3Kdelta,PI3K/MTOR 
+238,MGH,Idelalisib,"CAL-101, Zydelig",PI3Kdelta,PI3K/MTOR 
+245,MGH,UNC0638,"UNC-0638, UNC 0683",G9a and GLP methyltransferases,Chromatin histone methylation
+249,MGH,Cabozantinib,"BMS-907351, XL-184, Cometriq","VEGFR, MET, RET, KIT, FLT1, FLT3, FLT4, TIE2,AXL",RTK 
+252,MGH,WZ3105,,"SRC, ROCK2, NTRK2, FLT3, IRAK1, others",Other
+253,MGH,XMD14.99,,"ALK, CDK7, LTK, others","Other, kinases"
+254,MGH,Quizartinib,"AC220, AC 220, AC-220, Asp-2689",FLT3,RTK 
+255,MGH,CP724714,CP-724714,ERBB2,RTK 
+256,MGH,JW.7.24.1,,LCK,"Other, kinases"
+257,MGH,NPK76.II.72.1,,PLK3,Cell cycle
+258,MGH,STF.62247,STF62247,Autophagy inducer,Other
+260,MGH,NG.25,NG25,"TAK1, MAP4K2","Other, kinases"
+261,MGH,TL.1.85,,TAK,"Other, kinases"
+262,MGH,VX-11e,"VX11e, VX11e",ERK2,ERK MAPK 
+263,MGH,FR.180204,"FR 180204, FR180204, ERK Inhibitor II","ERK1, ERK2",ERK MAPK 
+264,MGH,ACY.1215,,HDAC6,Chromatin histone acetylation
+265,MGH,Tubastatin.A,,"HDAC1, HDAC6, HDAC8",Chromatin histone acetylation
+266,MGH,Zibotentan,"ZD4054, ZD-4054",Endothelin-1 receptor (EDNRA),Other
+268,MGH,Sepantronium bromide,"YM155, YM-155, YM 155",BIRC5,Apoptosis regulation
+269,MGH,NSC.207895,"XI-006, NSC207895",MDM4,p53 pathway
+271,MGH,VNLG.124,HDAC inhibitor XV,"HDAC,RAR",Chromatin histone acetylation
+272,MGH,AR.42,"HDAC-42, AR 42, AR42",HDAC1,Chromatin histone acetylation
+273,MGH,CUDC.101,CUDC 101,"HDAC1-10, EGFR, ERBB2",Other
+274,MGH,Belinostat,"PXD101, PXD-101",HDAC1,Chromatin histone acetylation
+275,MGH,I-BET-762,GSK525762A,"BRD2, BRD3, BRD4",Chromatin other
+276,MGH,CAY10603,,"HDAC1, HDAC6",Chromatin histone acetylation
+277,MGH,Linifanib,"ABT-869, ABT 869","VEGFR1, VEGFR2, VEGFR3, CSF1R, FLT3, KIT",RTK 
+279,MGH,BIX02189,BIX 02189,"MEK5, ERK5",ERK MAPK 
+281,MGH,Alectinib,"CH5424802, CH 542802, Alecensa",ALK,RTK 
+282,MGH,Pelitinib,"EKB-569, EKB 569",EGFR,EGFR 
+283,MGH,Omipalisib,"GSK2126458, GSK-2126458, EX-8678, GSK458","PI3K (class 1), MTORC1, MTORC2",PI3K/MTOR 
+284,MGH,JNJ38877605,,MET,RTK 
+285,MGH,SU11274,,MET,RTK 
+286,MGH,KIN001.236,,Angiopoietin-1 receptor,RTK 
+287,MGH,KIN001.244,PDK1 inhibitor 7,PDK1 (PDPK1),Metabolism
+288,MGH,WHI.P97,"AC1L1GQE, KIN001-055",JAK3,"Other, kinases"
+289,MGH,KIN001.042,,GSK3B,WNT 
+290,MGH,KIN001.260,"Bayer IKKb inhibitor, ACHP",IKKB,"Other, kinases"
+291,MGH,KIN001.266,,MAP3K8,ERK MAPK 
+292,MGH,Masitinib,"AB1010, Masivet","KIT, PDGFRA, PDGFRB",RTK 
+293,MGH,Amuvatinib,"MP470, MP 470, MP-470","KIT, PDGFRA, FLT3",RTK 
+294,MGH,MPS.1.IN.1,,MPS1,Mitosis
+295,MGH,NVP.BHG712,BHG712,EPHB4,RTK 
+298,MGH,OSI.930,OSI 930 OSI930,KIT,RTK 
+299,MGH,OSI.027,A-1065-5,"MTORC1, MTORC2",PI3K/MTOR 
+300,MGH,CX.5461,"CX5461, CX 5461",RNA Polymerase 1,Other
+301,MGH,PHA.793887,"PHA793887, PHA 793887","CDK2, CDK7, CDK5",Cell cycle
+302,MGH,PI.103,"PI-103, PI103, PI 103","PI3Kalpha, DAPK3, CLK4, PIM3, HIPK2","Other, kinases"
+303,MGH,PIK.93,"PIK 93, PIK93",PI3Kgamma,PI3K/MTOR 
+304,MGH,SB52334,"SB-52334, SB 52334",ALK5,"Other, kinases"
+305,MGH,TPCA.1,,IKK2,"Other, kinases"
+306,MGH,Fedratinib,"TG101348, TG-101348, SAR302503, SAR-302503",JAK2,"Other, kinases"
+308,MGH,Foretinib,"GSK1363089, XL-880, EXEL-2880, GSK089","MET, KDR, TIE2, VEGFR3/FLT4, RON, PDGFR, FGFR1, EGFR",RTK 
+309,MGH,Y.39983,,ROCK,Cytoskeleton
+310,MGH,YM201636,"YM-201636, YM 201636",PIKFYVE,PI3K/MTOR 
+312,MGH,Tivozanib,"AV-951, AV 951, KRN-951, KIL8951, ASP-4130","VEGFR1, VEGFR2, VEGFR3",RTK 
+317,MGH,WYE.125132,,mTOR,PI3K/MTOR 
+326,MGH,GSK690693,"GSK 690693, GSK-690693","AKT1, AKT2, AKT3",PI3K/MTOR 
+328,MGH,SNX.2112,SNX 2112,HSP90,Protein stability and degradation
+329,MGH,QL.XI.92,,DDR1,Cytoskeleton
+330,MGH,XMD13.2,,RIPK1,Apoptosis regulation
+331,MGH,QL.X.138,,BTK,"Other, kinases"
+332,MGH,XMD15.27,,CAMK2,"Other, kinases"
+333,MGH,T0901317,"TO-901317, TO901317","LXR, FXR",Other
+341,MGH,Selisistat,"EX-527, EX 527",SIRT1,Chromatin histone acetylation
+342,MGH,Tenovin.6,,SIRT,Chromatin histone acetylation
+344,MGH,THZ.2.49,,CDK9,Cell cycle
+345,MGH,KIN001.270,"CDK9 inhibitor, CDK9-IN-1",CDK9,Cell cycle
+346,MGH,THZ.2.102.1,,CDK7,Cell cycle
+356,MGH,AT7867,,AKT,PI3K/MTOR 
+362,MGH,CI.1033,,"EGFR, ERBB2, ERBB4",RTK 
+363,MGH,PF.00299804,,"EGFR, ERBB2, ERBB4",RTK 
+366,MGH,TWS119,,GSK3,WNT 
+371,MGH,Torin.2,,mTOR,PI3K/MTOR 
+372,MGH,Pilaralisib,XL-147,PI3K,PI3K/MTOR 
+374,MGH,GSK1059615,,PI3K,PI3K/MTOR 
+375,MGH,Voxtalisib,"XL-765, SAR245409","PI3K (class 1), DNAPK, MTOR",PI3K/MTOR 
+376,MGH,Brivanib..BMS.540215,,"VEGFR, PDGFR",RTK 
+380,MGH,BIBF.1120,,"VEGFR, PDGFR, FGFR",RTK 
+381,MGH,AST.1306,,"EGFR, ERBB4",RTK 
+382,MGH,Apitolisib,GDC0980,"mTOR, PI3K",PI3K/MTOR 
+406,MGH,LIMK1.inhibitor.BMS4,,LIMK1,Cytoskeleton
+407,MGH,kb.NB.142.70,,PKD,"Other, kinases"
+408,MGH,Sphingosine.Kinase.1.Inhibitor.II,PF-543,Sphingosine Kinase,"Other, kinases"
+409,MGH,eEF2K.Inhibitor..A.484954,,eEF2K,"Other, kinases"
+410,MGH,MetAP2.Inhibitor..A832234,,MetAP2,Other
+412,MGH,Venotoclax,"ABT-199, Veneclexta, GDC-0199",BCL-2 selective,Apoptosis regulation
+415,MGH,CPI.613,,"Metabo, Mitochondria",Other
+416,MGH,CAY10566,,Stearoyl-CoA desaturase,Other
+427,MGH,Ara.G,9-??-D-Arabinofuranosyl guanine,Anti-metabolite,Other
+428,MGH,Pemetrexed,,TYMS,DNA replication
+431,MGH,Alisertib,MLN8237,AURKA,Mitosis
+432,MGH,Flavopiridol,,CDK,Cell cycle
+435,MGH,C.75,,FAS,Apoptosis regulation
+436,MGH,CAP.232..TT.232..TLN.232,,Glycolysis,Metabolism
+437,MGH,Trichostatin.A,,HDAC,Chromatin histone acetylation
+438,MGH,Panobinostat,"Farydak, LBH589",HDAC,Chromatin histone acetylation
+439,MGH,LCL161,,"XIAP, cIAP1, cIAP2",Apoptosis regulation
+442,MGH,IMD.0354,,IKKb,"Other, kinases"
+446,MGH,MIM1,,MCL-1,Apoptosis regulation
+447,MGH,ETP.45835,,"MNK1, MNK2","Other, kinases"
+449,MGH,CD532,,AURKA,Mitosis
+461,MGH,NSC319726,,P53 Mut specific,p53 pathway
+474,MGH,ARRY.520,,KIF11,Mitosis
+476,MGH,SB505124,"SB 505124, SB505124","TGFBR1, ACVR1B, ACVR1C",RTK 
+477,MGH,A.83.01,,TGFB,Other
+478,MGH,LDN.193189,,BMP,Other
+546,MGH,FTY.720,Fingolimod hydrochloride; Gilenya; TDI-132; Imusera; Gilenia,S1P,Other
+552,MGH,BAM7,,Bax activator,Other
+562,MGH,AGI-6780,,IDH2(R140Q),Metabolism
+563,MGH,Kobe2602,,RAS effector,RTK 
+573,MGH,LGK974,,PORCN,WNT 
+574,MGH,Wnt-C59,,PORCN,WNT 
+576,MGH,RU.SKI.43,,Shh,Other
+1001,SANGER,AICA.Ribonucleotide,"AICAR, N1-(b-D-Ribofuranosyl)-5-aminoimidazole-4-carboxamide",AMPK agonist,Metabolism
+1003,SANGER,Camptothecin,"Camptothecine, (+)-Camptothecin",TOP1,DNA replication
+1004,SANGER,Vinblastine,Velban,Microtubule destabiliser,Mitosis
+1005,SANGER,Cisplatin,"cis-Diammineplatinum(II) dichloride, Platinol, CIS-DDP",DNA crosslinker,DNA replication
+1006,SANGER,Cytarabine,"Ara-Cytidine, Arabinosyl Cytosine, U-19920",Antimetabolite,Other
+1007,SANGER,Docetaxel,"RP-56976, Taxotere",Microtubule stabiliser,Mitosis
+1008,SANGER,Methotrexate,"Abitrexate, Amethopterin, Rheumatrex, Trexall, Folex",Antimetabolite,DNA replication
+1009,SANGER,Tretinoin,"ATRA, Vesanoid, Renova, Atralin, Tretin-X, Avita",Retinoic acid,Other
+1010,SANGER,Gefitinib,"ZD-1839, Iressa",EGFR,EGFR 
+1011,SANGER,Navitoclax,"ABT-263, ABT263, ABT 263","BCL2, BCL-XL, BCL-W",Apoptosis regulation
+1012,SANGER,Vorinostat,"Zolinza, SAHA, suberanilohydroxamic acid, suberoylanilide hydroxamic acid, MK-0683","HDAC inhibitor Class I, IIa, IIb, IV",Chromatin histone acetylation
+1013,SANGER,Nilotinib,"Tasigna, AMN 107",ABL,ABL 
+1014,SANGER,Refametinib,"RDEA119, BAY-86-9766, BAY 869766","MEK1, MEK2",ERK MAPK 
+1015,SANGER,CI.1040,"CI 1040, PD-18435, PD-184352, 212631-79-3","MEK1, MEK2",ERK MAPK 
+1016,SANGER,Temsirolimus,"CCI-779, Torisel",MTOR,PI3K/MTOR 
+1017,SANGER,Olaparib,"AZD2281, KU0059436,  Lynparza","PARP1, PARP2",Genome integrity
+1018,SANGER,Veliparib,"ABT-888, ABT888, ABT 888","PARP1, PARP2",Genome integrity
+1019,SANGER,Bosutinib,"SKI-606, Bosulif","SRC, ABL, TEC","Other, kinases"
+1020,SANGER,Lenalidomide,"CDC-501, CC-5013, Revlimid",CRBN,Protein stability and degradation
+1021,SANGER,Axitinib,"AG-13736, Inlyta","PDGFR, KIT, VEGFR",RTK 
+1022,SANGER,AZD7762,"AZD-7762, AZD 7762","CHEK1, CHEK2",Cell cycle
+1023,SANGER,GW441756,GW 441756,NTRK1,RTK 
+1024,SANGER,Lestaurtinib,"CEP-701, SP-924, SPM-924, A-154475, KT-555","FLT3, JAK2, NTRK1, NTRK2, NTRK3","Other, kinases"
+1025,SANGER,SB216763,"SB-216763, SB 216763","GSK3A, GSK3B",WNT 
+1026,SANGER,Tanespimycin,"17-AAG, BMS-722782",HSP90,Protein stability and degradation
+1028,SANGER,VX.702,"VX702, VX 702",p38,JNK and p38 
+1029,SANGER,Motesanib,"AMG-706, AMG 706, AMG706","VEGFR, RET, KIT, PDGFR",RTK 
+1030,SANGER,KU.55933,KU55933,ATM,Genome integrity
+1031,SANGER,Elesclomol,STA-4783,HSP90,Protein stability and degradation
+1032,SANGER,Afatinib,"BIBW2992, Tovok, Gilotrif","ERBB2, EGFR",EGFR 
+1033,SANGER,Vismodegib,"GDC0449, Erivedge",SMO,Other
+1034,SANGER,Staurosporine,,Broad spectrum kinase inhibitor,RTK 
+1036,SANGER,PLX.4720,"PLX4720, PLX 4720",BRAF,ERK MAPK 
+1037,SANGER,BX795,BX-795,"TBK1, PDK1 (PDPK1), IKK, AURKB, AURKC","Other, kinases"
+1038,SANGER,NU7441,"KU-57788, NU-7432, NU-7741",DNAPK,Genome integrity
+1039,SANGER,SL0101,"SL-0101, SL 0101-1","RSK, AURKB, PIM1, PIM3","Other, kinases"
+1042,SANGER,Doramapimod,"BIRB-796, BIRB 796","p38, JNK2",JNK and p38 
+1043,SANGER,JNK.Inhibitor.VIII,,JNK,JNK and p38 
+1046,SANGER,Wee1.Inhibitor,"681640, Wee1 Inhibitor","WEE1, CHEK1",Cell cycle
+1047,SANGER,Nutlin.3a....,,MDM2,p53 pathway
+1048,SANGER,Mirin,,MRE11,Genome integrity
+1049,SANGER,PD173074,"PD-173074, PD 173074","FGFR1, FGFR2, FGFR3",RTK 
+1050,SANGER,ZM447439,"ZM-447439, ZM 447439","AURKA, AURKB",Mitosis
+1051,SANGER,Alisertib,MLN8237,AURKA,Mitosis
+1052,SANGER,RO.3306,,CDK1,Cell cycle
+1053,SANGER,MK.2206,"MK 2206, MK2206","AKT1, AKT2",PI3K/MTOR 
+1054,SANGER,Palbociclib,"PD0332991, PD-0332991, PF-00080665-73","CDK4, CDK6",Cell cycle
+1057,SANGER,Dactolisib,"NVP-BEZ235, BEZ235","PI3K (class 1), MTORC1, MTORC2",PI3K/MTOR 
+1058,SANGER,Pictilisib,"GDC-0941, GDC0941, RG-7621",PI3K (class 1),PI3K/MTOR 
+1059,SANGER,AZD8055,AZD-8055,"MTORC1, MTORC2",PI3K/MTOR 
+1060,SANGER,PD0325901,"PD-0325901, PD 0325901","MEK1, MEK2",ERK MAPK 
+1061,SANGER,SB590885,SB-590885,BRAF,ERK MAPK 
+1062,SANGER,Selumetinib,"AZD6244, AZD-6244, ARRY-886","MEK1, MEK2",ERK MAPK 
+1066,SANGER,AZD6482,"AZD 6482, AZD-6482, AK-55409",PI3Kbeta,PI3K/MTOR 
+1067,SANGER,CCT007093,,PPM1D,Cell cycle
+1068,SANGER,Obatoclax.Mesylate,"GX15-070MS, Obatoclax, GX15-070","BCL2, BCL-XL, BCL-W, MCL1",Apoptosis regulation
+1069,SANGER,EHT.1864,EHT 1864,"RAC1, RAC2, RAC3",Cytoskeleton
+1072,SANGER,Avagacestat,"BMS-708163, BMS 708163","Amyloid beta20, Amyloid beta40",Other
+1073,SANGER,X5.Fluorouracil,5-FU,Antimetabolite (DNA & RNA),Other
+1079,SANGER,Dasatinib,"BMS-354825-03, BMS-354825, Sprycel","ABL, SRC, Ephrins, PDGFR, KIT","Other, kinases"
+1080,SANGER,Paclitaxel,"BMS-181339-01, Taxol, Onxol, Paxene, Praxel, Abraxane",Microtubule stabiliser,Mitosis
+1083,SANGER,Crizotinib,"Xalkori, PF2341066, PF-2341066, PF 2341066","MET, ALK, ROS1",RTK 
+1084,SANGER,Rapamycin,"AY-22989, Sirolimus, WY-090217, Torisel, Rapamune",MTORC1,PI3K/MTOR 
+1085,SANGER,Sorafenib,"Nexavar, 284461-73-0, BAY 43-9006","PDGFR, KIT, VEGFR, RAF","Other, kinases"
+1086,SANGER,BI.2536,,"PLK1, PLK2, PLK3",Cell cycle
+1088,SANGER,Irinotecan,"Camptosar, (+)-Irinotecan, Irinotecanum, irinotecan hydrochloride",TOP1,DNA replication
+1089,SANGER,Oxaliplatin,Eloxatin,DNA alkylating agent,DNA replication
+1091,SANGER,BMS.536924,BMS 536924,"IGF1R, IR",IGF1R 
+1093,SANGER,GSK1904529A,"GSK-1904529A, GSK 1904529A","IGF1R, IR",IGF1R 
+1096,SANGER,Tozasertib,"MK 0457,MK-0457,MK-045, VX-680 VX 680 VX-68","AURKA, AURKB, AURKC, others",Mitosis
+1114,SANGER,Cetuximab,"Erbitux, IMC-C225, C225, IMC-225, L01XC06",EGFR,EGFR 
+1129,SANGER,PF.4708671,"PF 4708671, PF4708671",S6K1,PI3K/MTOR 
+1131,SANGER,PRIMA.1MET,"Prima 1MET, APR-246",TP53 activation,p53 pathway
+1133,SANGER,Serdemetan,JNJ-26854165,MDM2,p53 pathway
+1135,SANGER,AZD4547,AZ6,"FGRF1, FGFR2, FGFR3",RTK 
+1136,SANGER,Capivasertib,AZ5363,AKT,PI3K/MTOR 
+1142,SANGER,HG.5.113.01,,"LOK, LTK, TRCB, ABL(T315I)",Other
+1143,SANGER,HG.5.88.01,,"EGFR, ADCK4","Other, kinases"
+1149,SANGER,TW.37,"TW37, TW-37","BCL2, BCL-XL, MCL1",Apoptosis regulation
+1158,SANGER,XMD11.85h,,"BRSK2, FLT4, MARK4, PRKCD, RET, SRPK1","Other, kinases"
+1161,SANGER,ZG.10,,JNK1,JNK and p38 
+1164,SANGER,XMD8.92,XMD 8-92,MAPK7,ERK MAPK 
+1166,SANGER,QL.VIII.58,,"MTOR, ATR",Other
+1168,SANGER,Erlotinib,"Tarceva, RG-1415, CP-358774, OSI-774, Ro-508231, R-1415",EGFR,EGFR 
+1170,SANGER,CCT.018159,"CCT018159, CCT 018159",HSP90,Protein stability and degradation
+1175,SANGER,Rucaparib,"PF-01367338, AG-014699, AG-14447, AG-14699","PARP1, PARP2",Genome integrity
+1177,SANGER,Niraparib,"MK-4827, MK4827","PARP1, PARP2",Genome integrity
+1179,SANGER,MK.1775,AZD1775,"WEE1, PLK1",Cell cycle
+1180,SANGER,Dinaciclib,"SCH727965, SCH 727965, SCH-727-965, MK-7965","CDK1, CDK2, CDK5, CDK9",Cell cycle
+1184,SANGER,AZ20,,ATR,Genome integrity
+1185,SANGER,KU.60019,,ATM,Genome integrity
+1190,SANGER,Gemcitabine,"Gemzar, LY-188011",Pyrimidine antimetabolite,DNA replication
+1191,SANGER,Bortezomib,"PS-341, LDP-341, Velcade",Proteasome,Protein stability and degradation
+1192,SANGER,GSK269962A,GSK 269962A,"ROCK1, ROCK2",Cytoskeleton
+1194,SANGER,SB505124,"SB 505124, SB505124","TGFBR1, ACVR1B, ACVR1C",RTK 
+1199,SANGER,Tamoxifen,"Nolvadex, Soltamox, Zynoplex, ICI-46474, Kessar",ESR1,Hormone-related
+1200,SANGER,Fulvestrant,"Faslodex, ICI-182780",ESR,Hormone-related
+1203,SANGER,QL.XII.61,,"BMX, BTK","Other, kinases"
+1218,SANGER,JQ1,"JQ-1, (+)-JQ-1","BRD2, BRD3, BRD4, BRDT",Chromatin other
+1219,SANGER,PFI.1,,BRD4,Chromatin other
+1230,SANGER,IOX2,"IOX-2, IOX 2, AK176060",EGLN1,Other
+1236,SANGER,UNC0638,"UNC-0638, UNC 0683",G9a and GLP methyltransferases,Chromatin histone methylation
+1237,SANGER,EPZ004777,EPZ-004777,DOT1L,Chromatin histone methylation
+1239,SANGER,YK.4.279,YK 4-279,RNA helicase A,Other
+1241,SANGER,CHIR.99021,"CT 99021, CHIR99021, CHIR 99021","GSK3A, GSK3B",WNT 
+1242,SANGER,X.5Z..7.Oxozeaenol,"5Z-7-Oxozeaenol, LL-Z1640-2",TAK1,"Other, kinases"
+1243,SANGER,Piperlongumine,Piplartine,Induces reactive oxygen species,Other
+1248,SANGER,Daporinad,"APO866,  FK866, FK866",NAMPT,Metabolism
+1249,SANGER,BMS.345541,,"IKK-1, IKK-2",Other
+1250,SANGER,AZ960,"AZ 960, AZ-960","JAK2, JAK3","Other, kinases"
+1259,SANGER,Talazoparib,"BMN-673, BMN 973","PARP1, PARP2",Genome integrity
+1261,SANGER,rTRAIL,,TRAIL receptor agonist,Apoptosis regulation
+1262,SANGER,UNC1215,UNC-1215,L3MBTL3,Chromatin other
+1263,SANGER,UNC0642,,"G9a(EHMT2), GLP(EHMT1)",Chromatin histone methylation
+1264,SANGER,SGC0946,,DOT1L,Chromatin histone methylation
+1266,SANGER,ICL1100013,,N-myristoyltransferase 1/2,Other
+1268,SANGER,XAV939,"NVP-XAV939, XAV-939, XAV 939","TNKS1, TNKS2",WNT 
+1371,SANGER,PLX-4720,"PLX4720, PLX 4720",BRAF,ERK MAPK 
+1372,SANGER,Trametinib,"GSK1120212, Mekinist","MEK1, MEK2",ERK MAPK 
+1373,SANGER,Dabrafenib,"GSK2118436, Tafinlar",BRAF,ERK MAPK 
+1375,SANGER,Temozolomide,"Temodar, Temodal, M-39831, SCH 52365",DNA alkylating agent,DNA replication
+1377,SANGER,Afatinib,"BIBW2992, Tovok, Gilotrif","ERBB2, EGFR",EGFR 
+1378,SANGER,Bleomycin..50.uM.,,dsDNA break induction,DNA replication
+1382,SANGER,AZD3514,SN1019841295,AR,Hormone-related
+1386,SANGER,Doxorubicin,,Anthracycline,DNA replication
+1392,SANGER,Bleomycin..10.uM.,,dsDNA break induction,DNA replication
+1393,SANGER,Gemcitabine,,Pyrimidine antimetabolite,DNA replication
+1394,SANGER,AZD6738,SN1034081770,ATR,Genome integrity
+1401,SANGER,AZD5438,SN1057898678,CDK2,Cell cycle
+1402,SANGER,AZD7762,SN1031853762,"CHEK1, CHEK2",Cell cycle
+1403,SANGER,AZD6094,SN1042487586,MET,RTK 
+1407,SANGER,Dyrk1b_191,SN1008982787,DYRK1B,"Other, kinases"
+1409,SANGER,AZD4877,SN1055467765,EG5,Mitosis
+1413,SANGER,EphB4_9721,SN1076287848,EPHB4,RTK 
+1414,SANGER,Fulvestrant,SN0117217688,ESR1,Hormone-related
+1416,SANGER,AZD8931,SN0216062465,"EGFR, ERBB2, ERBB3",RTK 
+1419,SANGER,FEN1_3940,SN1106019609,FEN1,Genome integrity
+1421,SANGER,FGFR_939,SN1043317881,FGFR4,RTK 
+1422,SANGER,FGFR_3831,SN1037992934,"FGFR1, FGFR2, FGFR3, FGFR4",RTK 
+1425,SANGER,BPTES,SN1041594574,GLS,Other
+1426,SANGER,AZD7969,SN1098976045,GSK3B,WNT 
+1427,SANGER,AZD5582,SN1021632995,IAP,Other
+1428,SANGER,IAP_5620,SN1043546339,IAP,Other
+1429,SANGER,IAP_7638,SN1043547481,IAP,Other
+1430,SANGER,IGFR_3801,SN1056768819,IGFR1,IGF1R 
+1432,SANGER,AZD1480,SN1044232195,"JAK1, JAK2","Other, kinases"
+1433,SANGER,JAK1_3715,SN1042605297,JAK1,"Other, kinases"
+1434,SANGER,JAK3_7406,SN1014281280,JAK3,"Other, kinases"
+1436,SANGER,MCT1_6447,SN0177231247,MCT1,Cell cycle
+1437,SANGER,MCT4_1422,SN1043999849,MCT4,Other
+1441,SANGER,AZD2014,SN1103949359,"mTORC1, mTORC2",PI3K/MTOR 
+1444,SANGER,AZD8186,SN1028722848,"PI3Kbeta, PI3Kdelta",PI3K/MTOR 
+1445,SANGER,AZD8835,SN1040214596,"PI3Kalpha, PI3Kdelta",PI3K/MTOR 
+1446,SANGER,PI3Ka_4409,SN1037097676,"PI3Kalpha, PI3Kdelta",PI3K/MTOR 
+1449,SANGER,AZD1208,SN1028350371,"PIM1, PIM2, PIM3","Other, kinases"
+1451,SANGER,PLK_6522,SN1077317349,"PLK1, PLK2, PLK3",Cell cycle
+1453,SANGER,RAF_9304,SN1034259943,"ARAF, BRAF, CRAF",ERK MAPK 
+1458,SANGER,PARP_9495,SN1024601395,"PARP1, PARP2, PARP7",Genome integrity
+1459,SANGER,PARP_108,SN1044053371,"PARP1, PARP2, PARP6",Genome integrity
+1460,SANGER,PARP_9482,SN1031920820,"PARP1, PARP2, PARP5a",Genome integrity
+1461,SANGER,TANK_1366,SN1032446568,"Tankyrase 1/2 (PARP5a, PARP5b)",Genome integrity
+1463,SANGER,AZD1332,SN1061387896,"NTRK1, NTRK2, NTRK3",RTK 
+1464,SANGER,TTK_3146,SN1080714093,TTK,Mitosis
+1490,SANGER,SN.38,SN1095903706,TOP1,DNA replication
+1494,SANGER,SN.38,"7-Ethyl-10-Hydroxy-Camptothecin, SN 38",TOP1,DNA replication
+1495,SANGER,Olaparib,"AZD2281, KU0059436,  Lynparza","PARP1, PARP2",Genome integrity
+1496,SANGER,Cisplatin,Cisplatin,DNA crosslinker,DNA replication
+1497,SANGER,AZD4547,AZ6,"FGFR1, FGFR2, FGFR3",RTK 
+1498,SANGER,Selumetinib,"AZD6244, AZD-6244, ARRY-886","MEK1, MEK2",ERK MAPK 
+1502,SANGER,Bicalutamide,"ICI-176334, Casodex, Cosudex, ICI 176334",AR,Hormone-related
+1507,SANGER,Ruxolitinib,"INCB-18424, Ruxolitinib Phosphate, Jakafi","JAK1, JAK2","Other, kinases"
+1510,SANGER,Linsitinib,"OSI-906, ASP-7487",IGF1R,IGF1R 
+1511,SANGER,Epirubicin,"Ellence, Farmorubicin, IMI-28",Anthracycline,DNA replication
+1512,SANGER,Cyclophosphamide,"Cytoxan, Neosar, Cyclophosphamid, Procytox, Cyclophosphane",Alkylating agent,DNA replication
+1526,SANGER,Refametinib,"RDEA119, BAY-86-9766, BAY 869766","MEK1, MEK2",ERK MAPK 
+1527,SANGER,Pictilisib,"GDC-0941, GDC0941, RG-7621",PI3K (class 1),PI3K/MTOR 
+1529,SANGER,Pevonedistat,"MLN4924, MLN 4924, MLN-4924",NAE,Other
+1530,SANGER,PFI.3,BDF00016096,"SMARCA2, SMARCA4, PB1",Chromatin other
+1549,SANGER,Sapitinib,AZD8931,"EGFR, ERBB2, ERBB3",EGFR 
+1553,SANGER,Uprosertib,"GSK2141795, GSK2141795C, GSK-2141795","AKT1, AKT2, AKT3",PI3K/MTOR 
+1557,SANGER,LCL161,,"XIAP, IAP1, IAP2",Apoptosis regulation
+1558,SANGER,Lapatinib,"Tykerb, Tyverb","EGFR, ERBB2",EGFR 
+1559,SANGER,Luminespib,"AUY922, VER-52296,NVP-AUY922,  AUY",HSP90,Protein stability and degradation
+1560,SANGER,Alpelisib,"BYL719, BYL-719, NVP-BYL719",PI3Kalpha,PI3K/MTOR 
+1561,SANGER,Taselisib,"GDC-0032, GDC0032, RG7604",PI3K (beta sparing),PI3K/MTOR 
+1563,SANGER,EPZ5676,"EPZ-5676, Pinometostat",DOT1L,Chromatin histone methylation
+1564,SANGER,SCH772984,CS-1421,"ERK1, ERK2",ERK MAPK 
+1576,SANGER,IWP.2,Wnt Inhibitor IWP-2,PORCN,WNT 
+1578,SANGER,Leflunomide,"Sulol, SU-101, HWA-486, Arava",Pyrimidine synthesis inhibitor,DNA replication
+1593,SANGER,Entinostat,MS-275,"HDAC1, HDAC3",Chromatin histone acetylation
+1594,SANGER,OSI.027,A-1065-5,"MTORC1, MTORC2",PI3K/MTOR 
+1598,SANGER,LGK974,LGK-974,PORCN,WNT 
+1613,SANGER,VE.822,"VE 822, VE822, Berzosertib",ATR,Genome integrity
+1614,SANGER,WZ4003,WZ 4003,"NUAK1, NUAK2","Other, kinases"
+1615,SANGER,CZC24832,GTPL6653,PI3Kgamma,PI3K/MTOR 
+1617,SANGER,AZD5582,"GTPL7710, AOB5560","XIAP, cIAP",Apoptosis regulation
+1618,SANGER,GSK2606414,AK175551,PERK,Metabolism
+1620,SANGER,PFI3,"PFI-3, PFI 3, AOB2221","Polybromo 1, SMARCA4, SMARCA2",Chromatin other
+1621,SANGER,PCI.34051,AK298746,"HDAC8, HDAC6, HDAC1",Chromatin histone acetylation
+1622,SANGER,Wnt.C59,"AOB3540, AK161197",PORCN,WNT 
+1624,SANGER,I.BET.762,GSK525762A,"BRD2, BRD3, BRD4",Chromatin other
+1625,SANGER,RVX.208,"1044870-39-4, Apabetalone",BRD4,Chromatin other
+1626,SANGER,OTX015,"Birabresib, OTX-015, MK-8628","BRD2, BRD3, BRD4",Chromatin other
+1627,SANGER,GSK343,"GTPL8240, AOB3680, AK175558",EZH2,Chromatin histone methylation
+1629,SANGER,ML323,"GTPL7898, AOB2313,","USP1, UAF1",Protein stability and degradation
+1630,SANGER,Entospletinib,GS-9973,SYK,"Other, kinases"
+1631,SANGER,PRT062607,"P505-15, PRT-2607, BIIB-057",SYK,"Other, kinases"
+1632,SANGER,Ribociclib,"LEE011, NVP-LEE011, LEE011-BBA","CDK4, CDK6",Cell cycle
+1634,SANGER,AGI.6780,AK162157,IDH2 R140Q mutant,Metabolism
+1635,SANGER,Picolinici.acid,Picolinate,Inflammatory related,Other
+1706,SANGER,AZD5153,"SN1045566955, AZD5153",BRD4,Chromatin other
+1708,SANGER,CDK9_5576,"SN1047226266, CDK9_5576",CDK9,Cell cycle
+1709,SANGER,CDK9_5038,"SN1047483750, CDK9_5038",CDK9,Cell cycle
+1712,SANGER,Eg5_9814,"SN1047613775, Eg5_9814",KSP11,Other
+1713,SANGER,ERK_2440,"SN1051032892, ERK_2440","ERK1,ERK2",ERK MAPK 
+1714,SANGER,ERK_6604,"SN1047587618, ERK_6604","ERK1,ERK2",ERK MAPK 
+1716,SANGER,IRAK4_4710,"SN1050852374, IRAK4_4710",IRAK4,"Other, kinases"
+1718,SANGER,JAK1_8709,"SN1049200060, JAK1_8709",JAK1,"Other, kinases"
+1720,SANGER,AZD5991,"SN1049446612, AZD5991",MCL1,Apoptosis regulation
+1730,SANGER,PAK_5339,"SN1046290829, PAK_5339","PAK1, PAK2",Cytoskeleton
+1732,SANGER,TAF1_5496,"SN1050393042, TAF1_5496",TAF1,Other
+1733,SANGER,ULK1_4989,"SN1049257073, ULK1_4989",ULK1,"Other, kinases"
+1734,SANGER,VSP34_8731,"SN1049998399, VSP34_8731",VSP34,Other
+1736,SANGER,Selumetinib,"SN1103949345, AZD1480","MEK1, MEK2",ERK MAPK 
+1738,SANGER,IGF1R_3801,"SN1051640224, IGF1R_3801",IGFR1,IGF1R 
+1739,SANGER,JAK_8517,"SN1066590414, JAK_8517","JAK1, JAK2","Other, kinases"
+1786,SANGER,AZD4547,1035270-39-3,"FGFR1, FGFR2, FGFR3",RTK 
+1799,SANGER,Ibrutinib,"PCI-32765, CRA-032765, PCI-32765-00",BTK,"Other, kinases"
+1802,SANGER,Zoledronate,"Zoledronic acid, Zometa, Reclast",,Unclassified
+1804,SANGER,Acetalax,Oxyphenisatin acetate,,Unclassified
+1806,SANGER,Oxaliplatin,,DNA alkylating agent,DNA replication
+1807,SANGER,Carmustine,,,DNA replication
+1808,SANGER,Topotecan,,,DNA replication
+1809,SANGER,Teniposide,Vumon,,DNA replication
+1810,SANGER,Mitoxantrone,,,DNA replication
+1811,SANGER,Dactinomycin,Actinomycin D,,Other
+1813,SANGER,Fludarabine,Fludara,,Unclassified
+1814,SANGER,Nelarabine,"Atriance, Arranon",,DNA replication
+1816,SANGER,Fulvestrant,,,Hormone-related
+1818,SANGER,Vincristine,,,Mitosis
+1819,SANGER,Docetaxel,"RP-56976, Taxotere",Microtubule stabiliser,Mitosis
+1825,SANGER,Podophyllotoxin.bromide,,,Unclassified
+1827,SANGER,Dihydrorotenone,,,Unclassified
+1830,SANGER,Gallibiscoquinazole,,,Unclassified
+1835,SANGER,Elephantin,,,Unclassified
+1838,SANGER,Sinularin,,,Unclassified
+1849,SANGER,Sabutoclax,BI-97C1,"BCL2,  BCL-XL,  BFL1, MCL1",Apoptosis regulation
+1852,SANGER,LY2109761,5XE,TGFB1,Other
+1853,SANGER,OF.1,,"BRPF1B, BRPF2",Chromatin histone acetylation
+1854,SANGER,MN.64,,"TNKS1, TNKS2",WNT 
+1855,SANGER,KRAS..G12C..Inhibitor.12,GTPL8020,KRAS (G12C),ERK MAPK 
+1862,SANGER,MG.132,"LLL cpd, MG 132, MG132","Proteasome, CAPN1",Protein stability and degradation
+1866,SANGER,BDP.00009066,,MRCKB_HUMAN,Cytoskeleton
+1873,SANGER,Buparlisib,"BKM120, NVP-BKM120","PI3Kalpha, PI3Kdelta, PI3Kbeta, PI3Kgamma",PI3K/MTOR 
+1908,SANGER,Ulixertinib,"BVD-523, VRT752271","ERK1, ERK2",ERK MAPK 
+1909,SANGER,Venetoclax,"ABT-199, Veneclexta, GDC-0199",BCL2,Apoptosis regulation
+1910,SANGER,ABT737,,"BCL2, BCL-XL,  BCL-W, BCL-B, BFL1",Apoptosis regulation
+1911,SANGER,Dactinomycin,"Actinomycin D, Cosmegen, Lyovac, Meractinomycin, Ac-De, ActD",RNA polymerase,Other
+1912,SANGER,Afuresertib,"GSK2110183, GSK2110183C","AKT1, AKT2, AKT3",PI3K/MTOR 
+1913,SANGER,AGI.5198,IDH-C35,IDH1 (R132H),Metabolism
+1915,SANGER,AZD3759,,EGFR,EGFR 
+1916,SANGER,AZD5363,,"AKT1, AKT2, AKT3, ROCK2","Other, kinases"
+1917,SANGER,AZD6738,"AZD 6738, AZD-6738",ATR,Genome integrity
+1918,SANGER,AZD8186,"AZD 8186, AZD-8186","PI3Kalpha, PI3Kbeta",PI3K/MTOR 
+1919,SANGER,Osimertinib,"AZD9291, AZD 9291, AZD-9291, Tagrisso, Mereletinib",EGFR,EGFR 
+1922,SANGER,Cediranib,"AZD2171, AZD 2171, AZD-2171, Recentin","VEGFR, FLT1, FLT2, FLT3, FLT4, KIT, PDGFRB",RTK 
+1924,SANGER,Ipatasertib,"GDC0068, GDC 0068, GDC-0068","AKT1, AKT, AKT3",PI3K/MTOR 
+1925,SANGER,GDC0810,"GDC-0810, GDC 0810","ESR1, ESR2",Hormone-related
+1926,SANGER,GNE.317,"GNE317, GNE 317",PI3Kalpha,PI3K/MTOR 
+1927,SANGER,GSK2578215A,"GSK 2578215A,  GSK-2578215A",LRRK2,"Other, kinases"
+1928,SANGER,I.BRD9,"GSK602, GSK 602, GSK-602",BRD9,Chromatin other
+1930,SANGER,Telomerase.Inhibitor.IX,"MST-312, MST 312, MST312",Telomerase,Genome integrity
+1931,SANGER,MIRA.1,"MIRA 1, MIRA1, NSC19630, NSC-19630, NSC 19630",TP53,p53 pathway
+1932,SANGER,NVP.ADW742,"NVP ADW742, NVPADW742",IGF1R,IGF1R 
+1933,SANGER,P22077,"P 22077, P-22077","USP7, USP47",Protein stability and degradation
+1936,SANGER,Savolitinib,"AZD6094, Volitinib, AZD-6094, AZD 6094",MET,RTK 
+1939,SANGER,UMI.77,"UMI 77, UMI-77",MCL1,Apoptosis regulation
+1940,SANGER,WIKI4,"WIKI-4, WIKI 4","TNKS1, TNKS2",WNT 
+1941,SANGER,Sepantronium.bromide,"YM155, YM-155, YM 155",BIRC5,Apoptosis regulation
+1996,SANGER,MIM1,"MIM 1, MIM-1",MCL1,Apoptosis regulation
+1997,SANGER,WEHI.539,"WEHI539, WEHI-539",BCL-XL,Apoptosis regulation
+1998,SANGER,BPD.00008900,,,Other
+2040,SANGER,Foretinib,"GSK1363089, XL-880, EXEL-2880, GSK089","MET, KDR, TIE2, VEGFR3/FLT4, RON, PDGFR, FGFR1, EGFR",RTK 
+2043,SANGER,BIBR.1532,,TERT,Genome integrity
+2044,SANGER,Pyridostatin,,G-quadruplex stabiliser,DNA replication
+2045,SANGER,AMG.319,AMG319,PI3K (beta sparing),PI3K/MTOR 
+2046,SANGER,MK.8776,SCH900776,"CHEK1, CHEK2, CDK2",Cell cycle
+2047,SANGER,Ulixertinib,"BVD-523, VRT752271","ERK1, ERK2",ERK MAPK 
+2048,SANGER,Vinorelbine,"vinorelbine tartrate, Navelbine, Exelbine",Microtubule destabiliser,Mitosis
+2096,SANGER,VX.11e,"VX11e, VX11e",ERK2,ERK MAPK 
+2106,SANGER,Uprosertib,"GSK2141795, GSK2141795C, GSK-2141795","AKT1, AKT2, AKT3",PI3K/MTOR 
+2107,SANGER,LJI308,,"RSK2, RSK1, RSK3",PI3K/MTOR 
+2109,SANGER,AZ6102,,"TNKS1, TNKS2",WNT 
+2110,SANGER,GSK591,"EPZ015866, GSK3203591",PMRT5,Chromatin histone methylation
+2111,SANGER,VE821,"VE 821, VE-821",ATR,Genome integrity
+2169,SANGER,AZD6482,"AZD 6482, AZD-6482, AK-55409",PI3Kbeta,PI3K/MTOR 
+2170,SANGER,AT13148,,AKT1,PI3K/MTOR 
+2171,SANGER,BMS.754807,BMS-754807,"IGF1R, IR",IGF1R 
+2172,SANGER,JQ1,"JQ-1, (+)-JQ-1","BRD2, BRD3, BRD4, BRDT",Chromatin other
