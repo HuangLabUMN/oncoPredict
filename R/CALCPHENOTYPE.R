@@ -267,7 +267,8 @@ calcPhenotype<-function (trainingExprData,
                          report_pc=FALSE,
                          cc=FALSE,
                          percent=80,
-                         rsq=FALSE)
+                         rsq=FALSE, 
+                         folder = TRUE)
 {
   
   #Initiate empty lists for each data type you'd like to collect.
@@ -669,32 +670,40 @@ calcPhenotype<-function (trainingExprData,
   DrugPredictions_mat<-do.call(cbind, DrugPredictions)
   colnames(DrugPredictions_mat)<-drugs
   rownames(DrugPredictions_mat)<-colnames(testExprData)
+  
+  if(folder){
   dir.create("./calcPhenotype_Output")
   write.csv(DrugPredictions_mat, file="./calcPhenotype_Output/DrugPredictions.csv", row.names = TRUE, col.names = TRUE)
   
   #If rsq=TRUE, save R^2 data.
-  if(rsq){
-    names(rsqs)<-drugs
-    rsqs_mat<-do.call(cbind, rsqs)
-    dir.create("./calcPhenotype_Output")
-    write.table(rsqs_mat, file="./calcPhenotype_Output/R^2.txt")
-  }
+    if(rsq){
+      names(rsqs)<-drugs
+      rsqs_mat<-do.call(cbind, rsqs)
+      dir.create("./calcPhenotype_Output")
+      write.table(rsqs_mat, file="./calcPhenotype_Output/R^2.txt")
+    }
   
   #If CC=TRUE, save correlation coefficient data.
-  if(cc){
-    names(cors)<-drugs
-    cor_mat<-do.call(cbind, cors)
-    rownames(cor_mat)<-rownames(homData$train[keepRows,NonNAindex])
-    colnames(cor_mat)<-drugs
-    dir.create("./calcPhenotype_Output")
-    write.table(cor_mat, file="./calcPhenotype_Output/cors.txt")
+    if(cc){
+      names(cors)<-drugs
+      cor_mat<-do.call(cbind, cors)
+      rownames(cor_mat)<-rownames(homData$train[keepRows,NonNAindex])
+      colnames(cor_mat)<-drugs
+      dir.create("./calcPhenotype_Output")
+      write.table(cor_mat, file="./calcPhenotype_Output/cors.txt")
+      
+      names(pvalues)<-drugs
+      p_mat<-do.call(cbind, pvalues)
+      rownames(p_mat)<-rownames(homData$train[keepRows, NonNAindex])
+      colnames(p_mat)<-drugs
+      dir.create("./calcPhenotype_Output")
+      write.table(p_mat, file="./calcPhenotype_Output/pvalues.txt")
+    }
+  
+  } else {
     
-    names(pvalues)<-drugs
-    p_mat<-do.call(cbind, pvalues)
-    rownames(p_mat)<-rownames(homData$train[keepRows, NonNAindex])
-    colnames(p_mat)<-drugs
-    dir.create("./calcPhenotype_Output")
-    write.table(p_mat, file="./calcPhenotype_Output/pvalues.txt")
+    return(DrugPredictions_mat)
+    
   }
   
   #print(vs)
