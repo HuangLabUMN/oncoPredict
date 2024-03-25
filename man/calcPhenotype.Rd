@@ -2,9 +2,7 @@
 % Please edit documentation in R/CALCPHENOTYPE.R
 \name{calcPhenotype}
 \alias{calcPhenotype}
-\title{This function predicts a phenotype (drug sensitivity score) when provided with microarray or bulk RNAseq gene expression data of different platforms.
-The imputations are performed using ridge regression, training on a gene expression matrix where phenotype is already known.
-This function integrates training and testing datasets via a user-defined procedure, and power transforming the known phenotype.}
+\title{Generate drug response scores from bulk transcriptomic data}
 \usage{
 calcPhenotype(
   trainingExprData,
