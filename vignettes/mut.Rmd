@@ -33,17 +33,34 @@ drug_prediction<-as.data.frame(t(drug_prediction))
 wd<-tempdir()
 savedir<-setwd(wd)
 
-#This script provides an example of how to download mutation data from the GDC database for GBM (glioblastoma) and
-#how to apply idwas() to test the drugs in your drug response dataset to each mutation to identify biomarkers that #enrich for drug response.
+```
 
-#Download mutation data for your cancer of interest from GDC database.
 
-#GDCquery_Maf() downloads MAF (mutation annotation files) for glioblastoma (GBM).
-#Other disease abbreviations include: "ACC", "BLCA", "BRCA", "CESC", "CHOL", "COAD", "COADREAD", "DLBC", "GBM", "GBMLGG", "HNSC", "KICH", "KIPAN", #"KIRC", "KIRP", "LAML", "LGG", "LIHC", "LUAD", "LUSC", "MESO", "OV", "PAAD", "PCPG", "PRAD", "READ", "SARC", "SKCM", "STAD", "STES", "TGCT", "THCA", #"THYM", "UCEC", "UCS", "UVM"
-library(TCGAbiolinks)
-maf<-GDCquery_Maf("GBM", pipelines = "muse")
+This script *used to* provide an example of how to download mutation data from the GDC database for GBM (glioblastoma) and how to apply idwas() to test the drugs in your drug response dataset to each mutation to identify biomarkers that #enrich for drug response.
 
-#Set the data parameter.
+However, GDC updated how to get the MAF dataset, so we will just provide information so the readers can hopefully get it to run if they need. 
+
+Download mutation data for your cancer of interest from GDC database.
+
+https://bioconductor.org/packages/release/bioc/vignettes/TCGAbiolinks/inst/doc/mutation.html
+
+https://rdrr.io/bioc/TCGAbiolinks/f/vignettes/mutation.Rmd
+
+
+The code would look something like this: 
+`library(TCGAbiolinks)`
+`query_maf <- GDCquery(project = "TCGA-GBM",` 
+                      `data.category = "Simple Nucleotide Variation",`
+                      `access = "open",` 
+                      `data.type = "Simple somatic mutation",` 
+                      `legacy = TRUE)`
+
+
+`GDCdownload(query)`
+`maf <- GDCprepare(query)`
+
+Then there is some light formatting to be done before running IDWAS. 
+
 #Make sure this data is a data frame and that colnames() are samples.
 data<-as.data.frame(maf)
 samps<-data$Tumor_Sample_Barcode
@@ -54,5 +71,3 @@ n=10
 
 #Indicate whether or not you would like to test cnv data. If TRUE, you will test cnv data. If FALSE, you will test mutation data.
 cnv=FALSE
-
-```

@@ -24,27 +24,13 @@ drug classification, please ensure these pathways are as specific as possible fo
 
 \item{minMuts}{The minimum number of non-zero entries required so that a p-value can be calculated (e.g. how many somatic mutations must be present). The default is 5.}
 
-\item{additionalCovariateMatrix}{A matrix containing covariates to be fit in the drug biomarker association models. This could be, for example, tissue of origin or cancer type. Columns are sample names. The default is NULL.}
+\item{additionalCovariateMatrix}{A matrix containing covariates to be fit in the drug biomarker association models. This could be, for example, tissue of origin or cancer type. Rows are sample names. The default is NULL.}
 
 \item{expression}{A matrix of expression data. rownames() are genes, and colnames() are the same pre-clinical samples as those in the drugMat (also in the same order).
 The default is NULL. If expression data is provided, a gene signature will be obtained.}
 
 \item{threshold}{Determine the correlation coefficient. Drugs with a correlation coefficient greater than or equal to this number with the drug under scrutiny will be removed from the negative control group.
 The default is 0.7}
-}
-\value{
-Naive and corrected p-values and beta-values, as well as a gene signature 
-}
-\examples{
-\donttest{try(glds(
-drugMat,
-drugRelatedness,
-markerMat,
-minMuts = 5,
-additionalCovariateMatrix = NULL,
-expression = NULL,
-threshold = 0.7))
-}
 }
 \description{
 This function determines drug-gene associations for pre-clinical data.

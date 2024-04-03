@@ -2,8 +2,7 @@
 % Please edit documentation in R/CALCPHENOTYPE.R
 \name{doVariableSelection}
 \alias{doVariableSelection}
-\title{This function performs variable selection on gene expression matrices.
-It can, for instance, remove genes with low variation.}
+\title{Remove genes with low variation.}
 \usage{
 doVariableSelection(exprMat, removeLowVaryingGenes = 0.2)
 }
@@ -15,12 +14,6 @@ doVariableSelection(exprMat, removeLowVaryingGenes = 0.2)
 \value{
 A vector of row/genes to keep.
 }
-\examples{
-\donttest{
-try(doVariableSelection(exprMat, removeLowVaryingGenes = 0.2))
-}
-}
 \description{
-This function performs variable selection on gene expression matrices.
-It can, for instance, remove genes with low variation.
+This function performs variable selection by removing genes with the lowest variance in the datasets.
 }

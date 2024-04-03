@@ -2,10 +2,7 @@
 % Please edit documentation in R/CALCPHENOTYPE.R
 \name{homogenizeData}
 \alias{homogenizeData}
-\title{This function takes two gene expression matrices (like trainExprMat and testExprMat) and returns homogenized versions of the matrices by employing the homogenization method specified.
-By default, the Combat method from the sva library is used.
-In both matrices, genes are row names and samples are column names.
-It will deal with duplicated gene names, as it subsets and orders the matrices correctly.}
+\title{Homogenizes two expression matrices}
 \usage{
 homogenizeData(
   testExprMat,
@@ -30,11 +27,6 @@ homogenizeData(
 }
 \value{
 A list containing two entries $train and $test, which are the homogenized input matrices.
-}
-\examples{
-\donttest{
-try(homogenizeData(testExprMat,trainExprMat,batchCorrect = "eb",selection = -1,printOutput = TRUE))
-}
 }
 \description{
 This function takes two gene expression matrices (like trainExprMat and testExprMat) and returns homogenized versions of the matrices by employing the homogenization method specified.

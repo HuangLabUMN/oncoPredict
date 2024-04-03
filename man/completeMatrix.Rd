@@ -17,11 +17,6 @@ A matrix of drug sensitivity scores without missing values. rownames() are sampl
 \description{
 This function performs an iterative matrix completion algorithm to predict drug response for pre-clinical data when there are missing ('NA') values.
 }
-\examples{
-\donttest{
-try(completeMatrix(senMat, nPerms = 50))
-}
-}
 \keyword{Drug}
 \keyword{prediction.}
 \keyword{response}

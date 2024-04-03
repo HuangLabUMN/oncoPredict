@@ -12,11 +12,6 @@ map_cnv(Cnvs)
 \value{
 A .RData file called, map.RData, which stores two objects: theCnvQuantVecList_mat (rows are genes, columns are samples), tumorSamps (indicates which samples are primary tumor/01A). This output will serve as the input for test().
 }
-\examples{
-\donttest{
-try(map_cnv(Cnvs))
-}
-}
 \description{
 This function maps cnv data to genes. The output of this function is a .RData file called map.RData; this file contains theCnvQuantVecList_mat (rows are genes, and columns are samples) and tumorSamps (indicates which samples are primary tumor samples, 01A).
 }
