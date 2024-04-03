@@ -2,22 +2,28 @@ Package: oncoPredict
 Type: Package
 Title: Drug Response Modeling and Biomarker Discovery
 Version: 1.2
+URL: https://github.com/HuangLabUMN/oncoPredict
+BugReports: https://github.com/HuangLabUMN/oncoPredict/issues
 Author: Authors@R: 
     c(person(given = "Danielle",
            family = "Maeser",
-           role = c("aut", "cre"),
+           role = "aut",
            email = "maese005@umn.edu",
            comment = c(ORCID = "0000-0002-3890-887X")),
       person(given = 'Robert',
            family = 'Gruener',
-           role = 'aut',
+           role = c("aut", "cre"),
            email = 'rgruener@umn.edu'))
 Maintainer: Robert Gruener <rgruener@umn.edu>
-Description: Allows for building drug response models using screening data between bulk RNA-Seq and a drug response metric and two additional tools for biomarker discovery that have been developed by the Huang Laboratory at Unniversity of Minnesota. 
-    There are 3 main functions within this package - 
-    calcPhenotype is used to build drug response models on RNA-Seq data and impute them on any other RNA-Seq dataset given to the model
-    GLDS is used to calculate the general level of drug sensitivity, which can improve biomarker discovery
-    IDWAS can take the results from calcPhenotype and link the imputed response back to available genomic (mutation and CNV alterations) to identify biomarkers
+Description: Allows for building drug response models using screening data between bulk RNA-Seq and a drug response metric and two additional tools for biomarker discovery that have been developed by the Huang Laboratory at University of Minnesota. 
+    There are 3 main functions within this package. 
+    (1) calcPhenotype is used to build drug response models on RNA-Seq data and impute them on any other RNA-Seq dataset given to the model. 
+    (2) GLDS is used to calculate the general level of drug sensitivity, which can improve biomarker discovery.
+    (3) IDWAS can take the results from calcPhenotype and link the imputed response back to available genomic (mutation and CNV alterations) to identify biomarkers. 
+    Each of these functions comes from a paper from the Huang research laboratory. Below gives the relevant paper for each function. 
+    calcPhenotype - Geeleher et al, Clinical drug response can be predicted using baseline gene expression levels and in vitro drug sensitivity in cell lines
+    GLDS - Geeleher et al, Cancer biomarker discovery is improved by accounting for variability in general levels of drug sensitivity in pre-clinical models
+    IDWAS -  Geeleher et al, Discovering novel pharmacogenomic biomarkers by imputing drug response in cancer patients from large genomics studies
 LazyData: true
 License: GPL-2
 Encoding: UTF-8

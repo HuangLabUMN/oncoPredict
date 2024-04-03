@@ -104,9 +104,9 @@ map_cnv<-function(Cnvs)
 idwas<-function(drug_prediction, data, n=10, cnv){
   #Check parameters.
   #_____________________________________________________________________________
-  if (class(drug_prediction) != "data.frame")
+  if (!is.data.frame(drug_prediction))
     stop("\nERROR: \"drug_prediction\" must be a data frame")
-  if (class(data) != "data.frame")
+  if (!is.data.frame(data))
     stop("\nERROR: \"data\" must be a data frame")
 
   if (cnv == FALSE){
