@@ -2,6 +2,7 @@ Package: oncoPredict
 Type: Package
 Title: Drug Response Modeling and Biomarker Discovery
 Version: 1.2
+URL: https://github.com/HuangLabUMN/oncoPredict
 Author: Authors@R: 
     c(person(given = "Danielle",
            family = "Maeser",
