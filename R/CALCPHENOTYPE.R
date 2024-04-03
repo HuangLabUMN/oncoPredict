@@ -1,5 +1,7 @@
-#' This function performs variable selection on gene expression matrices.
-#' It can, for instance, remove genes with low variation.
+#' Remove genes with low variation.
+#' 
+#' This function performs variable selection by removing genes with the lowest variance in the datasets.
+#' 
 #' @param exprMat A matrix of gene expression levels. rownames() are genes, and colnames() are samples.
 #' @param removeLowVaryingGenes The proportion of low varying genes to be removed.The default is .2
 #' @return A vector of row/genes to keep.
@@ -9,6 +11,8 @@ doVariableSelection <- function(exprMat, removeLowVaryingGenes=.2)
   vars <- apply(exprMat, 1, var)
   return(order(vars, decreasing=TRUE)[seq(1:as.integer(nrow(exprMat)*(1-removeLowVaryingGenes)))])
 }
+#' Homogenizes two expression matrices 
+#'
 #'This function takes two gene expression matrices (like trainExprMat and testExprMat) and returns homogenized versions of the matrices by employing the homogenization method specified.
 #'By default, the Combat method from the sva library is used.
 #'In both matrices, genes are row names and samples are column names.
@@ -172,6 +176,8 @@ homogenizeData<-function (testExprMat, trainExprMat, batchCorrect = "eb", select
                 selection = selection))
   }
 }
+#'Average over duplicate gene values
+#'
 #'This function takes a gene expression matrix and if duplicate genes are measured, summarizes them by their means.
 #'@param exprMat A gene expression matrix with genes as rownames() and samples as colnames().
 #'@return A gene expression matrix that does not contain duplicate genes.
@@ -202,7 +208,7 @@ summarizeGenesByMean <- function(exprMat)
     }
   }
   
-  if(class(exprMatUnique) == "numeric")
+  if(is.numeric(exprMatUnique))
   {
     exprMatUnique <- matrix(exprMatUnique, ncol=1)
   }
@@ -210,6 +216,8 @@ summarizeGenesByMean <- function(exprMat)
   rownames(exprMatUnique) <- gnamesUnique
   return(exprMatUnique)
 }
+#'Generate predicted drug sensitivity scores
+#'
 #'This function predicts a phenotype (drug sensitivity score) when provided with microarray or bulk RNAseq gene expression data of different platforms.
 #'The imputations are performed using ridge regression, training on a gene expression matrix where phenotype is already known.
 #'This function integrates training and testing datasets via a user-defined procedure, and power transforming the known phenotype.
@@ -259,7 +267,8 @@ calcPhenotype<-function (trainingExprData,
                          report_pc=FALSE,
                          cc=FALSE,
                          percent=80,
-                         rsq=FALSE)
+                         rsq=FALSE, 
+                         folder = TRUE)
 {
   
   #Initiate empty lists for each data type you'd like to collect.
@@ -661,32 +670,40 @@ calcPhenotype<-function (trainingExprData,
   DrugPredictions_mat<-do.call(cbind, DrugPredictions)
   colnames(DrugPredictions_mat)<-drugs
   rownames(DrugPredictions_mat)<-colnames(testExprData)
+  
+  if(folder){
   dir.create("./calcPhenotype_Output")
   write.csv(DrugPredictions_mat, file="./calcPhenotype_Output/DrugPredictions.csv", row.names = TRUE, col.names = TRUE)
   
   #If rsq=TRUE, save R^2 data.
-  if(rsq){
-    names(rsqs)<-drugs
-    rsqs_mat<-do.call(cbind, rsqs)
-    dir.create("./calcPhenotype_Output")
-    write.table(rsqs_mat, file="./calcPhenotype_Output/R^2.txt")
-  }
+    if(rsq){
+      names(rsqs)<-drugs
+      rsqs_mat<-do.call(cbind, rsqs)
+      dir.create("./calcPhenotype_Output")
+      write.table(rsqs_mat, file="./calcPhenotype_Output/R^2.txt")
+    }
   
   #If CC=TRUE, save correlation coefficient data.
-  if(cc){
-    names(cors)<-drugs
-    cor_mat<-do.call(cbind, cors)
-    rownames(cor_mat)<-rownames(homData$train[keepRows,NonNAindex])
-    colnames(cor_mat)<-drugs
-    dir.create("./calcPhenotype_Output")
-    write.table(cor_mat, file="./calcPhenotype_Output/cors.txt")
+    if(cc){
+      names(cors)<-drugs
+      cor_mat<-do.call(cbind, cors)
+      rownames(cor_mat)<-rownames(homData$train[keepRows,NonNAindex])
+      colnames(cor_mat)<-drugs
+      dir.create("./calcPhenotype_Output")
+      write.table(cor_mat, file="./calcPhenotype_Output/cors.txt")
+      
+      names(pvalues)<-drugs
+      p_mat<-do.call(cbind, pvalues)
+      rownames(p_mat)<-rownames(homData$train[keepRows, NonNAindex])
+      colnames(p_mat)<-drugs
+      dir.create("./calcPhenotype_Output")
+      write.table(p_mat, file="./calcPhenotype_Output/pvalues.txt")
+    }
+  
+  } else {
     
-    names(pvalues)<-drugs
-    p_mat<-do.call(cbind, pvalues)
-    rownames(p_mat)<-rownames(homData$train[keepRows, NonNAindex])
-    colnames(p_mat)<-drugs
-    dir.create("./calcPhenotype_Output")
-    write.table(p_mat, file="./calcPhenotype_Output/pvalues.txt")
+    return(DrugPredictions_mat)
+    
   }
   
   #print(vs)

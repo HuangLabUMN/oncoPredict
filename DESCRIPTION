@@ -1,7 +1,8 @@
 Package: oncoPredict
-Title: Drug and Biomarker Discovery
-Version: 0.1
-Authors@R: 
+Type: Package
+Title: Drug Response Modeling and Biomarker Discovery
+Version: 1.2
+Author: Authors@R: 
     c(person(given = "Danielle",
            family = "Maeser",
            role = c("aut", "cre"),
@@ -9,14 +10,19 @@ Authors@R:
            comment = c(ORCID = "0000-0002-3890-887X")),
       person(given = 'Robert',
            family = 'Gruener',
-           role = 'ctb',
-           email = 'rgruener@chicago.edu'))
-Description: Bridges in vitro drug screening with in vivo drug and biomarker discovery. Specifically, predicts in vivo or cancer patient drug response and biomarkers to enrich for response from cell line screening data. Builds model using ridge regression, and enables biomarker discovery by imputing drug response in large cancer molecular datasets. It also enables drug specific biomarker identification by correcting for general level of drug sensitivity shared among the population. 
+           role = 'aut',
+           email = 'rgruener@umn.edu'))
+Maintainer: Robert Gruener <rgruener@umn.edu>
+Description: Allows for building drug response models using screening data between bulk RNA-Seq and a drug response metric and two additional tools for biomarker discovery that have been developed by the Huang Laboratory at Unniversity of Minnesota. 
+    There are 3 main functions within this package - 
+    calcPhenotype is used to build drug response models on RNA-Seq data and impute them on any other RNA-Seq dataset given to the model
+    GLDS is used to calculate the general level of drug sensitivity, which can improve biomarker discovery
+    IDWAS can take the results from calcPhenotype and link the imputed response back to available genomic (mutation and CNV alterations) to identify biomarkers
+LazyData: true
 License: GPL-2
 Encoding: UTF-8
-LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1  
+RoxygenNote: 7.3.1
 Depends: R (>= 4.1.0)
 biocViews:
     sva,
@@ -55,6 +61,8 @@ Imports:
     IRanges,
     S4Vectors
 Suggests:
-    knitr, 
-    rmarkdown
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
 VignetteBuilder: knitr
+Config/testthat/edition: 3

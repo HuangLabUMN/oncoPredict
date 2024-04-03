@@ -18,11 +18,6 @@ idwas(drug_prediction, data, n = 10, cnv)
 \value{
 Raw p-value and beta-values for cnv and somatic mutations.
 }
-\examples{
-\donttest{
-try(idwas(drug_prediction, data, n = 10, cnv))
-}
-}
 \description{
 This function will test every drug against every CNV or somatic mutation for your cancer type.
 }
