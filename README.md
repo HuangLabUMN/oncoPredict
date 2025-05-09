@@ -2,6 +2,8 @@
 
 Note, for questions on oncoPredict, pleast contact us at rshuang at umn.edu . The email associated with this account is not regularly checked. 
 
+___________________________________________________
+
 Please Note the Following Bugs We are Aware of: 
 Selecting the batch correction option "qn" (microarray vs RNA-seq) will give an error.  (caused by line 167 in CALCPHENOTYPE.R seems to lose row names)  
 Would recommend using normalizeQuantiles from limma package before running the models and then choosing 'none'. 
@@ -9,6 +11,8 @@ Would recommend using normalizeQuantiles from limma package before running the m
 Also, there is another option for microarray to RNA-Seq for batch correction, the 'standardize' option. This is currently not documented, but it works to calculate z-scores on the microarray and RNA-Seq data for integration.
 
 Finally, oncoPredict currently expects a matrix and so it breaks if you try to build a model with just one variable. (E.g. if you were only interested in the lapatinib response, you'd have to run lapatinib and some other drug still. Not the biggest deal, but something to be aware of.
+
+___________________________________________________
 
 
 (Predict Response from Expression Data and Identify Cell line/Clinical Targets and Trends)
