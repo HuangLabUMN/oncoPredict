@@ -5,6 +5,7 @@ Note, for questions on oncoPredict, pleast contact us at rshuang at umn.edu . Th
 ___________________________________________________
 
 Please Note the Following Bugs We are Aware of: 
+
 Selecting the batch correction option "qn" (microarray vs RNA-seq) will give an error.  (caused by line 167 in CALCPHENOTYPE.R seems to lose row names)  
 Would recommend using normalizeQuantiles from limma package before running the models and then choosing 'none'. 
 
