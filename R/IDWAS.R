@@ -1,9 +1,9 @@
-#'This function maps cnv data to genes. The output of this function is a .RData file called map.RData; this file contains theCnvQuantVecList_mat (rows are genes, and columns are samples) and tumorSamps (indicates which samples are primary tumor samples, 01A).
+#'This function maps cnv data to genes.
 #'@param Cnvs The cnv data. A table with the following colnames: Sample (named using the TCGA patient barcode), Chromosome, Start, End, Num_Probes, and Segment_Mean.
+#'@param folder If TRUE, write a map.RData file containing the mapped CNV matrix and tumor sample indices. The default is FALSE.
 #'@keywords Map CNV data to genes
-#'@return A .RData file called, map.RData, which stores two objects: theCnvQuantVecList_mat (rows are genes, columns are samples), tumorSamps (indicates which samples are primary tumor/01A). This output will serve as the input for test().
+#'@return A list containing theCnvQuantVecList_mat (rows are genes, columns are samples) and tumorSamps (primary tumor/01A sample indices).
 #'@import org.Hs.eg.db
-#'@import TCGAbiolinks
 #'@import GenomicFeatures
 #'@import TxDb.Hsapiens.UCSC.hg19.knownGene
 #'@import utils
@@ -13,7 +13,7 @@
 #'@importFrom IRanges IRanges subsetByOverlaps findOverlaps countOverlaps
 #'@importFrom S4Vectors Rle
 #'@export
-map_cnv<-function(Cnvs)
+map_cnv<-function(Cnvs, folder=FALSE)
 {
   #Check colnames() of the cnv data.
   #This is important because depending on what method you use to obtain the cnv data, colnames() might slightly differ (aka Segment.Mean and not Segment_Mean).
@@ -84,24 +84,30 @@ map_cnv<-function(Cnvs)
   theCnvQuantVecList_mat <- do.call(rbind, theCnvQuantVecList)
   siteVec <- sapply(strsplit(names(CnvsList), "-"), function(l)return(l[4]))
   tumorSamps <- which(siteVec == "01A")
-  save(theCnvQuantVecList_mat, tumorSamps, file="./map.RData") # Save these RData files for use by other scripts.
+  output <- list(theCnvQuantVecList_mat=theCnvQuantVecList_mat, tumorSamps=tumorSamps)
+  if (folder) {
+    save(theCnvQuantVecList_mat, tumorSamps, file="./map.RData") # Save these RData files for use by other scripts.
+    return(invisible(output))
+  }
+
+  return(output)
 }
 #'This function will test every drug against every CNV or somatic mutation for your cancer type.
 #'@param drug_prediction The drug prediction data. Must be a data frame. rownames are samples, colnames are drugs. Make sure sample names are of the same form as the sample names in your cnv or mutation data. e.g. if the rownames() are TCGA barcodes of the form TCGA-##-####-###, make sure your cnv/mutation data also uses samples in the form TCGA-##-####-###
 #'@param data The cnv or mutation data. Must be a data frame. If you wish to use cnv data, use the output from map_cnv(), transpose it so that colnames() are samples. Or use data of similar form. If you wish to use mutation data, use the method for downloading mutation data outlined in the vignette, and make sure the TCGA barcodes use '-' instead of '.'; if you use another dataset (and don't download data from TCGA), make sure your data file includes the following columns: 'Variant_Classification', 'Hugo_Symbol', 'Tumor_Sample_Barcode'.
 #'@param n The minimum number of samples you want CNVs or mutations to be amplified in. The default is 10 (arbitrarily chosen).
 #'@param cnv TRUE or FALSE. Indicate whether or not you would like to test cnv data. If TRUE, you will test cnv data. If FALSE, you will test mutation data.
+#'@param folder If TRUE, write IDWAS results to CSV files in the current working directory. The default is FALSE.
 #'@keywords Test CNV or mutation data to genes.
 #'@import org.Hs.eg.db
 #'@import TxDb.Hsapiens.UCSC.hg19.knownGene
 #'@import GenomicFeatures
 #'@import utils
 #'@import stats
-#'@import ridge
 #'@import parallel
 #'@return Raw p-value and beta-values for cnv and somatic mutations.
 #'@export
-idwas<-function(drug_prediction, data, n=10, cnv){
+idwas<-function(drug_prediction, data, n=10, cnv, folder=FALSE){
   #Check parameters.
   #_____________________________________________________________________________
   if (!is.data.frame(drug_prediction))
@@ -194,8 +200,13 @@ idwas<-function(drug_prediction, data, n=10, cnv){
       }else{
         pVals <- sapply(allCors_hasAmps, function(item)return(item[[1]]))
         betas <- sapply(allCors_hasAmps, function(item)return(item[[2]]))
-        write.csv(pVals, file='./CnvTestOutput_pVals.csv')
-        write.csv(betas, file='./CnvTestOutput_betas.csv')
+        output <- list(pVals=pVals, betas=betas)
+        if (folder) {
+          write.csv(pVals, file='./CnvTestOutput_pVals.csv')
+          write.csv(betas, file='./CnvTestOutput_betas.csv')
+          return(invisible(output))
+        }
+        return(output)
       }
     }else{ #If TCGA MUT...
       #Obtain a list for the patients you have data for and initiate empty lists to fill.
@@ -352,9 +363,18 @@ idwas<-function(drug_prediction, data, n=10, cnv){
         gene<-names(which(commonMuts >= n))
         final_rows<-paste(rows, ':', gene, sep='')
         rownames(final_data)<-final_rows
-        write.csv(final_data, file='./MutationTestOutput_pVal_and_betaVal.csv')
+        if (folder) {
+          write.csv(final_data, file='./MutationTestOutput_pVal_and_betaVal.csv')
+          return(invisible(final_data))
+        }
+        return(final_data)
       }else{
-        write.csv(cbind(pVal, betaVal), file='./MutationTestOutput_pVal_and_betaVal.csv')
+        output <- cbind(pVal, betaVal)
+        if (folder) {
+          write.csv(output, file='./MutationTestOutput_pVal_and_betaVal.csv')
+          return(invisible(output))
+        }
+        return(output)
       }
     }#The end of the first else statement.
 
@@ -410,8 +430,13 @@ idwas<-function(drug_prediction, data, n=10, cnv){
       }else{
         pVals <- sapply(allCors_hasAmps, function(item)return(item[[1]]))
         betas <- sapply(allCors_hasAmps, function(item)return(item[[2]]))
-        write.csv(pVals, file='./CnvTestOutput_pVals.csv')
-        write.csv(betas, file='./CnvTestOutput_betas.csv')
+        output <- list(pVals=pVals, betas=betas)
+        if (folder) {
+          write.csv(pVals, file='./CnvTestOutput_pVals.csv')
+          write.csv(betas, file='./CnvTestOutput_betas.csv')
+          return(invisible(output))
+        }
+        return(output)
       }
 
     }else{ #If non TCGA Mut...
@@ -574,7 +599,11 @@ idwas<-function(drug_prediction, data, n=10, cnv){
         gene<-names(which(commonMuts >= n))
         final_rows<-paste(rows, ':', gene, sep='')
         rownames(final_data)<-final_rows
-        write.csv(final_data, file='./MutationTestOutput_pVal_and_betaVal.csv')
+        if (folder) {
+          write.csv(final_data, file='./MutationTestOutput_pVal_and_betaVal.csv')
+          return(invisible(final_data))
+        }
+        return(final_data)
 
       }else{
 
@@ -594,7 +623,11 @@ idwas<-function(drug_prediction, data, n=10, cnv){
         df=data.frame(pvalues, betavalues)
         rownames(df)<-mut_drug
 
-        write.csv(df, file='./MutationTestOutput_pVal_and_betaVal.csv')
+        if (folder) {
+          write.csv(df, file='./MutationTestOutput_pVal_and_betaVal.csv')
+          return(invisible(df))
+        }
+        return(df)
       }
     }
   }

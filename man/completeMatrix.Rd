@@ -4,12 +4,14 @@
 \alias{completeMatrix}
 \title{This function performs an iterative matrix completion algorithm to predict drug response for pre-clinical data when there are missing ('NA') values.}
 \usage{
-completeMatrix(senMat, nPerms = 50)
+completeMatrix(senMat, nPerms = 50, folder = FALSE)
 }
 \arguments{
 \item{senMat}{A matrix of drug sensitivity data with missing ('NA') values. rownames() are samples (e.g. cell lines), and colnames() are drugs.}
 
 \item{nPerms}{The number of iterations that the EM-algorithm (expectation maximization approach)  run. The default is 50, as previous findings recommend 50 iterations (https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1050-9)}
+
+\item{folder}{If TRUE, write the completed matrix to complete_matrix_output.txt in the current working directory. The default is FALSE.}
 }
 \value{
 A matrix of drug sensitivity scores without missing values. rownames() are samples, and colnames are drugs.

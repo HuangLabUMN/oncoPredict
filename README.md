@@ -26,6 +26,10 @@ An R package for drug response prediction and drug-gene association prediction. 
  * For clinical biomarker discovery, use **IDWAS** (for CNV or somatic mutation association with drug response) or indicate **cc=TRUE** (for gene expression association with drug response) in calcPhenotype(). 
  * The link to updated CCLE gene expression data is found at [depmap](https://depmap.org/portal/download/). We provide GDSC1/GDSC2 pre-processed expression and response data, as well as CTRP response data and depmap's CCLE expression data (18Q2) [here](https://osf.io/c6tfx/).
  
+ 
+User Notes: 
+
+- Reminder that it is best to logtransform the training and test datasets (i.e. log(TPM + 1)) before batch correction ("eb"). That is, use log-transformed expression data when using calcPhenotype. 
 ## R <h2>
  * This directory contains all the R functions included in this package. 
 

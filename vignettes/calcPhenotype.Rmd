@@ -12,6 +12,22 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
+
+vignette_file <- function(...) {
+  candidates <- c(
+    file.path(...),
+    file.path("vignettes", ...),
+    file.path("inst", "extdata", ...),
+    file.path(Sys.getenv("PWD"), "inst", "extdata", ...),
+    system.file("extdata", ..., package = "oncoPredict"),
+    system.file("doc", ..., package = "oncoPredict")
+  )
+  candidates <- candidates[nzchar(candidates) & file.exists(candidates)]
+  if (!length(candidates)) {
+    stop("Could not find vignette file: ", file.path(...), call. = FALSE)
+  }
+  candidates[[1]]
+}
 ```
 
 ```{r setup}
@@ -42,11 +58,11 @@ set.seed(12345)
 #trainingExprData=readRDS(file='GDSC2_Expr.rds')
 #dim(trainingExprData) #17419 805
 #Read GDSC2 response data. rownames() are samples, colnames() are drugs. 
-trainingPtype = readRDS(file = "GDSC2_Res.rds")
+trainingPtype = readRDS(file = vignette_file("GDSC2_Res.rds"))
 #dim(trainingPtype) #805 198
 
 #GDSC2 expression data for the vignette (it's a much smaller sampling)
-trainingExprData=readRDS(file='GDSC2_Expr_short.rds')
+trainingExprData=readRDS(file = vignette_file("GDSC2_Expr_short.rds"))
 #dim(trainingExprData) #1000 400
 
 #IMPORTANT note: here I do e^IC50 since the IC50s are actual ln values/log transformed already, and the calcPhenotype function Paul #has will do a power transformation (I assumed it would be better to not have both transformations)
@@ -64,14 +80,14 @@ trainingPtype<-exp(trainingPtype)
 #Test data. 
 #_______________________________________________________
 #Read testing data as a matrix with rownames() as genes and colnames() as samples.
-testExprData=as.matrix(read.table('prostate_test_data.txt', header=TRUE, row.names=1))
+testExprData=as.matrix(read.table(vignette_file("prostate_test_data.txt"), header=TRUE, row.names=1))
 #dim(testExprData) #20530 550
 
 #Additional parameters. 
 #_______________________________________________________
-#batchCorrect options: "eb" for ComBat, "qn" for quantiles normalization, "standardize", or "none"
+#batchCorrect options: "eb" for ComBat, "qn" for quantile normalization, "standardize" for z-score standardization, "rank", "rank_then_eb", or "none"
 #"eb" is good to use when you use microarray training data to build models on microarray testing data.
-#"standardize is good to use when you use microarray training data to build models on RNA-seq testing data (this is what Paul used in the 2017 IDWAS paper that used GDSC microarray to impute in TCGA RNA-Seq data, see methods section of that paper for rationale)
+#"standardize" is good to use when you use microarray training data to build models on RNA-seq testing data (this is what Paul used in the 2017 IDWAS paper that used GDSC microarray to impute in TCGA RNA-Seq data, see methods section of that paper for rationale)
 batchCorrect<-"eb"
 
 #Determine whether or not to power transform the phenotype data.
@@ -122,24 +138,26 @@ percent=80
 
 #Run the calcPhenotype() function using the parameters you specified above.
 #__________________________________________________________________________________________________________________________________
-wd<-tempdir()
-savedir<-setwd(wd)
+old_wd<-getwd()
+tryCatch({
+  setwd(tempdir())
 
-calcPhenotype(trainingExprData=trainingExprData,
-              trainingPtype=trainingPtype,
-              testExprData=testExprData,
-              batchCorrect=batchCorrect,
-              powerTransformPhenotype=powerTransformPhenotype,
-              removeLowVaryingGenes=removeLowVaryingGenes,
-              minNumSamples=minNumSamples,
-              selection=selection,
-              printOutput=printOutput,
-              pcr=pcr,
-              removeLowVaringGenesFrom=removeLowVaringGenesFrom,
-              report_pc=report_pc,
-              cc=cc,
-              percent=percent,
-              rsq=rsq)
+  drug_predictions <- calcPhenotype(trainingExprData=trainingExprData,
+                                    trainingPtype=trainingPtype,
+                                    testExprData=testExprData,
+                                    batchCorrect=batchCorrect,
+                                    powerTransformPhenotype=powerTransformPhenotype,
+                                    removeLowVaryingGenes=removeLowVaryingGenes,
+                                    minNumSamples=minNumSamples,
+                                    selection=selection,
+                                    printOutput=printOutput,
+                                    pcr=pcr,
+                                    removeLowVaringGenesFrom=removeLowVaringGenesFrom,
+                                    report_pc=report_pc,
+                                    cc=cc,
+                                    percent=percent,
+                                    rsq=rsq)
+}, finally = setwd(old_wd))
 
 #If pcr is performed, you can view a drug's first two principal components (and so on) using the code below. 
 #View(load('./calcPhenotype_Output/Vinblastine_1004.RData'))

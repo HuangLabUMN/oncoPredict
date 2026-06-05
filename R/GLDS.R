@@ -1,14 +1,14 @@
 #'This function performs an iterative matrix completion algorithm to predict drug response for pre-clinical data when there are missing ('NA') values.
 #'@param senMat A matrix of drug sensitivity data with missing ('NA') values. rownames() are samples (e.g. cell lines), and colnames() are drugs.
 #'@param nPerms The number of iterations that the EM-algorithm (expectation maximization approach)  run. The default is 50, as previous findings recommend 50 iterations (https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1050-9)
+#'@param folder If TRUE, write the completed matrix to complete_matrix_output.txt in the current working directory. The default is FALSE.
 #'@return A matrix of drug sensitivity scores without missing values. rownames() are samples, and colnames are drugs.
 #'@keywords Drug response prediction.
 #'@import glmnet
 #'@import stats
-#'@import car
 #'@import utils
 #'@export
-completeMatrix <- function(senMat, nPerms=50)
+completeMatrix <- function(senMat, nPerms=50, folder=FALSE)
 {
   message("\nNumber of iterations:")
   #To initialize the algorithm, all missing values are first imputed to the median.
@@ -95,9 +95,13 @@ completeMatrix <- function(senMat, nPerms=50)
   }
   message("\nDone\n")
 
-  write.table(hundIc50sImputeSort[,colnames(senMat)], file='./complete_matrix_output.txt')
+  completedMat <- hundIc50sImputeSort[, colnames(senMat)]
+  if (folder) {
+    write.table(completedMat, file='./complete_matrix_output.txt')
+    return(invisible(completedMat))
+  }
 
-  #return(hundIc50sImputeSort[,colnames(senMat)])
+  return(completedMat)
 }
 #'This function determines drug-gene associations for pre-clinical data.
 #'@param drugMat A matrix of drug sensitivity data. rownames() are pre-clinical samples, and colnames() are drug names.
@@ -110,11 +114,12 @@ completeMatrix <- function(senMat, nPerms=50)
 #'@param additionalCovariateMatrix A matrix containing covariates to be fit in the drug biomarker association models. This could be, for example, tissue of origin or cancer type. Rows are sample names. The default is NULL.
 #'@param expression A matrix of expression data. rownames() are genes, and colnames() are the same pre-clinical samples as those in the drugMat (also in the same order).
 #'The default is NULL. If expression data is provided, a gene signature will be obtained.
+#'@param folder If TRUE, write GLDS p-value and beta outputs to CSV files in the current working directory. The default is FALSE.
+#'@return A list containing GLDS-adjusted p-values and beta values, plus naive p-values and beta values.
 #'@import stats
 #'@import utils
-#'@import ridge
 #'@export
-glds <- function(drugMat, drugRelatedness, markerMat, minMuts=5, additionalCovariateMatrix=NULL, expression=NULL, threshold=0.7){
+glds <- function(drugMat, drugRelatedness, markerMat, minMuts=5, additionalCovariateMatrix=NULL, expression=NULL, threshold=0.7, folder=FALSE){
 
   results_gldsPs <- list()
   results_gldsBetas <- list()
@@ -241,14 +246,17 @@ glds <- function(drugMat, drugRelatedness, markerMat, minMuts=5, additionalCovar
 
   outList <- list(pGlds=results_gldsPs, betaGlds=results_gldsBetas, pNaive=results_naivePs, betaNaive=results_naiveBetas)
 
-  #return(outList)
-  write.csv(results_gldsPs, file="./gldsPs.csv", row.names = TRUE, col.names = TRUE)
-  write.csv(results_naivePs, file="./naivePs.csv", row.names = TRUE, col.names = TRUE)
-  write.csv(results_gldsBetas, file="./gldsBetas.csv", row.names = TRUE, col.names = TRUE)
-  write.csv(results_naiveBetas, file="./naiveBetas.csv", row.names = TRUE, col.names = TRUE)
+  if (folder) {
+    write.csv(results_gldsPs, file="./gldsPs.csv", row.names = TRUE, col.names = TRUE)
+    write.csv(results_naivePs, file="./naivePs.csv", row.names = TRUE, col.names = TRUE)
+    write.csv(results_gldsBetas, file="./gldsBetas.csv", row.names = TRUE, col.names = TRUE)
+    write.csv(results_naiveBetas, file="./naiveBetas.csv", row.names = TRUE, col.names = TRUE)
 
-  if(!is.null(additionalCovariateMatrix)){
-    write.csv(alwaysControlGene, file="./gene_signature.txt")
+    if(!is.null(expression)){
+      write.csv(alwaysControlGene, file="./gene_signature.txt")
+    }
+    return(invisible(outList))
   }
 
+  return(outList)
 }

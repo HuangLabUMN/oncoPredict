@@ -4,7 +4,7 @@ Title: Drug Response Modeling and Biomarker Discovery
 Version: 1.2
 URL: https://github.com/HuangLabUMN/oncoPredict
 BugReports: https://github.com/HuangLabUMN/oncoPredict/issues
-Author: Authors@R: c(
+Authors@R: c(
       person(given = "Danielle",
             family = "Maeser",
             role = "aut",
@@ -28,11 +28,11 @@ LazyData: true
 License: GPL-2
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2
 Depends: R (>= 4.1.0)
 biocViews:
     sva,
-    preprocessCore, 
+    limma, 
     stringr,
     biomaRt,
     genefilter,
@@ -52,12 +52,10 @@ Imports:
     glmnet,
     pls,
     sva,
-    preprocessCore,
+    limma,
     GenomicFeatures,
     org.Hs.eg.db,
     TxDb.Hsapiens.UCSC.hg19.knownGene,
-    tidyverse,
-    TCGAbiolinks,
     BiocGenerics,
     GenomicRanges,
     IRanges,
@@ -65,10 +63,7 @@ Imports:
 Suggests:
     knitr,
     rmarkdown,
-    gdata,
-    genefilter,
-    maftools,
-    readxl,
+    TCGAbiolinks,
     testthat (>= 3.0.0)
 VignetteBuilder: knitr
 Config/testthat/edition: 3

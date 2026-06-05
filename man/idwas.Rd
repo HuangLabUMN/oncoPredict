@@ -4,7 +4,7 @@
 \alias{idwas}
 \title{This function will test every drug against every CNV or somatic mutation for your cancer type.}
 \usage{
-idwas(drug_prediction, data, n = 10, cnv)
+idwas(drug_prediction, data, n = 10, cnv, folder = FALSE)
 }
 \arguments{
 \item{drug_prediction}{The drug prediction data. Must be a data frame. rownames are samples, colnames are drugs. Make sure sample names are of the same form as the sample names in your cnv or mutation data. e.g. if the rownames() are TCGA barcodes of the form TCGA-##-####-###, make sure your cnv/mutation data also uses samples in the form TCGA-##-####-###}
@@ -14,6 +14,8 @@ idwas(drug_prediction, data, n = 10, cnv)
 \item{n}{The minimum number of samples you want CNVs or mutations to be amplified in. The default is 10 (arbitrarily chosen).}
 
 \item{cnv}{TRUE or FALSE. Indicate whether or not you would like to test cnv data. If TRUE, you will test cnv data. If FALSE, you will test mutation data.}
+
+\item{folder}{If TRUE, write IDWAS results to CSV files in the current working directory. The default is FALSE.}
 }
 \value{
 Raw p-value and beta-values for cnv and somatic mutations.

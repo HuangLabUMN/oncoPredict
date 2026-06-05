@@ -12,6 +12,22 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
+
+vignette_file <- function(...) {
+  candidates <- c(
+    file.path(...),
+    file.path("vignettes", ...),
+    file.path("inst", "extdata", ...),
+    file.path(Sys.getenv("PWD"), "inst", "extdata", ...),
+    system.file("extdata", ..., package = "oncoPredict"),
+    system.file("doc", ..., package = "oncoPredict")
+  )
+  candidates <- candidates[nzchar(candidates) & file.exists(candidates)]
+  if (!length(candidates)) {
+    stop("Could not find vignette file: ", file.path(...), call. = FALSE)
+  }
+  candidates[[1]]
+}
 ```
 
 ```{r setup}
@@ -31,8 +47,7 @@ library(oncoPredict)
 
 #Apply completeMatrix()
 #_____________________________________________________________________
-#This function will create a file called complete_matrix_output.txt in your working directory.
-#This file is used as input in the next function.
+#This function returns the completed matrix. Set folder=TRUE to also write complete_matrix_output.txt.
 
 #completeMatrix(trainingPtype)
 
@@ -46,11 +61,11 @@ library(oncoPredict)
 
 #Read GDSC's updated cell line information file (used later).
 #cellLineDetails<-read_excel('Cell_Lines_Details.xlsx')
-cellLineDetails<-read.csv('Cell_Lines_Details.csv')
+cellLineDetails<-read.csv(vignette_file("Cell_Lines_Details.csv"))
 
 #I ran the response data through completeMatrix() because there were some NA values.
 #NA values in the response data will cause a problem when you apply prcomp().
-cm<-read.table('complete_matrix_output_GDSCv2.txt', header=TRUE, row.names=1) #Now, there are no NA values.
+cm<-read.table(vignette_file("complete_matrix_output_GDSCv2.txt"), header=TRUE, row.names=1) #Now, there are no NA values.
 
 #rownames(cm) #Cosmic identifiers are used for cell names in this dataset...this will cause a problem later when matching cell lines between sensitivity and mutation data.
 
@@ -65,7 +80,7 @@ rownames(cm)<-newNames
 #gdscv2_drugs.xlsx contains the colnames of cm in the correct order, but with the extra identifiers removed.
 #fix<-read_excel('gdscv2_drugs.xlsx')
 #fix<-as.vector(unlist(fix[,2]))
-fix<-as.vector(unlist(read.table('gdscv2_drugs.txt', header=TRUE)))
+fix<-as.vector(unlist(read.table(vignette_file("gdscv2_drugs.txt"), header=TRUE)))
 colnames(cm)<-as.vector(fix)
 drugMat<-as.matrix(cm) #Finally, set this object as the drugMat parameter. 
 #dim(drugMat) #805 samples vs. 198 drugs
@@ -104,23 +119,25 @@ drugMat<-as.matrix(cm) #Finally, set this object as the drugMat parameter.
 #colnames(markerMat)<-cols
 #dim(markerMat) #1315 1389
 #write.table(markerMat, file='markerMat.txt')
-markerMat<-as.matrix(read.table('markerMat.txt', header=TRUE, row.names=1))
+markerMat<-as.matrix(read.table(vignette_file("markerMat.txt"), header=TRUE, row.names=1))
 
 #'@param drugRelatedness 
 #This file is GDSC's updated drug relatedness file (obtained from bulk data download/all compounds screened/compounds-annotation).
 #Note: I had to change some drug names in this file so that they matched colnames of cm.
 #Ex: replace - with . (small modifications like that).
-drugRelatedness <- read.csv("screened_compunds_rel_8.2.csv")
+drugRelatedness <- read.csv(vignette_file("screened_compunds_rel_8.2.csv"))
 drugRelatedness<-drugRelatedness[,c(3,6)]
 #colnames(drugRelatedness) #"DRUG_NAME"      "TARGET_PATHWAY"
 
-wd<-tempdir()
-savedir<-setwd(wd)
+old_wd<-getwd()
+tryCatch({
+  setwd(tempdir())
 
-glds(drugMat,
-     drugRelatedness,
-     markerMat,
-     minMuts=5,
-     additionalCovariateMatrix=NULL,
-     threshold=0.7)
+  glds_results <- glds(drugMat,
+                       drugRelatedness,
+                       markerMat,
+                       minMuts=5,
+                       additionalCovariateMatrix=NULL,
+                       threshold=0.7)
+}, finally = setwd(old_wd))
 ```

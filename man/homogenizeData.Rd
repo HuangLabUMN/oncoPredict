@@ -17,7 +17,7 @@ homogenizeData(
 
 \item{trainExprMat}{A gene expression matrix for samples for which the phenotype is already known.Genes are rows, samples are columns.}
 
-\item{batchCorrect}{The type of batch correction to be used. Options are 'eb' for Combat, 'none', or 'qn' for quantile normalization.
+\item{batchCorrect}{The type of batch correction to be used. Options are 'eb' for ComBat, 'qn' for quantile normalization, 'standardize' for within-dataset z-score standardization, 'rank', 'rank_then_eb', or 'none'. The 'standardize' option can be useful when using microarray training data to build models on RNA-seq testing data.
 #The default is 'eb'.}
 
 \item{selection}{This parameter can be used to specify how duplicates are handled. The default value of -1 means to ask the user.
