@@ -19,7 +19,7 @@ make_calcPhenotype_inputs <- function(n_genes=8, n_train=6, n_test=3, n_drugs=2)
   )
 }
 
-run_calcPhenotype <- function(inputs, ...) {
+run_calcPhenotype <- function(inputs, minNumSamples=0, pcr=FALSE, ...) {
   calcPhenotype(
     trainingExprData=inputs$trainingExprData,
     trainingPtype=inputs$trainingPtype,
@@ -27,10 +27,10 @@ run_calcPhenotype <- function(inputs, ...) {
     batchCorrect="none",
     powerTransformPhenotype=FALSE,
     removeLowVaryingGenes=0,
-    minNumSamples=0,
+    minNumSamples=minNumSamples,
     selection=1,
     printOutput=FALSE,
-    pcr=FALSE,
+    pcr=pcr,
     removeLowVaringGenesFrom="homogenizeData",
     folder=FALSE,
     ...
@@ -70,6 +70,16 @@ test_that("calcPhenotype preserves one-column trainingPtype as a matrix", {
   expect_equal(dim(output), c(3L, 1L))
 })
 
+test_that("calcPhenotype minNumSamples checks samples, not genes", {
+  inputs <- make_calcPhenotype_inputs(n_genes=20, n_train=2, n_test=2)
+
+  expect_error(
+    run_calcPhenotype(inputs, minNumSamples=3),
+    "There are less than 3 samples",
+    fixed=TRUE
+  )
+})
+
 test_that("homogenizeData qn preserves dimnames", {
   inputs <- make_calcPhenotype_inputs()
 
@@ -105,6 +115,19 @@ test_that("calcPhenotype validates cores", {
     '"cores" must be a positive integer',
     fixed=TRUE
   )
+})
+
+test_that("calcPhenotype pcr rsq removes zero-variance genes from train and test", {
+  inputs <- make_calcPhenotype_inputs(n_genes=8, n_train=20, n_test=3, n_drugs=1)
+  inputs$trainingExprData[1, ] <- 1
+  inputs$testExprData[1, ] <- c(1, 2, 3)
+
+  set.seed(1)
+  output <- run_calcPhenotype(inputs, pcr=TRUE, rsq=TRUE, percent=50)
+
+  expect_true(is.list(output))
+  expect_true("rsq" %in% names(output))
+  expect_equal(dim(output$DrugPredictions), c(3L, 1L))
 })
 
 run_predictionAccuracybyCV <- function(inputs, trainingPtype=inputs$trainingPtype[, 1, drop=FALSE], ...) {

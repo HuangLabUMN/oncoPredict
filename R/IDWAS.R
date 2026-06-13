@@ -2,13 +2,11 @@
 #'@param Cnvs The cnv data. A table with the following colnames: Sample (named using the TCGA patient barcode), Chromosome, Start, End, Num_Probes, and Segment_Mean.
 #'@param folder If TRUE, write a map.RData file containing the mapped CNV matrix and tumor sample indices. The default is FALSE.
 #'@keywords Map CNV data to genes
-#'@return A list containing theCnvQuantVecList_mat (rows are genes, columns are samples) and tumorSamps (primary tumor/01A sample indices).
-#'@import org.Hs.eg.db
-#'@import GenomicFeatures
-#'@import TxDb.Hsapiens.UCSC.hg19.knownGene
+#'@return A list containing theCnvQuantVecList_mat (rows are genes, columns are samples) and tumorSamps (primary tumor/01A sample column indices).
 #'@import utils
 #'@import stats
 #'@importFrom BiocGenerics toTable
+#'@importFrom GenomicFeatures genes
 #'@importFrom GenomicRanges GRanges
 #'@importFrom IRanges IRanges subsetByOverlaps findOverlaps countOverlaps
 #'@importFrom S4Vectors Rle
@@ -20,10 +18,19 @@ map_cnv<-function(Cnvs, folder=FALSE)
   if (('Segment_Mean' %in% colnames(Cnvs)) == FALSE)
     stop("\nERROR: Check colnames() of cnv data. colnames() must include Sample, Chromosome, Start, End, and Segment_Mean")
 
+  if (!requireNamespace("org.Hs.eg.db", quietly = TRUE)) {
+    stop("Package 'org.Hs.eg.db' is required for map_cnv(). Install it with BiocManager::install('org.Hs.eg.db').",
+         call. = FALSE)
+  }
+  if (!requireNamespace("TxDb.Hsapiens.UCSC.hg19.knownGene", quietly = TRUE)) {
+    stop("Package 'TxDb.Hsapiens.UCSC.hg19.knownGene' is required for map_cnv(). Install it with BiocManager::install('TxDb.Hsapiens.UCSC.hg19.knownGene').",
+         call. = FALSE)
+  }
+
   #Load the gene ranges for HG19 using.
-  txdb <- TxDb.Hsapiens.UCSC.hg19.knownGene
+  txdb <- getExportedValue("TxDb.Hsapiens.UCSC.hg19.knownGene", "TxDb.Hsapiens.UCSC.hg19.knownGene")
   geneRanges <- genes(txdb) #seqnames (chr), ranges, gene id.
-  e2s = toTable(org.Hs.egSYMBOL) #gene id, gene symbol.
+  e2s = toTable(getExportedValue("org.Hs.eg.db", "org.Hs.egSYMBOL")) #gene id, gene symbol.
   syms <- e2s[, "symbol"] #Gene symbols for HG19.
   names(syms) <- e2s[, "gene_id"] #Gene symbols with gene id.
   theGeneSymsOrd <- syms[as.character(geneRanges$gene_id)]
@@ -81,7 +88,7 @@ map_cnv<-function(Cnvs, folder=FALSE)
   }
 
   names(theCnvQuantVecList) <- names(CnvsList)
-  theCnvQuantVecList_mat <- do.call(rbind, theCnvQuantVecList)
+  theCnvQuantVecList_mat <- do.call(cbind, theCnvQuantVecList)
   siteVec <- sapply(strsplit(names(CnvsList), "-"), function(l)return(l[4]))
   tumorSamps <- which(siteVec == "01A")
   output <- list(theCnvQuantVecList_mat=theCnvQuantVecList_mat, tumorSamps=tumorSamps)
@@ -92,20 +99,17 @@ map_cnv<-function(Cnvs, folder=FALSE)
 
   return(output)
 }
-#'This function will test every drug against every CNV or somatic mutation for your cancer type.
+#'This function will test every drug against CNA amplifications or somatic mutations for your cancer type.
 #'@param drug_prediction The drug prediction data. Must be a data frame. rownames are samples, colnames are drugs. Make sure sample names are of the same form as the sample names in your cnv or mutation data. e.g. if the rownames() are TCGA barcodes of the form TCGA-##-####-###, make sure your cnv/mutation data also uses samples in the form TCGA-##-####-###
-#'@param data The cnv or mutation data. Must be a data frame. If you wish to use cnv data, use the output from map_cnv(), transpose it so that colnames() are samples. Or use data of similar form. If you wish to use mutation data, use the method for downloading mutation data outlined in the vignette, and make sure the TCGA barcodes use '-' instead of '.'; if you use another dataset (and don't download data from TCGA), make sure your data file includes the following columns: 'Variant_Classification', 'Hugo_Symbol', 'Tumor_Sample_Barcode'.
-#'@param n The minimum number of samples you want CNVs or mutations to be amplified in. The default is 10 (arbitrarily chosen).
-#'@param cnv TRUE or FALSE. Indicate whether or not you would like to test cnv data. If TRUE, you will test cnv data. If FALSE, you will test mutation data.
+#'@param data The CNA amplification or mutation data. Must be a data frame. If you wish to use CNA data, use the output from map_cnv(), where rows are genes and columns are samples, or use data of similar form. If you wish to use mutation data, use the method for downloading mutation data outlined in the vignette, and make sure the TCGA barcodes use '-' instead of '.'; if you use another dataset (and don't download data from TCGA), make sure your data file includes the following columns: 'Variant_Classification', 'Hugo_Symbol', 'Tumor_Sample_Barcode'.
+#'@param n The minimum number of samples you want CNA amplifications or mutations to occur in. The default is 10 (arbitrarily chosen).
+#'@param cnv TRUE or FALSE. Indicate whether or not you would like to test CNA amplification data. If TRUE, you will test CNA amplifications. If FALSE, you will test mutation data.
 #'@param folder If TRUE, write IDWAS results to CSV files in the current working directory. The default is FALSE.
-#'@keywords Test CNV or mutation data to genes.
-#'@import org.Hs.eg.db
-#'@import TxDb.Hsapiens.UCSC.hg19.knownGene
-#'@import GenomicFeatures
+#'@keywords Test CNA amplification or mutation data to genes.
 #'@import utils
 #'@import stats
 #'@import parallel
-#'@return Raw p-value and beta-values for cnv and somatic mutations.
+#'@return Raw p-value and beta-values for CNA amplifications or somatic mutations.
 #'@export
 idwas<-function(drug_prediction, data, n=10, cnv, folder=FALSE){
   #Check parameters.
@@ -140,26 +144,25 @@ idwas<-function(drug_prediction, data, n=10, cnv, folder=FALSE){
       #Collect the patient IDs of all the patients in drugs_01A (the patients IDS for the 01A samples you have drug prediction data for). These are the 4 digits after the bacode TCGA-## so TCGA-##-????
       drugs_01Aids <- sapply(strsplit(drugs_01A, "-"), function(a)a[3])
       #Index the drug prediction matrix so that its rows/patients are the primary tumor patients.
-      matrix2 <- drug_prediction[drugs_01A,]
+      matrix2 <- drug_prediction[drugs_01A,, drop=FALSE]
       #Rename the rows of the drug prediction matrix to the patient id (the 4 digits).
 
       #Make sure you only use unique ids (sometimes there are duplicates). If there are duplicates, remove.
       indices<-match(unique(drugs_01Aids), drugs_01Aids)
-      matrix2<-matrix2[indices,] #Only keep the rows that have unique ids.
+      matrix2<-matrix2[indices,, drop=FALSE] #Only keep the rows that have unique ids.
       rownames(matrix2) <- drugs_01Aids[indices]
 
       #Collect all the patient IDs of the patients in columns of matrix
       ids <- sapply(strsplit(colnames(matrix), "-"), function(a)a[3])
 
       #Collect the patients that are common to both prediction and cnv/mut data (using their 4 digit ids).
-      overlapping_ids<-intersect(drugs_01Aids, ids)
+      overlapping_ids<-intersect(rownames(matrix2), ids)
 
       #Index the drug prediction matrix so that its rows only contains patients it has in common with the cnv/mut data.
-      indices<-match(overlapping_ids, drugs_01Aids)
-      drug_prediction2<-drug_prediction[indices,]
+      drug_prediction2<-matrix2[overlapping_ids,, drop=FALSE]
 
       indices<-match(overlapping_ids, ids)
-      matrix3<-as.matrix(matrix[,indices])
+      matrix3<-as.matrix(matrix[,indices, drop=FALSE])
 
       MatCommonPats_amps <- apply(matrix3, 2, function(theCol)return(as.numeric(theCol > 1))) #Apply this function to each column.
       rownames(MatCommonPats_amps) <- rownames(matrix3)
@@ -196,7 +199,7 @@ idwas<-function(drug_prediction, data, n=10, cnv, folder=FALSE){
 
       allCors_hasAmps <- allCors[hasAmps]
       if(length(allCors_hasAmps) == 0){
-        stop((paste("\nERROR: A gene was not mutated in at least", n, "patients. Recommend decreasing the n parameter.", sep=" ")))
+        stop((paste("\nERROR: A gene was not amplified in at least", n, "patients. Recommend decreasing the n parameter.", sep=" ")))
       }else{
         pVals <- sapply(allCors_hasAmps, function(item)return(item[[1]]))
         betas <- sapply(allCors_hasAmps, function(item)return(item[[2]]))
@@ -256,7 +259,7 @@ idwas<-function(drug_prediction, data, n=10, cnv, folder=FALSE){
 
       #Lets remove everything but the "Primary Solid Tumors (i.e. "01")".
       #_______________________________________
-      mutMat_only01 <- mutMat[, tumorTypeId == "01A"] #Genes that were mutated in 01A samples.
+      mutMat_only01 <- mutMat[, tumorTypeId == "01A", drop=FALSE] #Genes that were mutated in 01A samples.
       theIds <- colnames(mutMat_only01) #Patient ids that were 01A.
       mutIds <- sapply(strsplit(theIds, "-", fixed=T), function(l)return(l[3])) #The TCGA #### part of the barcode.
       colnames(mutMat_only01) <- mutIds
@@ -264,7 +267,7 @@ idwas<-function(drug_prediction, data, n=10, cnv, folder=FALSE){
       #Extract the 01a samples from the drug prediction data, i.e. tumor samples.
       #_______________________________________
       all01ASamples <- colnames(drug_prediction)[which(sapply(strsplit(colnames(drug_prediction), "-", fixed=T), function(a)a[4]) == "01A")]
-      preds01a <- drug_prediction[, all01ASamples] #Predictions for 01A samples.
+      preds01a <- drug_prediction[, all01ASamples, drop=FALSE] #Predictions for 01A samples.
       sampIds01a <- sapply(strsplit(all01ASamples, "-", fixed=T), function(l)return(l[3])) #The TCGA #### digit number.
       colnames(preds01a) <- sampIds01a
       inPredAndMutData <- sampIds01a[sampIds01a %in% mutIds] #Samples for which we have both predicted drug response and mutation calls
@@ -275,77 +278,50 @@ idwas<-function(drug_prediction, data, n=10, cnv, folder=FALSE){
 
       #Run the associations between all genes and drugs, for drugs with at least 50 mutations.
       #_______________________________________
-      preds01a_filt_ord <- as.matrix(preds01a[, inPredAndMutData]) #The preds for the 01A samples we have both prediction and mutation data for.
-      mutMat_nodups_ordFilt <- mutMat_only01[, inPredAndMutData]
+      preds01a_filt_ord <- as.matrix(preds01a[, inPredAndMutData, drop=FALSE]) #The preds for the 01A samples we have both prediction and mutation data for.
+      mutMat_nodups_ordFilt <- mutMat_only01[, inPredAndMutData, drop=FALSE]
       commonMuts <- apply(mutMat_nodups_ordFilt, 1, sum)
       if (length(which(commonMuts >= n)) == 0){
         stop((paste("\nERROR: A gene was not mutated in at least", n, "patients. Recommend decreasing the n parameter.", sep=" ")))
       }
-      commonlyMutated <- mutMat_nodups_ordFilt[which(commonMuts >= n), ] #Rows are genes that are mutated in n+ patients. Cols are patients.
+      commonlyMutated <- mutMat_nodups_ordFilt[which(commonMuts >= n), , drop=FALSE] #Rows are genes that are mutated in n+ patients. Cols are patients.
 
-      #If there are multiple genes, commonlyMutated will have dimensions.
-      #Otherwise, it will be a vector.
+      #If there are gene entries with an unknown HUGO ID, remove it.
       #_______________________________________
-      dim<-try(dim(as.vector(unlist(commonlyMutated))), silent=TRUE)
-      if(length(dim)){ #If we have a vector (one gene)...
-        #Get p values and beta values.
-        pValList <- list()
-        betaValList <- list()
-
-        suppressWarnings(for(i in 1:nrow(preds01a_filt_ord)){ #For each drug...
-          pValList[[i]] <- numeric()
-          betaValList[[i]] <- numeric()
-          thecoefs <- coef(summary(lm(preds01a_filt_ord[i,]~commonlyMutated)))
-          pValList[[i]]<- thecoefs[2,4]
-          betaValList[[i]] <- thecoefs[2,1]
-        })
-
-        #Get the adjusted p-value for each gene-drug combination, pull out the significant associations
-        #and create a supplementary table that lists these for "predictable" drugs?.
-        sigPs <- list()
-        pAdjListCantype <- list()
-        for(i in 1:length(pValList)){
-          #names(pValList[[i]]) <- rownames(commonlyMutated)
-          #names(betaValList[[i]]) <- rownames(commonlyMutated)
-          padj <- p.adjust(pValList[[i]], method="BH")
-          sigPs[[i]] <- padj[padj < 0.05]
-          pAdjListCantype[[i]] <- padj
+      if("Unknown" %in% rownames(commonlyMutated)){
+        commonlyMutated<-commonlyMutated[rownames(commonlyMutated) != "Unknown",, drop=FALSE]
+        if (nrow(commonlyMutated) == 0) {
+          stop("\nERROR: No known genes remain after removing Unknown HUGO IDs.", call. = FALSE)
         }
-      }else{ #Otherwise, we have rows/multiple genes...
-        #If there are gene entries with an unknown HUGO ID, remove it.
-        #_______________________________________
-        if("Unknown" %in% rownames(commonlyMutated)){
-          indices<-'Unknown' %in% rownames(commonlyMutated)
-          commonlyMutated<-commonlyMutated[-indices,]
-        }
+      }
 
-        #Get p values and beta values.
-        #_______________________________________
-        pValList <- list()
-        betaValList <- list()
+      #Get p values and beta values. Keeping commonlyMutated as a matrix lets the same
+      #code handle one passing gene and many passing genes.
+      #_______________________________________
+      pValList <- list()
+      betaValList <- list()
 
-        suppressWarnings(for(i in 1:nrow(preds01a_filt_ord)){ #For each drug...
-          pValList[[i]] <- numeric()
-          betaValList[[i]] <- numeric()
-          for(j in 1:nrow(commonlyMutated)) #For each row/gene that is mutated in n+ patients...
-          {
-            thecoefs <- coef(summary(lm(preds01a_filt_ord[i,]~commonlyMutated[j,])))
-            pValList[[i]][[j]] <- thecoefs[2,4]
-            betaValList[[i]][[j]] <- thecoefs[2,1]
-          }
-        })
-        #Get the adjusted p-value for each gene-drug combination, pull out the significant associations
-        #and create a supplementary table that lists these for "predictable" drugs?.
-        #_______________________________________
-        sigPs <- list()
-        pAdjListCantype <- list()
-        for(i in 1:length(pValList)){
-          names(pValList[[i]]) <- rownames(commonlyMutated)
-          names(betaValList[[i]]) <- rownames(commonlyMutated)
-          padj <- p.adjust(pValList[[i]], method="BH")
-          sigPs[[i]] <- padj[padj < 0.05]
-          pAdjListCantype[[i]] <- padj
+      suppressWarnings(for(i in 1:nrow(preds01a_filt_ord)){ #For each drug...
+        pValList[[i]] <- numeric()
+        betaValList[[i]] <- numeric()
+        for(j in 1:nrow(commonlyMutated)) #For each row/gene that is mutated in n+ patients...
+        {
+          thecoefs <- coef(summary(lm(preds01a_filt_ord[i,]~commonlyMutated[j,])))
+          pValList[[i]][[j]] <- thecoefs[2,4]
+          betaValList[[i]][[j]] <- thecoefs[2,1]
         }
+      })
+      #Get the adjusted p-value for each gene-drug combination, pull out the significant associations
+      #and create a supplementary table that lists these for "predictable" drugs?.
+      #_______________________________________
+      sigPs <- list()
+      pAdjListCantype <- list()
+      for(i in 1:length(pValList)){
+        names(pValList[[i]]) <- rownames(commonlyMutated)
+        names(betaValList[[i]]) <- rownames(commonlyMutated)
+        padj <- p.adjust(pValList[[i]], method="BH")
+        sigPs[[i]] <- padj[padj < 0.05]
+        pAdjListCantype[[i]] <- padj
       }
 
       names(sigPs) <- rownames(preds01a_filt_ord)
@@ -356,26 +332,12 @@ idwas<-function(drug_prediction, data, n=10, cnv, folder=FALSE){
       pVal<-unlist(pValList)
       betaVal<-unlist(betaValList)
 
-      #If you only have one gene of interest...make sure the row names are appropriate (drug:gene)
-      if(length(dim)){ #If we have a vector (one gene)...
-        final_data<-cbind(pVal, betaVal)
-        rows<-rownames(final_data)
-        gene<-names(which(commonMuts >= n))
-        final_rows<-paste(rows, ':', gene, sep='')
-        rownames(final_data)<-final_rows
-        if (folder) {
-          write.csv(final_data, file='./MutationTestOutput_pVal_and_betaVal.csv')
-          return(invisible(final_data))
-        }
-        return(final_data)
-      }else{
-        output <- cbind(pVal, betaVal)
-        if (folder) {
-          write.csv(output, file='./MutationTestOutput_pVal_and_betaVal.csv')
-          return(invisible(output))
-        }
-        return(output)
+      output <- cbind(pVal, betaVal)
+      if (folder) {
+        write.csv(output, file='./MutationTestOutput_pVal_and_betaVal.csv')
+        return(invisible(output))
       }
+      return(output)
     }#The end of the first else statement.
 
     #This code is for when you don't have TCGA barcoded samples (it's similar to above)
@@ -426,7 +388,7 @@ idwas<-function(drug_prediction, data, n=10, cnv, folder=FALSE){
 
       allCors_hasAmps <- allCors[hasAmps]
       if(length(allCors_hasAmps) == 0){
-        stop((paste("\nERROR: A gene was not mutated in at least", n, "patients. Recommend decreasing the n parameter.", sep=" ")))
+        stop((paste("\nERROR: A gene was not amplified in at least", n, "patients. Recommend decreasing the n parameter.", sep=" ")))
       }else{
         pVals <- sapply(allCors_hasAmps, function(item)return(item[[1]]))
         betas <- sapply(allCors_hasAmps, function(item)return(item[[2]]))
@@ -497,89 +459,53 @@ idwas<-function(drug_prediction, data, n=10, cnv, folder=FALSE){
 
       #Run the associations between all genes and drugs, for drugs with at least 50 mutations.
       #_______________________________________
-      drug_prediction_filt_ord <- as.matrix(drug_prediction[inPredAndMutData,]) #The preds for the 01A samples we have both prediction and mutation data for.
-      mutMat_nodups_ordFilt <- mutMat[, inPredAndMutData]
+      drug_prediction_filt_ord <- as.matrix(drug_prediction[inPredAndMutData,, drop=FALSE]) #The preds for the samples we have both prediction and mutation data for.
+      mutMat_nodups_ordFilt <- mutMat[, inPredAndMutData, drop=FALSE]
       commonMuts <- apply(mutMat_nodups_ordFilt, 1, sum)
       if (length(which(commonMuts >= n)) == 0){
         stop((paste("\nERROR: A gene was not mutated in at least", n, "patients. Recommend decreasing the n parameter.", sep=" ")))
       }
       #dim(mutMat_nodups_ordFilt) #genes by samples.
-      commonlyMutated <- mutMat_nodups_ordFilt[which(commonMuts >= n), ]
-      #NOTE: commonlyMutated will become a vector if there is only one mut that is >=n
+      commonlyMutated <- mutMat_nodups_ordFilt[which(commonMuts >= n), , drop=FALSE]
 
-      #dim(commonlyMutated) #3 208...genes/muts by samples.
-      #rownames(commonlyMutated)
-      #length(commonlyMutated)
-
-      #If there are multiple genes, commonlyMutated will have dimensions.
-      #Otherwise, it will be a vector, and you can calculate the length.
+      #If there are gene entries with an unknown HUGO ID, remove it.
       #_______________________________________
-      #length<-try(length(as.vector(unlist(commonlyMutated))), silent=TRUE) #If commonlyMutated is not a vector...(if there are multiple )
-      nrow=try(nrow(commonlyMutated))
-      if(is.null(nrow)){ #If we have a vector (one gene)...
-        #Get p values and beta values.
-        pValList <- list()
-        betaValList <- list()
-
-        suppressWarnings(for(i in 1:ncol(drug_prediction_filt_ord)){ #For each drug...
-          pValList[[i]] <- numeric()
-          betaValList[[i]] <- numeric()
-          thecoefs <- coef(summary(lm(drug_prediction_filt_ord[,i]~as.vector(unlist(commonlyMutated)))))
-          pValList[[i]]<- thecoefs[2,4]
-          betaValList[[i]] <- thecoefs[2,1]
-        })
-
-        #Get the adjusted p-value for each gene-drug combination, pull out the significant associations
-        #and create a supplementary table that lists these for "predictable" drugs?.
-        sigPs <- list()
-        pAdjListCantype <- list()
-        for(i in 1:length(pValList)){
-          names(pValList[[i]]) <- rownames(commonlyMutated)
-          names(betaValList[[i]]) <- rownames(commonlyMutated)
-          padj <- p.adjust(pValList[[i]], method="BH")
-          sigPs[[i]] <- padj[padj < 0.05]
-          pAdjListCantype[[i]] <- padj
+      if("Unknown" %in% rownames(commonlyMutated)){
+        commonlyMutated<-commonlyMutated[rownames(commonlyMutated) != "Unknown",, drop=FALSE]
+        if (nrow(commonlyMutated) == 0) {
+          stop("\nERROR: No known genes remain after removing Unknown HUGO IDs.", call. = FALSE)
         }
+      }
 
-      }else{ #Otherwise, we have rows/multiple genes...
+      #Get p values and beta values. Keeping commonlyMutated as a matrix lets the same
+      #code handle one passing gene and many passing genes.
+      #_______________________________________
+      pValList <- list()
+      betaValList <- list()
 
-        #If there are gene entries with an unknown HUGO ID, remove it.
-        #_______________________________________
-        if("Unknown" %in% rownames(commonlyMutated)){
-          indices<-'Unknown' %in% rownames(commonlyMutated)
-          commonlyMutated<-commonlyMutated[-indices,]
-        }
-
-        #Get p values and beta values.
-        #_______________________________________
-        pValList <- list()
-        betaValList <- list()
-        #dim(drug_prediction_filt_ord) #samples by drugs.
-
-        suppressWarnings(for(i in 1:ncol(drug_prediction_filt_ord)){ #For each drug...drug_prediction_filt_ord is samples/rows and drugs/columns. 208 11
-          pValList[[i]] <- numeric()
-          betaValList[[i]] <- numeric()
-          for(j in 1:nrow(commonlyMutated)) #For each mut gene...commonlyMutated is mut genes/rows and samples/columns.3 208
-          {
-            thecoefs <- coef(summary(lm(drug_prediction_filt_ord[,i]~commonlyMutated[j,])))
-            pValList[[i]][[j]] <- thecoefs[2,4]
-            betaValList[[i]][[j]] <- thecoefs[2,1]
-          }
-        })
-
-        #Get the adjusted p-value for each gene-drug combination, pull out the significant associations
-        #and create a supplementary table that lists these for "predictable" drugs?.
-        #_______________________________________
-        sigPs <- list()
-        pAdjListCantype <- list()
-        for(i in 1:length(pValList))
+      suppressWarnings(for(i in 1:ncol(drug_prediction_filt_ord)){ #For each drug...drug_prediction_filt_ord is samples/rows and drugs/columns. 208 11
+        pValList[[i]] <- numeric()
+        betaValList[[i]] <- numeric()
+        for(j in 1:nrow(commonlyMutated)) #For each mut gene...commonlyMutated is mut genes/rows and samples/columns.3 208
         {
-          #names(pValList[[i]]) <- rownames(commonlyMutated)
-          #names(betaValList[[i]]) <- rownames(commonlyMutated)
-          padj <- p.adjust(pValList[[i]], method="BH")
-          sigPs[[i]] <- padj[padj < 0.05]
-          pAdjListCantype[[i]] <- padj
+          thecoefs <- coef(summary(lm(drug_prediction_filt_ord[,i]~commonlyMutated[j,])))
+          pValList[[i]][[j]] <- thecoefs[2,4]
+          betaValList[[i]][[j]] <- thecoefs[2,1]
         }
+      })
+
+      #Get the adjusted p-value for each gene-drug combination, pull out the significant associations
+      #and create a supplementary table that lists these for "predictable" drugs?.
+      #_______________________________________
+      sigPs <- list()
+      pAdjListCantype <- list()
+      for(i in 1:length(pValList))
+      {
+        names(pValList[[i]]) <- rownames(commonlyMutated)
+        names(betaValList[[i]]) <- rownames(commonlyMutated)
+        padj <- p.adjust(pValList[[i]], method="BH")
+        sigPs[[i]] <- padj[padj < 0.05]
+        pAdjListCantype[[i]] <- padj
       }
 
       names(sigPs) <- colnames(drug_prediction_filt_ord)
@@ -587,48 +513,20 @@ idwas<-function(drug_prediction, data, n=10, cnv, folder=FALSE){
       names(betaValList) <- colnames(drug_prediction_filt_ord)
       names(pAdjListCantype) <- colnames(drug_prediction_filt_ord)
 
-      #If you only have one gene of interest...make sure the row names are appropriate (drug:gene)
-      nrow=try(nrow(commonlyMutated))
-      if(is.null(nrow)){ #If we have a vector (one gene)...
+      drugs=names(pValList)
+      genes=paste(rownames(commonlyMutated), ":", sep="")
+      mut_drug<-do.call(paste0,expand.grid(genes,drugs))
+      pvalues=as.vector(unlist(pValList)) #All p values as a vector.
+      betavalues=as.vector(unlist(betaValList)) #All beta values as a vector.
 
-        pVal<-unlist(pValList)
-        betaVal<-unlist(betaValList)
+      df=data.frame(pvalues, betavalues)
+      rownames(df)<-mut_drug
 
-        final_data<-cbind(pVal, betaVal)
-        rows<-rownames(final_data)
-        gene<-names(which(commonMuts >= n))
-        final_rows<-paste(rows, ':', gene, sep='')
-        rownames(final_data)<-final_rows
-        if (folder) {
-          write.csv(final_data, file='./MutationTestOutput_pVal_and_betaVal.csv')
-          return(invisible(final_data))
-        }
-        return(final_data)
-
-      }else{
-
-        drugs=names(pValList)
-        genes=names(which(commonMuts >= n))
-        genes=paste(genes, ":", sep="")
-        mut_drug<-do.call(paste0,expand.grid(genes,drugs))
-        pvalues=as.vector(unlist(pValList)) #All p values as a vector.
-        #names(pvalues)=v1
-
-        drugs=names(betaValList)
-        genes=names(which(commonMuts >= n))
-        genes=paste(genes, ":", sep="")
-        #mut_drug<-do.call(paste0,expand.grid(genes,drugs))
-        betavalues=as.vector(unlist(betaValList)) #All p values as a vector.
-
-        df=data.frame(pvalues, betavalues)
-        rownames(df)<-mut_drug
-
-        if (folder) {
-          write.csv(df, file='./MutationTestOutput_pVal_and_betaVal.csv')
-          return(invisible(df))
-        }
-        return(df)
+      if (folder) {
+        write.csv(df, file='./MutationTestOutput_pVal_and_betaVal.csv')
+        return(invisible(df))
       }
+      return(df)
     }
   }
 }

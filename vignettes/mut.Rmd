@@ -83,9 +83,9 @@ data<-as.data.frame(maf)
 samps<-data$Tumor_Sample_Barcode
 data$Tumor_Sample_Barcode<-substr(samps,1,nchar(samps)-12) #Make sure these sample ids are of the same form as the sample ids in your prediction data.
 
-#Determine the number of samples you want the CNVs to be amplified in. The default is 10.
+#Determine the number of samples you want mutations to occur in. The default is 10.
 n=10
 
-#Indicate whether or not you would like to test cnv data. If TRUE, you will test cnv data. If FALSE, you will test mutation data.
+#Indicate whether or not you would like to test CNA amplification data. If TRUE, you will test CNA amplifications. If FALSE, you will test mutation data.
 cnv=FALSE
 ```

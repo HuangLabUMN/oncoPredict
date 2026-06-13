@@ -2,29 +2,30 @@
 % Please edit documentation in R/IDWAS.R
 \name{idwas}
 \alias{idwas}
-\title{This function will test every drug against every CNV or somatic mutation for your cancer type.}
+\title{This function will test every drug against CNA amplifications or somatic mutations for your cancer type.}
 \usage{
 idwas(drug_prediction, data, n = 10, cnv, folder = FALSE)
 }
 \arguments{
 \item{drug_prediction}{The drug prediction data. Must be a data frame. rownames are samples, colnames are drugs. Make sure sample names are of the same form as the sample names in your cnv or mutation data. e.g. if the rownames() are TCGA barcodes of the form TCGA-##-####-###, make sure your cnv/mutation data also uses samples in the form TCGA-##-####-###}
 
-\item{data}{The cnv or mutation data. Must be a data frame. If you wish to use cnv data, use the output from map_cnv(), transpose it so that colnames() are samples. Or use data of similar form. If you wish to use mutation data, use the method for downloading mutation data outlined in the vignette, and make sure the TCGA barcodes use '-' instead of '.'; if you use another dataset (and don't download data from TCGA), make sure your data file includes the following columns: 'Variant_Classification', 'Hugo_Symbol', 'Tumor_Sample_Barcode'.}
+\item{data}{The CNA amplification or mutation data. Must be a data frame. If you wish to use CNA data, use the output from map_cnv(), where rows are genes and columns are samples, or use data of similar form. If you wish to use mutation data, use the method for downloading mutation data outlined in the vignette, and make sure the TCGA barcodes use '-' instead of '.'; if you use another dataset (and don't download data from TCGA), make sure your data file includes the following columns: 'Variant_Classification', 'Hugo_Symbol', 'Tumor_Sample_Barcode'.}
 
-\item{n}{The minimum number of samples you want CNVs or mutations to be amplified in. The default is 10 (arbitrarily chosen).}
+\item{n}{The minimum number of samples you want CNA amplifications or mutations to occur in. The default is 10 (arbitrarily chosen).}
 
-\item{cnv}{TRUE or FALSE. Indicate whether or not you would like to test cnv data. If TRUE, you will test cnv data. If FALSE, you will test mutation data.}
+\item{cnv}{TRUE or FALSE. Indicate whether or not you would like to test CNA amplification data. If TRUE, you will test CNA amplifications. If FALSE, you will test mutation data.}
 
 \item{folder}{If TRUE, write IDWAS results to CSV files in the current working directory. The default is FALSE.}
 }
 \value{
-Raw p-value and beta-values for cnv and somatic mutations.
+Raw p-value and beta-values for CNA amplifications or somatic mutations.
 }
 \description{
-This function will test every drug against every CNV or somatic mutation for your cancer type.
+This function will test every drug against CNA amplifications or somatic mutations for your cancer type.
 }
-\keyword{CNV}
+\keyword{CNA}
 \keyword{Test}
+\keyword{amplification}
 \keyword{data}
 \keyword{genes.}
 \keyword{mutation}

@@ -12,7 +12,7 @@ map_cnv(Cnvs, folder = FALSE)
 \item{folder}{If TRUE, write a map.RData file containing the mapped CNV matrix and tumor sample indices. The default is FALSE.}
 }
 \value{
-A list containing theCnvQuantVecList_mat (rows are genes, columns are samples) and tumorSamps (primary tumor/01A sample indices).
+A list containing theCnvQuantVecList_mat (rows are genes, columns are samples) and tumorSamps (primary tumor/01A sample column indices).
 }
 \description{
 This function maps cnv data to genes.

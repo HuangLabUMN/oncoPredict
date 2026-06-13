@@ -74,7 +74,8 @@ cm<-read.table(vignette_file("complete_matrix_output_GDSCv2.txt"), header=TRUE, 
 newRows <- substring(rownames(cm),8) #Remove 'COSMIC'...keep the numbers after COSMIC.
 indices<-match(as.numeric(newRows), as.vector(unlist(cellLineDetails[,2]))) #Refer to the cell line details file to make this replacement.
 newNames<-as.vector(unlist(cellLineDetails[,1]))[indices] #Reports the corresponding cell line names
-rownames(cm)<-newNames
+# Match the sanitized cell-line names used in the example marker matrix.
+rownames(cm)<-make.names(newNames)
 
 #Fix the drug names in the cm object so that it's just the name of the drug (remove those extra numbers/identifiers at the end).
 #gdscv2_drugs.xlsx contains the colnames of cm in the correct order, but with the extra identifiers removed.
@@ -83,7 +84,7 @@ rownames(cm)<-newNames
 fix<-as.vector(unlist(read.table(vignette_file("gdscv2_drugs.txt"), header=TRUE)))
 colnames(cm)<-as.vector(fix)
 drugMat<-as.matrix(cm) #Finally, set this object as the drugMat parameter. 
-#dim(drugMat) #805 samples vs. 198 drugs
+#dim(drugMat) #100 samples vs. 198 drugs in this reduced example file.
 
 #'@param markerMat A matrix containing the data for which you are looking for an association with drug sensitivity (e.g. a matrix of somatic mutation data). rownames() are 
 #marker names (e.g. gene names), and colnames() are samples.
@@ -119,7 +120,12 @@ drugMat<-as.matrix(cm) #Finally, set this object as the drugMat parameter.
 #colnames(markerMat)<-cols
 #dim(markerMat) #1315 1389
 #write.table(markerMat, file='markerMat.txt')
-markerMat<-as.matrix(read.table(vignette_file("markerMat.txt"), header=TRUE, row.names=1))
+#The included example markerMat is reduced to the top 200 markers among the samples used here.
+markerMat<-as.matrix(read.table(vignette_file("markerMat.txt"), header=TRUE, row.names=1, check.names=FALSE))
+
+if(length(intersect(colnames(markerMat), rownames(drugMat))) == 0){
+  stop("No overlapping samples were found between markerMat and drugMat.")
+}
 
 #'@param drugRelatedness 
 #This file is GDSC's updated drug relatedness file (obtained from bulk data download/all compounds screened/compounds-annotation).

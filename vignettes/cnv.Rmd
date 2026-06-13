@@ -30,11 +30,11 @@ vignette_file <- function(...) {
 }
 ```
 
-```{r setup}
+```{r setup, eval=requireNamespace("org.Hs.eg.db", quietly = TRUE) && requireNamespace("TxDb.Hsapiens.UCSC.hg19.knownGene", quietly = TRUE)}
 
 library(oncoPredict)
 
-#This script provides an example of how to download cnv (copy number variation) data from the GDC database for GBM #(glioblastoma), how to apply the map_cnv() function to that data to map cnvs to genes, and how to test the drugs in your drug #response dataset to each cnv to identify biomarkers that enrich for drug response.
+#This script provides an example of how to download copy-number data from the GDC database for GBM #(glioblastoma), how to apply the map_cnv() function to that data to map CNAs to genes, and how to test the drugs in your drug #response dataset against CNA amplifications to identify biomarkers that enrich for drug response.
 
 #First, download CNV data for your cancer of interest from GDC database. The cnv data will be exported to your #working directory as cnv.txt 
 
@@ -57,7 +57,7 @@ library(oncoPredict)
 #Determine the parameters of the map_cnv() function.
 Cnvs<-read.table(vignette_file("cnv.txt"), header=TRUE, row.names=1)
 
-#Third, apply idwas() to test each cnv and each drug. The p-values and beta-values for each test will be returned as an object.
+#Third, apply idwas() to test each CNA amplification and each drug. The p-values and beta-values for each test will be returned as an object.
 
 #Determine the parameters of the idwas() function...
 
@@ -74,10 +74,11 @@ rows=rownames(drug_prediction)
 rownames(drug_prediction)<-substring(rows, 3, nchar(rows))
 drug_prediction<-as.data.frame(drug_prediction)
 
-#Determine the number of samples you want the CNVs to be amplified in. The default is 10.
-n=10
+#Determine the number of samples you want the CNAs to be amplified in. The default is 10.
+#The included CNV example is intentionally small, so use a lower threshold for this vignette.
+n=5
 
-#Indicate whether or not you would like to test cnv data. If TRUE, you will test cnv data. If FALSE, you will test mutation data.
+#Indicate whether or not you would like to test CNA amplification data. If TRUE, you will test CNA amplifications. If FALSE, you will test mutation data.
 cnv=TRUE
 
 old_wd<-getwd()
@@ -89,7 +90,7 @@ tryCatch({
 
   #Set the data parameter.
   #Make sure this data is a data frame and that colnames() are samples.
-  data<-as.data.frame(t(mapped_cnv$theCnvQuantVecList_mat))
+  data<-as.data.frame(mapped_cnv$theCnvQuantVecList_mat)
   samps<-colnames(data)
   colnames(data)<-substr(samps,1,nchar(samps)-12)
 

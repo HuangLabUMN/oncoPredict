@@ -1,7 +1,8 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
-^\.git$
+^\.git($|/)
 ^\.gitignore$
 ^\.DS_Store$
 ^\.Rhistory$
 ^.*\.tar\.gz$
+^.*[.]Rcheck($|/)

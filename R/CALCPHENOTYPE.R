@@ -316,7 +316,7 @@ calcPhenotype<-function (trainingExprData,
 
   #Check if an adequate number of training and test samples have been supplied.
   #_______________________________________________________________
-  if ((nrow(trainingExprData) < minNumSamples) || (nrow(testExprData) < minNumSamples)) {
+  if ((ncol(trainingExprData) < minNumSamples) || (ncol(testExprData) < minNumSamples)) {
     stop(paste("\nThere are less than", minNumSamples, "samples in your test or training set. It is strongly recommended that you use larger numbers of samples in order to (a) correct for batch effects and (b) fit a reliable model. To supress this message, change the \"minNumSamples\" parameter to this function."))
   }
 
@@ -457,6 +457,7 @@ calcPhenotype<-function (trainingExprData,
           bi<-which(variance %in% 0)
           if (length(bi) != 0){
             train_x<-train_x[, -bi, drop=FALSE]
+            test_x<-data.frame(test_x[, -bi, drop=FALSE])
           }
 
           data<-data.frame(Resp=train_y, train_x)
